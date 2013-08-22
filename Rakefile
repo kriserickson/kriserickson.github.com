@@ -95,7 +95,7 @@ task :draft do
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
-end # task :post
+end # task :draft
 
 # Usage: rake publish title="A Title" [date="2012-02-09"]
 desc "Publish a draft in #{CONFIG['posts']}"
@@ -135,7 +135,7 @@ task :publish do
   FileUtils.cp(filename, put_filename)
   FileUtils.rm(filename)
 
-end # task :post
+end # task :publish
 
 # Usage: rake page name="about.html"
 # You can also specify a sub-directory path.
