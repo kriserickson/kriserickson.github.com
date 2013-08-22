@@ -72,7 +72,8 @@ task :post do
   end
 end # task :post
 
-# Usage: rake draft title="A Title" [tags=[tag1, tag2]]
+# Usage: rake draft []title="A Title"] [tags=[tag1, tag2]]
+# if you have no title it becomes new-post which will be the default draft to publish with the draft command
 desc "Begin a new draft in #{CONFIG['drafts']}"
 task :draft do
   abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
@@ -97,7 +98,8 @@ task :draft do
   end
 end # task :draft
 
-# Usage: rake publish title="A Title" [date="2012-02-09"]
+# Usage: rake publish []title="A Title"] [date="2012-02-09"]
+# if you give no title it will try to publish "new post".
 desc "Publish a draft in #{CONFIG['posts']}"
 task :publish do
   abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
