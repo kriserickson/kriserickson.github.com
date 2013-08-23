@@ -5,6 +5,10 @@ Incremental version bumps that were not released publicly are nested where appro
 
 P.S. If there is a standard (popular) changelog format, please let me know.
 
+- **0.3.1 : 2013.08.22**
+    - @kriserickson Added the ability to do drafts from command-line
+    - @kriserickson Fixed preview from the command line.
+
 - **0.3.0 : 2013.02.24**
     - **Features**
     - Update twitter bootstrap to 2.2.2. Add responsiveness and update design a bit.
