@@ -76,7 +76,9 @@ end # task :post
 # if you have no title it becomes new-post which will be the default draft to publish with the draft command
 desc "Begin a new draft in #{CONFIG['drafts']}"
 task :draft do
-  abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
+  unless FileTest.directory?(CONFIG['drafts'])
+    FileUtils.mkdir_p(CONFIG['drafts'])
+  end
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
