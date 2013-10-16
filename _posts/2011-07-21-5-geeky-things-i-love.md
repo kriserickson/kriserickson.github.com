@@ -3,7 +3,7 @@ layout: post
 title: "5 Geeky Things I Love"
 description: ""
 category: thingsilove
-tags: [rdio,iphone,kindlge,jetbrains,phpstorm,cygwin]
+tags: [rdio,iphone,kindle,jetbrains,phpstorm,cygwin]
 ---
 {% include JB/setup %}
 1. [Rdio](http://rd.io) Instant access to millions of tunes.  Amazing value for money.

@@ -76,21 +76,26 @@ end # task :post
 # if you have no title it becomes new-post which will be the default draft to publish with the draft command
 desc "Begin a new draft in #{CONFIG['drafts']}"
 task :draft do
-  abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
+  unless FileTest.directory?(CONFIG['drafts'])
+    FileUtils.mkdir_p(CONFIG['drafts'])
+  end
+  
   title = ENV['title'] || 'new-post'
   tags = ENV['tags'] || '[]'
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = File.join(CONFIG['drafts'], "#{slug}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
+  if File.exist?(filename)  
     abort('rake aborted!') if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
 
   puts "Creating new draft: #{filename}"
   open(filename, 'w') do |post|
+
     post.puts '---'
     post.puts 'layout: post'
     post.puts "title: \"#{title.gsub(/-/, ' ')}\""
     post.puts 'description: ""'
+
     post.puts 'category: '
     post.puts 'tags: []'
     post.puts '---'
@@ -103,9 +108,11 @@ end # task :draft
 desc "Publish a draft in #{CONFIG['posts']}"
 task :publish do
   abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
+
   title = ENV['title'] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = File.join(CONFIG['drafts'], "#{slug}.#{CONFIG['post_ext']}")
+
   unless File.exists?(filename)
     filename = File.join(CONFIG['drafts'], "new-post..#{CONFIG['post_ext']}")
   end

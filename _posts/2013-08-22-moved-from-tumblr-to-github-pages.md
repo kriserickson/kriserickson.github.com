@@ -2,8 +2,8 @@
 layout: post
 title: "Moved from Tumblr to Github Pages"
 description: ""
-category: 
-tags: []
+category: Blog
+tags: [github,blogging]
 ---
 {% include JB/setup %}
 
