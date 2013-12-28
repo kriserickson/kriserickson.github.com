@@ -1,17 +1,17 @@
-require "rubygems"
+require 'rubygems'
 require 'rake'
 require 'yaml'
 require 'time'
 
 SOURCE = "."
 CONFIG = {
-  'version' => "0.3.0",
-  'themes' => File.join(SOURCE, "_includes", "themes"),
-  'layouts' => File.join(SOURCE, "_layouts"),
-  'posts' => File.join(SOURCE, "_posts"),
-  'drafts' => File.join(SOURCE, "_drafts"),
-  'post_ext' => "md",
-  'theme_package_version' => "0.1.0"
+  :version => "0.3.1",
+  :themes => File.join(SOURCE, "_includes", "themes"),
+  :layouts => File.join(SOURCE, "_layouts"),
+  :posts => File.join(SOURCE, "_posts"),
+  :drafts => File.join(SOURCE, "_drafts"),
+  :post_ext => "md",
+  :theme_package_version => "0.1.0"
 }
 
 # Path configuration helper
@@ -19,8 +19,8 @@ module JB
   class Path
     SOURCE = "."
     Paths = {
-      :layouts => "_layouts",
-      :themes => "_includes/themes",
+      :layouts => '_layouts',
+      :themes => '_includes/themes',
       :theme_assets => "assets/themes",
       :theme_packages => "_theme_packages",
       :posts => "_posts"
@@ -85,24 +85,27 @@ task :draft do
   unless FileTest.directory?(CONFIG['drafts'])
     FileUtils.mkdir_p(CONFIG['drafts'])
   end
-  title = ENV["title"] || "new-post"
-  tags = ENV["tags"] || "[]"
+  
+  title = ENV['title'] || 'new-post'
+  tags = ENV['tags'] || '[]'
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = File.join(CONFIG['drafts'], "#{slug}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  if File.exist?(filename)  
+    abort('rake aborted!') if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
 
   puts "Creating new draft: #{filename}"
   open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
+
+    post.puts '---'
+    post.puts 'layout: post'
     post.puts "title: \"#{title.gsub(/-/, ' ')}\""
     post.puts 'description: ""'
-    post.puts "category: "
-    post.puts "tags: []"
-    post.puts "---"
-    post.puts "{% include JB/setup %}"
+
+    post.puts 'category: '
+    post.puts 'tags: []'
+    post.puts '---'
+    post.puts '{% include JB/setup %}'
   end
 end # task :draft
 
@@ -111,10 +114,12 @@ end # task :draft
 desc "Publish a draft in #{CONFIG['posts']}"
 task :publish do
   abort("rake aborted: '#{CONFIG['drafts']}' directory not found.") unless FileTest.directory?(CONFIG['drafts'])
-  title = ENV["title"] || "new-post"
+
+  title = ENV['title'] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = File.join(CONFIG['drafts'], "#{slug}.#{CONFIG['post_ext']}")
-  if !File.exists?(filename)
+
+  unless File.exists?(filename)
     filename = File.join(CONFIG['drafts'], "new-post..#{CONFIG['post_ext']}")
   end
   abort("rake aborted: no draft #{filename}' not found.") unless File.exist?(filename)
@@ -134,7 +139,7 @@ task :publish do
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e
-    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
+    puts 'Error - date format must be YYYY-MM-DD, please check you typed it correctly!'
     exit -1
   end
 
@@ -149,8 +154,8 @@ end # task :publish
 
 # Usage: rake page name="about.html"
 # You can also specify a sub-directory path.
-# If you don't specify a file extention we create an index.html at the path specified
-desc "Create a new page."
+# If you don't specify a file extension we create an index.html at the path specified
+desc 'Create a new page.'
 task :page do
   name = ENV["name"] || "new-page.md"
   filename = File.join(SOURCE, "#{name}")
