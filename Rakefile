@@ -41,6 +41,12 @@ module JB
   end #Path
 end #JB
 
+desc "Usage"
+task :default do
+    puts "Usage\n"
+    puts "rake post title=\"title\" [date=\"date\"]\n"
+end
+
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
@@ -364,7 +370,7 @@ end
 
 def ask(message, valid_options)
   if valid_options
-    answer = get_stdin("#{message} #{valid_options.to_s.gsub(/"/, '').gsub(/, /,'/')} ") while !valid_options.include?(answer)
+    answer = get_stdin("#{message} #{valid_options.to_s.gsub(/"/, '').gsub(/, /, '/')} ") until valid_options.include?(answer)
   else
     answer = get_stdin(message)
   end
