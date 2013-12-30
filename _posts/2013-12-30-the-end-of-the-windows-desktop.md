@@ -15,7 +15,7 @@ next cross platform dream.
 
 I don't really think that Google will succeed with this, it's just another of their throw it against the wall and see if it sticks (ala Chrome Frame and
 Google Gears and all the other ways that Google has tried to Chromize the default web experience) but it is interesting that Google is trying
-Microsoft's *embrace, extend, eliminate* tactics from the late 19090's and early 2000's.  I see their Chrome Apps as akin to the old
+Microsoft's *embrace, extend, eliminate* tactics from the late 1990's and early 2000's.  I see their Chrome Apps as akin to the old
 Internet Explorer ActiveX control that we all loved so much (with perhaps not as bad of a security model).  Firefox extensions grew organically
 out of Greasemonkey and the extension model that Firefox originally built in.  Chrome, however, developed its extension model on its own as it
 realized it needed extensions to compete with Firefox.  The Chrome Apps extended from that as Chrome made it simple to package your URL as an
