@@ -287,13 +287,13 @@ pre {
   margin-top: 0;
 }
 .unit-article a:link {
-  border-bottom: 1px dotted #DAD671;
+  border-bottom: 2px dotted #AA404C;
 }
 .unit-article a:visited {
-  border-bottom: 1px dotted #F7F04C;
+  border-bottom: 2px dotted #F7404C;
 }
 .unit-article a:hover {
-  border-bottom: 1px dotted #bbddbb;
+  border-bottom: 2px dotted #3A3A8F;
 }
 .unit-article blockquote {
   border-left: 1em solid rgba(21, 25, 25, 0.8);
