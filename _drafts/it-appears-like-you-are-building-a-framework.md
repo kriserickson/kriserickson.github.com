@@ -32,7 +32,7 @@ when I wrote it (Symfony2, Laravel, Phalcon where not out yet) and the choices f
 
 So when I looked at the state of Mobile frameworks I really tried to not write a new framework.  For my work we needed
 to quickly create a mobile application, and I spent a bunch of time researching the state of Mobile frameworks.  I have made
-apps in the past with [jQtouch or jQT as they are now calling it](http://jqtjs.com/) (3 years ago), however its Android
+some apps 3 years ago with [jQtouch or jQT as they are now calling it](http://jqtjs.com/), however its Android
 experience was always lacking and with IOS7 it looks horribly dated.
 Recently I made my own [Recipe Folder](https://play.google.com/store/apps/details?id=com.recipefolder.app)
 
