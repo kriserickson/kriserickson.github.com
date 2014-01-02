@@ -31,10 +31,28 @@ when I wrote it (Symfony2, Laravel, Phalcon where not out yet) and the choices f
  I could write a better framework -- ah the hubris of youth.
 
 So when I looked at the state of Mobile frameworks I really tried to not write a new framework.  For my work we needed
-to quickly create a mobile application, and I spent a bunch of time researching the state of Mobile frameworks.  I have made
-some apps 3 years ago with [jQtouch or jQT as they are now calling it](http://jqtjs.com/), however its Android
-experience was always lacking and with IOS7 it looks horribly dated.
-Recently I made my own [Recipe Folder](https://play.google.com/store/apps/details?id=com.recipefolder.app)
+to quickly create a mobile application, and I spent a bunch of time researching the state of Mobile frameworks.  I made
+some apps 3 years ago with [jQtouch or jQT as they are now calling it](http://jqtjs.com/), and started working with it
+but quickly found it lacking.  So I did a kind of mobile rundown of the big frameworks:
+
+Over the past year I have been working on my own mobile hobby App [Recipe Folder](https://play.google.com/store/apps/details?id=com.recipefolder.app),
+a kind of [Pocket](getpocket.com)/[Instapaper](http://www.instapaper.com/)/[Readability](www.readability.com) for
+Recipes (using a [Chrome Extension](https://chrome.google.com/webstore/detail/recipe-folder/nfgkogochmmkkglclaokmangionbpmha) or
+[Bookmarklet](http://recipe-folder.com) you can save any Recipes you find on the web and then access them
+later on your Mobile device).  It was written using jQuery Mobile, and that is a mistake I would never make again.  To quote
+one of the creators of PhoneGap:
+
+<blockquote class="twitter-tweet" lang="en"><p>use jquery mobile with phonegap <a href="https://twitter.com/search?q=%23FiveWordTechHorrors&amp;src=hash">#FiveWordTechHorrors</a></p>&mdash; xnoɹǝʃ uɐıɹq (@brianleroux) <a href="https://twitter.com/brianleroux/statuses/410650764101439488">December 11, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I also looked at some of the commercial options (specifically [PhoneJS](http://phonejs.devexpress.com/) and [KendoUI Mobile](http://www.kendoui.com/mobile.aspx),
+but once again the size of the framework scared me off.  Its not **just** that adding 1/2 a Meg of minified Javascript
+on a mobile device seems like a bad idea, it is the problem of edge cases that you always run into when working with a framework when you
+discover that the framework doesn't do quite what you expect and you need to change it.  Frequently when things aren't working
+the way you would expect I like walking through the source to see what is going on, and with huge code bases that sometimes
+just isn't possible.
+
+I also looked at Sencha
 
 
 
