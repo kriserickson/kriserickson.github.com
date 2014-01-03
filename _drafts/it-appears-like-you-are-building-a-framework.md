@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It appears like you are building a framework"
+title: "It appears like you are building a framework (Part 1)"
 description: ""
 category: 
 tags: [Mobile,Coding]
@@ -52,7 +52,15 @@ discover that the framework doesn't do quite what you expect and you need to cha
 the way you would expect I like walking through the source to see what is going on, and with huge code bases that sometimes
 just isn't possible.
 
-I also looked at Sencha
+I also looked at [Sencha](http://www.sencha.com/products/touch) and would seriously consider it for a large project I was writing by myself, however the complexity
+of learning the platform and the time to build apps in it makes it a bit of a non-starter.  It would take anyone who had
+ to work on the project a few weeks to get up to speed with the framework, and thereby diminishes the advantages of
+ rapidly developing an app in HTML5 Javascript.  Let me be very clear, the Topcoat Touch framework is designed for small apps,
+ only a page or two.  If you are building a giant mobile application seriously look into Sencha or
+ (Topcoat with Angular)[http://coenraets.org/blog/2013/11/sample-mobile-application-with-angularjs/].
+
+My decision after watching several excellent phonegap presentations by
+
 
 
 
