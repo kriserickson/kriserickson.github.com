@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Pocket Casts Feeds</title>
+    <dateCreated>Fri, 03 Jan 2014 16:37:01 +0000</dateCreated>
+    <dateModified>Fri, 03 Jan 2014 16:37:01 +0000</dateModified>
+  </head>
+  <body>
+    <outline text="feeds"> 
+        <outline text="Daily Tech News Show" type="rss" xmlUrl="http://feeds.feedburner.com/DailyTechNewsShow"/>
+      <outline text="Windows Weekly (MP3)" type="rss" xmlUrl="http://leoville.tv/podcasts/ww.xml"/>
+      <outline text="What The Tech" type="rss" xmlUrl="http://feeds.feedburner.com/Whatthetechgfq"/>
+      <outline text="This Week in Startups - Audio" type="rss" xmlUrl="http://feeds.feedburner.com/twist-audio"/>
+      <outline text="This Developer's Life" type="rss" xmlUrl="http://feeds.feedburner.com/ThisDevelopersLife"/>
+      <outline text="The Web Ahead" type="rss" xmlUrl="http://feeds.5by5.tv/webahead"/>
+      <outline text="The Tablet Show" type="rss" xmlUrl="http://www.pwop.com/feed.aspx?show=thetabletshow&amp;filetype=master"/>
+      <outline text="The News" type="rss" xmlUrl="HTTP://feeds.5by5.tv/news"/>
+      <outline text="The Changelog" type="rss" xmlUrl="http://feeds.5by5.tv/changelog"/> 
+      <outline text="Javascript Jabber" type="rss" xmlUrl="http://feeds.feedburner.com/JavascriptJabber"/>
+      <outline text="Herding Code" type="rss" xmlUrl="http://feeds.feedburner.com/herdingcode"/>
+      <outline text="Hanselminutes" type="rss" xmlUrl="http://feeds.feedburner.com/Hanselminutes"/>
+      <outline text="Security Now (MP3)" type="rss" xmlUrl="http://leoville.tv/podcasts/sn.xml"/>
+      <outline text="Developing Perspective" type="rss" xmlUrl="http://developingperspective.com/feed/podcast/"/>
+      <outline text=".NET Rocks!" type="rss" xmlUrl="http://feeds.feedburner.com/dotnetrocks_AAC"/>
+      <outline text="Slate's Political Gabfest" type="rss" xmlUrl="http://feeds.feedburner.com/SlatePoliticalGabfest"/>
+      <outline text="NPR: Planet Money Podcast" type="rss" xmlUrl="http://www.npr.org/rss/podcast.php?id=510289"/>
+      <outline text="New Yorker: The Political Scene" type="rss" xmlUrl="http://feeds.newyorker.com/services/rss/feeds/campaign_trail.xml"/>
+      <outline text="Common Sense with Dan Carlin" type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/commonsense?format=xml"/>
+      
+      <outline text="This American Life" type="rss" xmlUrl="http://feeds.thisamericanlife.org/talpodcast"/>      
+      <outline text="The Nerdist" type="rss" xmlUrl="http://nerdist.libsyn.com/rss"/>
+      <outline text="The Bugle" type="rss" xmlUrl="http://feeds.feedburner.com/thebuglefeed"/>
+      <outline text="The Alton Browncast" type="rss" xmlUrl="http://feeds.feedburner.com/libsyn/zihs"/>
+      <outline text="Slate's Culture Gabfest" type="rss" xmlUrl="http://feeds.feedburner.com/SlateCultureGabfest"/>
+      <outline text="Freakonomics Radio" type="rss" xmlUrl="http://feeds.feedburner.com/freakonomicsradio"/>
+      <outline text="Dan Carlin's Hardcore History" type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/history?format=xml"/> 
+    </outline>
+  </body>
+</opml>

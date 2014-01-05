@@ -42,8 +42,7 @@ Recipes (using a [Chrome Extension](https://chrome.google.com/webstore/detail/re
 later on your Mobile device).  It was written using jQuery Mobile, and that is a mistake I would never make again.  To quote
 one of the creators of PhoneGap:
 
-<blockquote class="twitter-tweet" lang="en"><p>use jquery mobile with phonegap <a href="https://twitter.com/search?q=%23FiveWordTechHorrors&amp;src=hash">#FiveWordTechHorrors</a></p>&mdash; xnoɹǝʃ uɐıɹq (@brianleroux) <a href="https://twitter.com/brianleroux/statuses/410650764101439488">December 11, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 I also looked at some of the commercial options (specifically [PhoneJS](http://phonejs.devexpress.com/) and [KendoUI Mobile](http://www.kendoui.com/mobile.aspx),
 but once again the size of the framework scared me off.  Its not **just** that adding 1/2 a Meg of minified Javascript
@@ -57,7 +56,7 @@ of learning the platform and the time to build apps in it makes it a bit of a no
  to work on the project a few weeks to get up to speed with the framework, and thereby diminishes the advantages of
  rapidly developing an app in HTML5 Javascript.  Let me be very clear, the Topcoat Touch framework is designed for small apps,
  only a page or two.  If you are building a giant mobile application seriously look into Sencha or
- (Topcoat with Angular)[http://coenraets.org/blog/2013/11/sample-mobile-application-with-angularjs/].
+ [Topcoat with Angular](http://coenraets.org/blog/2013/11/sample-mobile-application-with-angularjs/).
 
 My decision after watching several excellent phonegap presentations by
 
