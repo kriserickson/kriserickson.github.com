@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It appears like you are building a framework (Part 1)"
+title: "It appears like you are building a framework"
 description: ""
 category: 
 tags: [Mobile,Coding]
@@ -8,6 +8,9 @@ tags: [Mobile,Coding]
 {% include JB/setup %}
 
 <img src="/img/clippy.png" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
+
+*TLDR - After weighing all the options I built a mobile framework around [Topcoat](http://topcoat.io), you
+ can find it on [Github](https://github.com/kriserickson/topcoat-touch). *
 
 There seems to be an ongoing theme in programming that instead of trying to understand and work within
 someone else's framework, most programmers would rather write their own.  Re-inventing the wheel is almost
@@ -55,14 +58,18 @@ I also looked at [Sencha](http://www.sencha.com/products/touch) and would seriou
 of learning the platform and the time to build apps in it makes it a bit of a non-starter.  It would take anyone who had
  to work on the project a few weeks to get up to speed with the framework, and thereby diminishes the advantages of
  rapidly developing an app in HTML5 Javascript.  Let me be very clear, the Topcoat Touch framework is designed for small apps,
- only a page or two.  If you are building a giant mobile application seriously look into Sencha or
- [Topcoat with Angular](http://coenraets.org/blog/2013/11/sample-mobile-application-with-angularjs/).
+ that are only couple of pages and do not have a lot of data binding.  If you are building a giant mobile application seriously
+ look into Sencha or using a framework like Angular (see [Topcoat with Angular](http://coenraets.org/blog/2013/11/sample-mobile-application-with-angularjs)
+ for a good example of how to mix Angular with Topcoat).
 
-My decision after watching several excellent phonegap presentations by
-
-
-
-
-
-
-<div style="clear:both"/>
+My decision after watching a couple of excellent (and highly recommended) Phonegap presentations by
+[Christopher Coenraets](http://coenraets.org/blog/2013/05/top-10-performance-techniques-for-phonegap-applications) and
+[Tommy Williams](http://phonegap.com/blog/2013/09/30/spideroak) was to go without a framework at all.
+However, after examining the source code for Christopher's [Backbone/RequireJS example](http://coenraets.org/blog/2013/06/building-modular-web-applications-with-backbone-js-and-requirejs-sample-app)
+ and starting to write code without a framework I realized that there was a bunch of repetative programming chores that
+ I could encapsulate into a framework.  There were also a few things that I really liked about the old jQTouch
+ and that I could probably very quickly write a [micro-framework](http://microjs.com) that could acheive almost all of them.
+ I could throw in [iScroll](http://cubiq.org/fyi-iscroll-is-out-of-beta) (I needed scrolling) and [Fastclick](https://github.com/ftlabs/fastclick)
+  as optional micro-libraries and Bob's your uncle I would have  exactly what I wanted.  A tiny framework that could be easily extended, easily altered and was
+ [very fast to learn](https://github.com/kriserickson/topcoat-touch/wiki/Getting-Started).
+ And Voila! we now have [Topcoat Touch](https://github.com/kriserickson/topcoat-touch).
