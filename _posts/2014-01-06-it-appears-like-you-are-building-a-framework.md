@@ -29,7 +29,7 @@ is at best a little misguided.  Mostly I will argue that copying the ActiveRecor
 I have to use my framework (my wife's site for [Dance Company Ammara](http://ammara.ca) still uses it) it is the
 database access that truly makes me shudder, but in my defence the golden age of PHP frameworks had yet to begin
 when I wrote it (Symfony2, Laravel, Phalcon where not out yet) and the choices for a frameworks all seemed lacking.
- Though I liked Symofony at the time, I felt that it was over-engineered for a PHP framework (it tried to be far too much
+ Though I liked Symfony at the time, I felt that it was over-engineered for a PHP framework (it tried to be far too much
  like Java frameworks like Struts) and running it on a shared hosting site without APC it was really slow.  So obviously
  I could write a better framework -- ah the hubris of youth.
 
