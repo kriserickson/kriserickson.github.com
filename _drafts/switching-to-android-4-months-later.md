@@ -32,16 +32,34 @@ was as polished as IOS and that the state of Apps was really improving.
 and the quality of those apps.   There are almost 150,000 apps in the Windows 8 store and when I first started using Windows 8
 I literally could not find one that I wanted to use.  I really
 wanted to try the Windows 8 experience and I downloaded apps that I had been told where of excellent quality and I never used
-any of them more than 1 minute of trying them out.   Netflix and Kindle were actually better in a browser, and the rest had no
-compelling to use them.
+any of them more than 1 minute of trying them out.   Netflix and Kindle were actually better in a browser, and the rest of the
+apps I tried had no compelling to use them.  The number of Apps available on a platform is a canard (that thankfully is
+is going away) up there with the mghz wars of the late nineties.
 </blockquote>
 
+And so after deciding to switch to Android in August, and switching in September here are my thoughts.
 
- and then it kind of stagnated for years.  Whereas Android was kind of a mess when
-initially appeared and over the past few years has become the equal or better of IOS.
-
-- Until quite recently iPhone build quality was superior to all of the android phones, which maintained had remained plastic
+1.  Until quite recently iPhone build quality was superior to all of the android phones, which maintained had remained plastic
 and not copied the metal finishing of the iPhone 4.  In devices like the HTC One and Nexus 5 the build quality was finally
  at parity with what apple had achieved and with the Nexus 5 at a considerable savings to the iPhone (almost half the price).
 
--
+2. I was OK with the Nexus 4, it didn't thrill me as a phone (and it should have given that I had switched from a very underpowered
+ iPhone 4 that was barely usable), however the Nexus 5 still gives me a feeling of awe every day (The iPhone 3G and the iPhone 4
+ did the same thing for almost a year and half so let's see if the Nexus 5 lasts that long).
+
+3. I actually like IOS7 (though I have only used it for short periods of time testing and building my
+[Recipe Folder app for IOS](https://itunes.apple.com/ca/app/recipe-folder/id796838333?mt=8)) so the switch to IOS7 was not the
+reason of switch other than hearing it wasn't changing the policy about setting default applications.
+
+4. IOS still has better niche apps, the $2-3 apps that [Android users won't pay for](http://blog.flurry.com/bid/99013/The-History-of-App-Pricing-And-Why-Most-Apps-Are-Free).
+Personally I believe that is changing, but until App developers build quality Apps IOS will continue to have better apps.  An example
+is [Stop Motion Studio](https://itunes.apple.com/ca/app/stop-motion-studio/id441651297?mt=8) and there are several other really
+good stop motion apps on the iphone, however as much as I have looked the same Apps on Android suck.
+They look terrible and they perform even worse (and this is on a Nexus 5, I can't imagine using this on a low end device).
+<div style="text-align:center">
+    <a href="https://play.google.com/store/apps/details?id=com.sheado.lite.stopmotion&amp;hl=en"><img alt="Stop Motion App" style="display:inline; margin: 10px; width: 250px" src="https://lh5.ggpht.com/Ysqc41ANxJhjCkLpZmph0sAhithZaI1RgIXuxOL-ukQFIdc85zdtGrfqItW-oEI72Co=h900-rw"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.sheado.lite.stopmotion&amp;hl=en"><img alt="Stop Motion App 2" style="display:inline; margin: 10px; width: 250px" src="https://lh6.ggpht.com/_0FTDdsLrwGIxXNh8ksgV90WyEz5L6O1KIBzxe_ld1Ro-UNfN7NvEdkTZhF42qvKARg=h310-rw"></a>
+</div>
+
+5.
+
