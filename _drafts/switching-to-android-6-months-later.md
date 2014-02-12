@@ -44,8 +44,11 @@ and not copied the metal finishing of the iPhone 4.  In devices like the HTC One
  at parity with what apple had achieved and with the Nexus 5 at a considerable savings to the iPhone (almost half the price).
 
 2. I was OK with the Nexus 4, it didn't thrill me as a phone (and it should have given that I had switched from a very underpowered
- iPhone 4 that was barely usable), however the Nexus 5 still gives me a feeling of awe every day (The iPhone 3G and the iPhone 4
- did the same thing for almost a year and half so let's see if the Nexus 5 lasts that long).
+ iPhone 4 that was barely usable), however the Nexus 5 still gives me a feeling of awe every day I use it (The iPhone 3G and the iPhone 4
+ did the same thing for almost a year and half so let's see if the Nexus 5 lasts that long).  And it's not that the Nexus 5 is so
+ much more powerful than the Nexus 4, it literally is the build quality on things like the case.  It feels like an amazing
+ phone which is something that few Android phones have done to this day (the HTC-One is the only other Android phone that
+ ***feels*** awesome.
 
 3. I actually like IOS7 (though I have only used it for short periods of time testing and building my
 [Recipe Folder app for IOS](https://itunes.apple.com/ca/app/recipe-folder/id796838333?mt=8)) so the switch to IOS7 was not the
@@ -61,5 +64,10 @@ They look terrible and they perform even worse (and this is on a Nexus 5, I can'
     <a href="https://play.google.com/store/apps/details?id=com.sheado.lite.stopmotion&amp;hl=en"><img alt="Stop Motion App 2" style="display:inline; margin: 10px; width: 250px" src="https://lh6.ggpht.com/_0FTDdsLrwGIxXNh8ksgV90WyEz5L6O1KIBzxe_ld1Ro-UNfN7NvEdkTZhF42qvKARg=h310-rw"></a>
 </div>
 
-5.
+5. The camera is still terrible.  It's not that it take terrible pictures, you can get the Nexus 5 to take very good pictures,
+its that the camera App is so lacking on stock android and other Apps (ZoomFX, haven't been able to get the control that they need to take great pictures.  Hopefully this
+is something that is fixed Android 5, as hints of the underlying [Camera3 API's](http://www.slideshare.net/lbk003/an-devcon2013-camera3kaurfinal) became visible in 4.4.
+
+6. Developing for Android is both easier and harder than developing for IOS.  It is easier as the tooling is much better
+and far more sane.
 
