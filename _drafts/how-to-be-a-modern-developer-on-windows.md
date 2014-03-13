@@ -6,7 +6,7 @@ category:
 tags: Programmings,Windows
 ---
 {% include JB/setup %}
-Be a windows developer in the web world sucks.  Bring a windows laptop to conference or meetup you feel like the
+Be a windows developer in the web world sucks.  Bring a windows laptop to conference or meet-up you feel like the
 the not so bright kid in the corner eating paste.  Of course you could cover it with Linux stickers and [pretend
 it's running Linux](http://dpcdpc11.deviantart.com/art/Maverick-for-Win7-194347855) but if you are going
 to [make the uncool, cool](/geek%20life/2014/01/24/trying-too-hard-to-make-uncool-cool/) here is how to embrace
@@ -25,15 +25,16 @@ windows as modern web developer.
     better at finding them.  For me the JetBrains tools are the best finding errors, refactoring, and so many
     other things that installing them is one of the first things I do on any machine.  It even has a [VIM plugin](http://plugins.jetbrains.com/plugin/164).
     I may use a test editor a lot, but I write almost all of my code in Intellij.
-1. Unix toolchain, this may be a full blown [cygwin](http://www.cygwin.com/) installation or just the tools from
+1. You need some kind of Unix toolchain, this may be a full blown [cygwin](http://www.cygwin.com/) installation or just the tools from
     [msysgit](http://msysgit.github.io/)  In fact to be honest, although I used to be a total cygwin junkie, I almost
     never find myself in a cygwin console any more as the msysgit tools basically have all I need.  And the path
     confusion in cygwin especially when running non-cygwin utilities is more of a headache than it is worth.
-1.  [Ninite](http://ninite.com) is a great too to get up and running on a new PC, it basically packages a script to install
+1.  [Ninite](http://ninite.com) is a great tool to get up and running on a new PC, it basically packages a script to install
     a bunch of programs and then downloads and installs them.  A lot of the programs I am recommending are available on
     Ninite and I have yet to have it install any Malware (Toolbars, etc) when it installs a program.  Rather than
     jumping to 20-30 websites you can have it do its magic while you are doing something else (it doesn't even
-    prompt you so you can actually work at your computer while it is installing things).
+    prompt you so you can actually work at your computer while it is installing things).  It isn't a package manager
+    because it doesn't keep things up to date, but it is a lot better than the old way of doing thing.
 1.  [Chocolatey](https://chocolatey.org/) - is another software package manager that help you install programs, though because
     it is a hack on top of NuGet that throws installers and exe's into a package manager it is not like a real package manager
     like apt, yum, ports, homebrew or macports, it doesn't really know too much about versions and thus is not great
@@ -43,20 +44,26 @@ windows as modern web developer.
     the name and if there is an installer run it gets the name + .install.  So you want to cinst nodejs.install not cinst nodejs.
 1.  [Secunia](http://secunia.com/vulnerability_scanning/personal/) since we don't have nice package managers on windows, we
     have to rely on tools like Secunia to tell us when programs are out of date and potential security risks.
-1. [Git](http://git-scm.com/) and [Github](http://github.com).  Don't bother with [Github for windows](http://git-scm.com/),
-    but [TortoiseGit](https://code.google.com/p/tortoisegit/) has finally gotten decent and as stated above
-    [msysgit](http://msysgit.github.io/) is really good.  Hint for using git though, unless you are willing to
+1. [Git](http://git-scm.com/) and [Github](http://github.com) work fine on Windows now, and Github is probably the
+    greatest thing about open source these days.  I personally wound't bother with [Github for windows](http://git-scm.com/),
+    but [TortoiseGit](https://code.google.com/p/tortoisegit/) has finally gotten decent.  And as stated above
+    [msysgit](http://msysgit.github.io/) is really good.  A big hint for using git though, unless you are willing to
     live in cygwin stick to https urls (i.e. choose https://github.com/kriserickson/topcoat-touch.git over git@github.com:kriserickson/topcoat-touch.git)
     as windows has a ton of problems with ssl (where it stores your keys, etc) that will lead to no end of problems.
-1.  [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/) and the related tools.  If you don't know how to use
-    pageant, I would recommend [learning](http://winscp.net/eng/docs/ui_pageant) if you spend any time on remote machines
+1.  You need to install [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/) and the related tools.  If you don't know how to use
+    pageant, I would recommend [learning](http://winscp.net/eng/docs/ui_pageant), especially if you spend any time on remote machines
     through SSH. (Completely off topic, but I could never find why pageant is called pageant rather than pagent.)  While
     you a learning about pageant, you should probably pick up a copy of [WinScp]((http://winscp.net) for transferring files.
-1.  Install [Paint.Net](http://www.getpaint.net/) and [Irfanview](http://www.irfanview.com/) and change the default
-    image viewer from the atrocious Windows Photo Viewer to Irfanview.  **Warning: Irfanview default download is download.net,
+1.  I find I always need a graphics editor, and I personally install [Paint.Net](http://www.getpaint.net/) as one of the first
+    programs on any machine I have, you could use [gimp](http://www.gimp.org/).  You don't necessarily need a screenshot
+    tool (Snipping Tool is pretty good or just Ctrl-PrtScr), but you do need to swap out the atrocious Windows Photo Viewer as
+    the default graphics viewer with [Irfanview](http://www.irfanview.com/).  **Warning: Irfanview default download is download.net,
     which wraps it's downloads in crapware, fosshob and tucows still to my knowledge do not. Be careful when installing
     some of these programs, most of the toolbars are installed by default when you select the default setup.  That warning
-    goes for winscp as well as Sourceforge has started wrapping some of it's downloads as well.**
+    goes for winscp as well as Sourceforge has started wrapping some of it's downloads as well.  Also if you do download
+    these apps one at a time from Google search be very careful, malware companies are buying ads on google that look
+    like the real software company and wrap the application in malware.  It is the scourge of windows and may be the main
+    reason for Windows death. **
 1.  [Nodejs](http://nodejs.org/), [Ruby](http://rubyinstaller.org/), and [Python](http://www.python.org/downloads/windows/).  You may
     never program in any of these languages, but lots of tools you will be using will require them.  Get the 1.9 ruby and the 2.7
     python unless you are actually working in the languages as all of the tools are still based off of the older versions. For Ruby
@@ -65,8 +72,8 @@ windows as modern web developer.
    example), and this is the best tool I have found for setting up your Path and other environment variables.
 1.  I always need a merge tool, and I use [Winmerge](http://winmerge.org/).  [Beyond Compare](http://www.scootersoftware.com/) is
     also excellent but does cost $30 (which is pretty reasonable).  The merge in TortoiseGit/TortoiseSVN is also good.
-1.  [KeePass2](http://keepass.info/) for storing passwords.  You can use the Chrome and Firefox plugins or use something like
-    [LastPass](https://lastpass.com/) for your passwords.
+1.  If you are a serious developer you need serious passwords for the root account on your servers, and
+    I use [KeePass2](http://keepass.info/) for storing those passwords and all my passwords.
 1.  It took me a long time to get into the File sync flow (I used to use Hamachi as a vpn to manage files and then use RDP
     for remote desktop) but now that I have gotten on the bandwagon I couldn't live my life without it.  I personally use
     dropbox, but only because it is simple, it actually probably has more features than I want -- the more features the
