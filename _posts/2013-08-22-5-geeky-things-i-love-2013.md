@@ -2,7 +2,7 @@
 layout: post
 title: "5 Geeky Things I Love - 2013"
 description: ""
-category: thingsilove
+category: Lifehacks
 tags: [rdio,nexus7,jetbrains,github,javascript]
 ---
 {% include JB/setup %}

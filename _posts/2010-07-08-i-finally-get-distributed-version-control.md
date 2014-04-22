@@ -2,8 +2,8 @@
 layout: post
 title: "I Finally Get Distributed Version Control"
 description: ""
-category: duh
-tags: [gihub, dcvs]
+category: Programming
+tags: [gihub, dcvs, duh]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Coding ike it's 1999"
 description: ""
-category: programming
+category: Programming
 tags: [xcode, mac]
 ---
 {% include JB/setup %}

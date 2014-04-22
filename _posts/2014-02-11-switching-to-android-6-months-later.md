@@ -2,8 +2,8 @@
 layout: post
 title: "Switching to Android 6 Months Later"
 description: "I switched to Android from IOS in September, Here are my thoughts"
-category: 
-tags: [Android, IOS]
+category: Android
+tags: [Mobile, Android, IOS]
 ---
 {% include JB/setup %}
 I bought a Nexus 4 at the end of August when they dropped to $199.  My iPhone 4 was barely holding on and I had grown

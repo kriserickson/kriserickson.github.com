@@ -2,8 +2,8 @@
 layout: post
 title: "Tools for the Modern Web Developer on Windows"
 description: ""
-category: 
-tags: Programmings,Windows
+category: Programming
+tags: [Programming,Windows]
 ---
 {% include JB/setup %}
 Be a windows developer in the web world sucks.  Bring a windows laptop to conference or meet-up you feel like the
