@@ -2,8 +2,8 @@
 layout: post
 title: "The End of the Windows Desktop"
 description: "Google is Microsofting Microsoft"
-category: 
-tags: [Microsoft, Google]
+category: Windows
+tags: [Microsoft, Google, Windows]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Windows 8 is still killing Microsoft"
 description: "Even after the release the Windows 8.1 the scars remain.  Windows 8 may be more damaging to Microsoft than Vista was."
-category: 
+category: Windows
 tags: [Windows8]
 ---
 {% include JB/setup %}

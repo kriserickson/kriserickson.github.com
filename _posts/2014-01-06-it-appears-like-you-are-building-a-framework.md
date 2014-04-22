@@ -2,8 +2,8 @@
 layout: post
 title: "It appears like you are building a framework"
 description: ""
-category: 
-tags: [Mobile,Coding]
+category: TopcoatTouch
+tags: [Mobile,Programming]
 ---
 {% include JB/setup %}
 
