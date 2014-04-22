@@ -28,7 +28,7 @@ tr:nth-child(odd) {
 </style>
 |Framework   | License   | Peak Interest  | StackOverflow  | Lines of Code (Sloc)  |
 |---|---|---|---|---|
-|jQueryMobile   | MIT  | [October 2012](https://www.google.ca/trends/explore#q=jQueryMobile)  | 18,024  |   |
+|jQueryMobile   | MIT  | [October 2012](https://www.google.ca/trends/explore#q=jQueryMobile)  | 18,024  | 10222  |
 |KendoUI   | Apache / Commercial  | [November 2013](https://www.google.ca/trends/explore#q=KendoUI)  | 5,798  |   |
 |Ionic   | MIT  | [April 2014](https://www.google.ca/trends/explore#q=Ionic%20framework)  | 82 |   |
 |Sencha-Touch   | GPL3 / Commercial  | [March 2012](https://www.google.ca/trends/explore#q=sencha%20touch)   | 3,961 (15,128 for ExtJs)  |   |
