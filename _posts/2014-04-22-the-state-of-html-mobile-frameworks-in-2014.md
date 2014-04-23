@@ -12,7 +12,8 @@ did the job, I realized that while easy to get started with, jQuery Mobile is fa
 days of work rather than just dropping in the new files.  I figured that there had to be a better solution, and I researched
 the various other HTML5 Mobile platforms when I had to create a mobile application for work.  My directives was to find a
 framework as simple as jQuery Mobile or jQTouch that looked modern and very extensible with a relatively simple codebase
-that we could alter the behavior and yet not be left behind as it was updated.
+that we could alter the behavior and yet not be left behind as it was updated.  Also the end result would be an application
+running on Phonegap, not a web page so a framework that felt as native as possible was required.
 
 Unfortunately I was left with the decision that there really wasn't anything out there that was fulfilled all those
 goals, so I ended up creating [TopcoatTouch](http://topcoattouch.com), so full disclosure, I may be a little
@@ -77,18 +78,18 @@ tr:nth-child(odd) {
 </style>
 |Framework   | License   | Peak Interest  | StackOverflow Questions | Lines of Code (Sloc)  |
 |---|---|---|---|---|
+|[jQT](http://jqtjs.com/)   | MIT  | [August 2010](https://www.google.ca/trends/explore#q=jqtouch%2C%20jqt&cmpt=q)  | 469  | 681 |
 |[jQueryMobile](http://jquerymobile.com/)  | MIT  | [October 2012](https://www.google.ca/trends/explore#q=jQueryMobile)  | 18,024  | 10,222  |
+|[Bootstrap](http://getbootstrap.com)   | MIT | [July 2013](https://www.google.ca/trends/explore#q=twitter%20bootstrap)  | 1,087 (I was suprised too)   | 1256  |
 |[KendoUI Mobile](http://www.telerik.com/kendo-ui)  | Apache2 / Commercial  | [November 2013](https://www.google.ca/trends/explore#q=KendoUI)  | 5,798  | 34,523  |
 |[Ionic](http://ionicframework.com/)   | MIT  | [April 2014](https://www.google.ca/trends/explore#q=Ionic%20framework)  | 82 | 4,199  |
 |[Onsen-UI](http://onsenui.io/) | Apache2 | No Result | 5 | 4,762 |
 |[Sencha-Touch](http://www.sencha.com/products/touch/)   | GPL3 / Commercial  | [March 2012](https://www.google.ca/trends/explore#q=sencha%20touch)   | 3,961 (15,128 for ExtJs)  | 8,706  |
-|[Bootstrap](http://getbootstrap.com)   | MIT | [July 2013](https://www.google.ca/trends/explore#q=twitter%20bootstrap)  | 1,087 (I was suprised too)   | 1256  |
 |[Jo](http://joapp.com/)   | OpenSource / Snowflake*  | [August 2012](https://www.google.ca/trends/explore#q=jo%20mobile)  | 0  | 3,975  |
 |[PhoneJS](http://phonejs.devexpress.com/)   | Commercial  | [April 2014](https://www.google.ca/trends/explore#q=phonejs)  | 58  | 23,203  |
 |[ChoclateChip-UI](http://chocolatechip-ui.com/)   | MIT / Commercial  | No Results | 5  | 2,007  |
-|[jQT](http://jqtjs.com/)   | MIT  | [August 2010](https://www.google.ca/trends/explore#q=jqtouch%2C%20jqt&cmpt=q)  | 469  | 681 |
-|[TopcoatTouch](http://topcoattouch.com)   | MIT  | No Results  | 0 (13 for Topcoat)  | 884 |
 |[AppFramework](http://app-framework-software.intel.com/)   | MIT / X11  | [March 2012](https://www.google.ca/trends/explore#q=AppFramework%2C%20jqmobi&cmpt=q)   | 67  | 1,764  |
+|[TopcoatTouch](http://topcoattouch.com)   | MIT  | No Results  | 0 (13 for Topcoat)  | 884 |
 
 A few quick things to note, when I intially did the overview I was unaware of both Ionic and Onsen-UI.  I believe that
 Ionic may have been out when I did the original research but certainly had no noticable online presence, Onsen appeared
@@ -115,23 +116,29 @@ well on those platforms, but since their site doesn't tout support of that platf
 
 |Framework   | Reliant Technologies  | Ease of Learning  | Supported Platforms  |
 |---|---|---|---|---|
+|[jQT](http://jqtjs.com/)   | [jQuery](http://jquery.com) | 1 | IOS / Android |
 |[jQueryMobile](http://jquerymobile.com/)  | [jQuery](http://jquery.com), [jQueryUI](jqueryui.com)  | 1  | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
+|[Bootstrap](http://getbootstrap.com)   | [jQuery](http://jquery.com) | 1 | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
 |[KendoUI Mobile](http://www.telerik.com/kendo-ui)  | [jQuery](http://jquery.com) | 2  | IOS / Android / WinPhone |
 |[Ionic](http://ionicframework.com/)   | [Angular](angularjs.org)  | 3 | IOS / Android |
 |[Onsen-UI](http://onsenui.io/) | [Angular](angularjs.org) | 3 | IOS / Android |
 |[Sencha-Touch](http://www.sencha.com/products/touch/)   | None (but built on ExtJS) | 5 | IOS / Android |
-|[Bootstrap](http://getbootstrap.com)   | [jQuery](http://jquery.com) | 1 | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
 |[Jo](http://joapp.com/)   | None! | 4 | IOS, Android, Windows 8, BlackBerry 10, Tizen, Chrome OS  |
 |[PhoneJS](http://phonejs.devexpress.com/)   | [jQuery](http://jquery.com), ([Knockout](http://knockoutjs.com/)) |  3 | IOS, Android, WinPhone, Tizen |
 |[ChoclateChip-UI](http://chocolatechip-ui.com/)   | None | 2  | IOS, Android / WinPhone |
-|[jQT](http://jqtjs.com/)   | [jQuery](http://jquery.com) | 1 | IOS / Android |
-|[TopcoatTouch](http://topcoattouch.com)   | [jQuery](http://jquery.com), ([iScroll](http://iscrolljs.com/), [Hammer.js](http://eightmedia.github.io/hammer.js), [lodash](http://lodash.com/), [fastclick](https://github.com/ftlabs/fastclick)) | 1 <nobr>(MVC style 3)</nobr> | IOS / Android |
 |[AppFramework](http://app-framework-software.intel.com/)   | None | 2 | IOS  / Android / WinPhone / Blackberry |
+|[TopcoatTouch](http://topcoattouch.com)   | [jQuery](http://jquery.com), ([iScroll](http://iscrolljs.com/), [Hammer.js](http://eightmedia.github.io/hammer.js), [lodash](http://lodash.com/), [fastclick](https://github.com/ftlabs/fastclick)) | 1 <nobr>(MVC style 3)</nobr> | IOS / Android |
 
 
 Over the next few articles are going to look at the various frameworks and do a quick skim over the advantages and disadvantages
 of each based on my use of each platform (though I will freely admit that I only have surface knowledge of most of these
-platforms).  One of the best resources I found for comparing these platforms is the [PropertyCross](http://propertycross.com/) website,
+platforms).
+
+I ignored a couple of neat little frameworks, [Fries](http://getfri.es/), which is an Android skin and [Ratchet](http://goratchet.com/)
+as they are specifically designed for prototyping and not for building apps (though Ratchet appears to be moving more
+towards being a framework).
+
+When comparing the frameworks for yourself, one of the best resources I found for comparing these platforms is the [PropertyCross](http://propertycross.com/) website,
 which gives a very good idea of what the resulting app will look like (and source code) for almost all of these platforms.  I highly
 recommend it (it also has native cross browser frameworks like [Xamarin](https://xamarin.com/) if yuu are actively comparing native
 and hi-brid solutions.
