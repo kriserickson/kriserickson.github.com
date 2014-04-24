@@ -7,6 +7,10 @@ tags: mobile,html,phonegap
 ---
 {% include JB/setup %}
 
+**This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
+if you haven't already.
+**
+
 JQT (formerly jqTouch) is the Grandaddy of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime
 in mobile web frameworks), I guess [iUI](http://www.iui-js.org/) but jqTouch was my introduction to mobile web development.
 Initially jQuery plugin (remember the time when everything was a jQuery plugin?) it grew into a relatively fully functional
@@ -21,12 +25,22 @@ Originally jqTouch had 2 themes, a Apple theme that looked like the iPhone's ori
 <img src="/img/mobile_frameworks/jqt-apple.jpg">
 
 and their own theme, which looked pretty modern at the time but is pretty dated now (notice the nice faux leather
-stitched navbar, and the glossy buttons.
+stitched navbar, and the glossy buttons.  If you want to overhaul the css's look and feel (it was ported from css
+to sass a while ago which should make it a lot easier to change the style) and you are looking for a simple
+Framework there are a few plus's to JQT.
 
 <img src="/img/mobile_frameworks/jqt-jqt.jpg">
 
-All that said, if you want to overhaul the css's look and feel (it was ported from css to sass a while ago which should
-make it a lot easier to change the style) and you are looking for a simple Framework there are a few plus's to JQT.
+
+**How it Works**
+
+jQTouch applications are created as single web page divided (no pun intended) with DIV's performing the role of pages (you can also load
+external pages rather than using DIV's for pages).  The skinning is done through a combination of CSS and Javascript
+with standard html elements being given classes to make them into mobile widgets.  There is no proscribed MVC framework
+or any support of data-binding included but since the framework is so light an un-opinionated it works well with
+frameworks like [Backbone](http://backbonejs.org/) or [Knockout](http://knockoutjs.com/).
+
+**Advantages**
 
 + Lightweight and small and should be pretty fast (though the CSS it is using is outdated for IOS).
 + Familiar so it will take very little time to get up and running.
@@ -36,7 +50,7 @@ make it a lot easier to change the style) and you are looking for a simple Frame
   and [Building iPhone Apps with HTML, CSS, and JavaScript](http://jonathanstark.com/iphone-book), though they are a little
   dated, and a good screencast for beginners [Meet jQtouch](https://peepcode.com/products/jqtouch) also a little dated.
 
-And then there are the negatives, which grow day by day.
+**Disadvantages**
 
 + Sencha pushes their SenchaTouch product, and although they control jqTouch they don't seem to be actively working on it,
  it is officially still stuck on Beta4 (from Feb 2012).  All of the old active Forks (which was  were new features were developed)
@@ -46,6 +60,8 @@ And then there are the negatives, which grow day by day.
 + Worked on Android but never tested heavily on Android so really best for iPhone Apps.
 + If you use the latest version you'll have to make any changes in CoffeScript (don't get me wrong, I <strike>love</strike> **hate** CoffeeScript
   as much as the next guy).
+
+**Summary**
 
 So, to sum up, I see little reason to use the antiquated JQT unless you perhaps you are working on legacy project that
 already uses it.
