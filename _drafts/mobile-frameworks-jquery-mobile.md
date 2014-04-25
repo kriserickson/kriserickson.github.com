@@ -55,13 +55,23 @@ choose a framework like [Knockout](http://knockoutjs.com/) but you have to be ca
 without calling _refresh_ you will get an unskinned or improperly skinned widget.
 
 **Advantages**
-
-
+- Easy to use.
+- Most populate mobile framework, because of that it has lots of plugins, books, and articles supporting it.
+- Is documented (not the greatest organization, but everything is there).
+- Theme Builder makes it easy to change Theme Colors.
+- Wide set of widgets.
 
 **Disadvantages**
-
-
+- Huge Codebase (and very complex, unlike jQTouch it isn't really changeable).
+- Slow, a lot of tricks and hacks are required to try to get a near native experience.
+- Becoming less popular as more modern frameworks are coming out.
+- If you have to dynamically change lists, and other UI elements you will find yourself constant calling the
+  'refresh' method of each object.
 
 **Summary**
-
+I've used jQuery mobile a fair bit, and though you can quickly create an application with it, you will end up spending
+a lot of the time you saved quickly creating application tweaking and trying to figure out how to get a more native
+feel to your application.  There is a lot of functionality and widgets in the jQuery Mobile toolkit, however all that
+power comes with a lot of overhead, especially if you aren't going to be using all of the widgets and if you don't need
+to support 
 
