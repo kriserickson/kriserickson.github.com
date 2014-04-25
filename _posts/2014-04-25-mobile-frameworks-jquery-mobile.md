@@ -71,7 +71,22 @@ without calling _refresh_ you will get an unskinned or improperly skinned widget
 **Summary**
 I've used jQuery mobile a fair bit, and though you can quickly create an application with it, you will end up spending
 a lot of the time you saved quickly creating application tweaking and trying to figure out how to get a more native
-feel to your application.  There is a lot of functionality and widgets in the jQuery Mobile toolkit, however all that
+feel to your application.  There is a lot of functionality and widgets in the jQuery Mobile toolkit, however with all that
 power comes with a lot of overhead, especially if you aren't going to be using all of the widgets and if you don't need
-to support 
+to support.  Another added feature in 1.4 is the ability to create a custom build that doesn't include quite as many
+features, however, if you are going to use this, do it from the beginning do not include the entire version of jQuery Mobile
+and then try removing features one at a time as you can spend a ton of debugging missing features, or just building
+dozens of versions when you discover some feature you didn't think you needed was actually necessary on page 7 of your
+application.  My general recommendation for jQuery mobile is to use it for websites that are primarily mobile but to avoid
+it for building applications that will be installed on devices.
+
+I will end with [Brian Leroux's](https://twitter.com/brianleroux/) (one of Phonegap's original creators) addition to the
+[#FiveWordTechHorros Meme](https://twitter.com/search?q=%23FiveWordTechHorrors&src=hash) from a few months ago:
+
+<div style="width:500px;margin: 0 auto 20px;">
+<blockquote class="twitter-tweet" lang="en"><p>use jquery mobile with phonegap <a href="https://twitter.com/search?q=%23FiveWordTechHorrors&amp;src=hash">#FiveWordTechHorrors</a></p>&mdash; xnoɹǝʃ uɐıɹq (@brianleroux) <a href="https://twitter.com/brianleroux/statuses/410650764101439488">December 11, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+Next up, Bootstrap...
 
