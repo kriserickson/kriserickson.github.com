@@ -7,6 +7,9 @@ tags: []
 ---
 {% include JB/setup %}
 
+This is Part 3 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
+and [Part 2](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/) if you haven't already.
+
 Last time we dealt with the grandaddy of all HTML5 Mobile Frameworks, now lets look at the 800 lb Gorilla.  jQuery Mobile
 is bar far the most well known and commonly used Mobile Framework (and while I admin I'm going mostly by number of StackOverflow
 question count, number of books available, number of articles on the web, which may also be influenced by the fact it has been

@@ -7,9 +7,8 @@ tags: mobile,html,phonegap
 ---
 {% include JB/setup %}
 
-**This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
+This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 if you haven't already.
-**
 
 JQT (formerly jqTouch) is the Grandaddy of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime
 in mobile web frameworks), I guess [iUI](http://www.iui-js.org/) but jqTouch was my introduction to mobile web development.
