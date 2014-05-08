@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mobile Frameworks JQT (Formerly jqTouch)"
+title: "Mobile Frameworks -- JQT (Formerly jqTouch)"
 description: "Continuing on from our overview, an in depth look into JQT"
 category: Programming
 tags: mobile,html,phonegap
@@ -65,4 +65,4 @@ frameworks like [Backbone](http://backbonejs.org/) or [Knockout](http://knockout
 So, to sum up, I see little reason to use the antiquated JQT unless you perhaps you are working on legacy project that
 already uses it.
 
-Next up, jQuery Mobile...
+Next up, [jQuery Mobile](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)...

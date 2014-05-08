@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "Mobile Frameworks jQuery Mobile"
-description: ""
-category: 
+title: "Mobile Frameworks -- jQuery Mobile"
+description: "Last time we dealt with the grandaddy of all HTML5 Mobile Frameworks, now lets look at the 800 lb Gorilla.  jQuery Mobile
+is bar far the most well known and commonly used Mobile Framework (and while I admin I'm going mostly by number of StackOverflow
+question count, number of books available, number of articles on the web, which may also be influenced by the fact it has been
+around for a few years, it still hasn't been around as long as jQTouch)."
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -91,5 +94,5 @@ I will end with [Brian Leroux's](https://twitter.com/brianleroux/) (one of Phone
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-Next up, Bootstrap...
+Next up, [Bootstrap](/2014/05/08/mobile-frameworks-bootstrap/)...
 

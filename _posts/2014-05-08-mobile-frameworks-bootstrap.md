@@ -1,18 +1,25 @@
 ---
 layout: post
-title: "mobile frameworks Bootstrap"
-description: ""
+title: "Mobile Frameworks -- Bootstrap"
+description: "Bootstrap is another monster in the mobile world now, especially with Bootstrap 3.0 and its emphasis on responsive and
+mobile first design.  And it can't be argued that it is popular, a lot of the sites you see created in the past few
+years are written with the aid of Bootstrap (or perhaps Zurb's Foundation))."
 category: 
 tags: []
 ---
 {% include JB/setup %}
 
-This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
-and [Part 2](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/), [Part 3](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)
+This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/),
+[Part 2](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/) and [Part 3](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)
 if you haven't already.
 
 Bootstrap is another monster in the mobile world now, especially with Bootstrap 3.0 and its emphasis on "responsive" and
-"mobile first" design.  And it can't be argued that it is popular,
+"mobile first" design.  And it can't be argued that it is popular, a lot of the sites you see created in the past few
+years are written with the aid of Bootstrap (or perhaps [Zurb's Foundation](http://foundation.zurb.com/)).  It provides
+a great way to get a website up and going, and looking good with as little effort as possible, and with its prevelence
+on the web it provides a familiar comforting look and feel to the site.  And mobile websites (not apps) properly
+designed look and feel fantastic, however when run as app on a phone or tablet it really feels like a website packaged
+for that device.
 
 **How it Works**
 

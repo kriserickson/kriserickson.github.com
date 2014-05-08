@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "The State of HTML Mobile Frameworks in 2014"
-description: ""
+description: "A year I released my mobile app Recipe Folder using jQuery mobile and PhoneGap.  While jQuery mobile
+did the job, I realized that while easy to get started with, jQuery Mobile is fairly bloated and the upgrade cycle was taking
+days of work rather than just dropping in the new files.  I figured that there had to be a better solution, and I researched
+the various other HTML5 Mobile platforms when I had to create a mobile application for work. "
 category: Programming
 tags: mobile,html,phonegap
 ---
 {% include JB/setup %}
+
+This is part 1 of a multipart series.  There will be more parts forthcoming.
 
 A year I released my mobile app [Recipe Folder](http://recipe-folder.com) using jQuery mobile and PhoneGap.  While jQuery mobile
 did the job, I realized that while easy to get started with, jQuery Mobile is fairly bloated and the upgrade cycle was taking
@@ -146,4 +151,6 @@ and hi-brid solutions.
 Until next time,
 
 Stay mobile!
+
+Next up [jQT](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
 
