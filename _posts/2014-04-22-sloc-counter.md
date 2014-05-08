@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "SLOC Counter"
-description: "Quick a dirty way to count "
+description: "I needed a quick way to count the lines of code in a program, skipping empty lines and ignoring commented lines so I
+could get an estimate of how many lines of code a Library used (I have a current interest in SLOC and complexity).  I
+searched online to find such a beast and was surprised that the only online Line of Code Counters I could find didn't
+take comments or whitespace into account.  Github does a nice job of this, but not every ... "
 category: Tool
 tags: [SLOC, LOC, Tools]
 ---

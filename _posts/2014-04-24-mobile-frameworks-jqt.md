@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Mobile Frameworks -- JQT (Formerly jqTouch)"
-description: "Continuing on from our overview, an in depth look into JQT"
+description: "Continuing on from our overview, an in depth look into JQT.  JQT (formerly jqTouch) is the Grandaddy
+of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime in mobile web frameworks), I guess iUI was
+around but jqTouch was my introduction to mobile web development.  Initially jQuery plugin (remember the time when
+everything was a jQuery plugin?) it grew into a relatively ..."
 category: Programming
 tags: mobile,html,phonegap
 ---
@@ -11,7 +14,7 @@ This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, se
 if you haven't already.
 
 JQT (formerly jqTouch) is the Grandaddy of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime
-in mobile web frameworks), I guess [iUI](http://www.iui-js.org/) but jqTouch was my introduction to mobile web development.
+in mobile web frameworks), I guess [iUI](http://www.iui-js.org/) was around but jqTouch was my introduction to mobile web development.
 Initially jQuery plugin (remember the time when everything was a jQuery plugin?) it grew into a relatively fully functional
 framework over time.  It was pretty actively developed in 2012, however the main work on it in 2013 seemed to be to port
 it to CoffeeScript (Ugh, no love of Coffeescript from me).  It still has never officially reached version 1.0, and has

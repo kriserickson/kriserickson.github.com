@@ -4,7 +4,8 @@ title: "Mobile Frameworks -- jQuery Mobile"
 description: "Last time we dealt with the grandaddy of all HTML5 Mobile Frameworks, now lets look at the 800 lb Gorilla.  jQuery Mobile
 is bar far the most well known and commonly used Mobile Framework (and while I admin I'm going mostly by number of StackOverflow
 question count, number of books available, number of articles on the web, which may also be influenced by the fact it has been
-around for a few years, it still hasn't been around as long as jQTouch)."
+around for a few years, it still hasn't been around as long as jQTouch). It has gone through several iterations -- with
+each iteration making ..."
 category:
 tags: []
 ---

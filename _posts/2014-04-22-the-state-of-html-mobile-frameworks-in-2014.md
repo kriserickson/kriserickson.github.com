@@ -4,7 +4,8 @@ title: "The State of HTML Mobile Frameworks in 2014"
 description: "A year I released my mobile app Recipe Folder using jQuery mobile and PhoneGap.  While jQuery mobile
 did the job, I realized that while easy to get started with, jQuery Mobile is fairly bloated and the upgrade cycle was taking
 days of work rather than just dropping in the new files.  I figured that there had to be a better solution, and I researched
-the various other HTML5 Mobile platforms when I had to create a mobile application for work. "
+the various other HTML5 Mobile platforms when I had to create a mobile application for work. My directives was to find a
+framework ..."
 category: Programming
 tags: mobile,html,phonegap
 ---
