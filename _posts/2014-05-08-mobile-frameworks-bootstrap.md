@@ -10,8 +10,12 @@ tags: []
 ---
 {% include JB/setup %}
 
-This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/),
-[Part 2](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/) and [Part 3](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)
+This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, see
+
+* [Part 1 - The State of HTML Mobile Frameworks in 2014](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
+* [Part 2 - Mobile Frameworks -- JQT (Formerly jqTouch)](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
+* [Part 3 - Mobile Frameworks -- jQuery Mobile](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)
+
 if you haven't already.
 
 Bootstrap is another monster in the mobile world now, especially with Bootstrap 3.0 and its emphasis on "responsive" and
@@ -38,15 +42,19 @@ Twitter Bootstrap folks have recently pushed [Ratchet](http://goratchet.com/) wh
 tool, the latest version looks like something to keep an eye on in the mobile app space.
 
 **Advantages**
-- Easy to use
+- Easy to use, and if you haven't worked with some kind CSS framework in the past few years you really should spend some
+  time with either bootstrap or foundation.
 - Very popular, hundreds or thousands of Bootstrap themes are available as well as hundreds of plugins.
 - Modern looking, constantly updated, and has a very nice web ascetic.
-- Nicely documented.
+- It is very thoroughly and nicely documented.
 
 **Disadvantages**
 - Looks like a website, not an app.
 - Requires lots of changes to the css and js to get the appearance of an app, which makes it difficult to upgrade.
-- While it is
+- While it provides a lot of features for a web developer it really doesn't provide much for the mobile developer,
+  there is no way to deal with fixed toolbars (the position:fixed css attribute is notoriously broken in mobile) or
+  scrollable div's (overflow: auto is another issue with many mobile browsers to the point where the scrolling is
+  so jerky that people assume that they need a native client to get smooth scrolling on a mobile device).
 
 **Summary**
 
