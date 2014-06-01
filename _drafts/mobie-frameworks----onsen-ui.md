@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mobile Frameworks -- KendoUI"
+title: "Mobie Frameworks    Onsen UI"
 description: ""
 category: Programming
 tags: [Mobile,Phonegap,HTML5,KendoUI]
@@ -29,5 +29,5 @@ which
 
 **Summary**
 
-Next up, Ionic...
+Next up, Sencha-Touch...
 

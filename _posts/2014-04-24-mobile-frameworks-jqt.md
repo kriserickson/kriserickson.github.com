@@ -6,7 +6,7 @@ of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime in m
 around but jqTouch was my introduction to mobile web development.  Initially jQuery plugin (remember the time when
 everything was a jQuery plugin?) it grew into a relatively ..."
 category: Programming
-tags: mobile,html,phonegap
+tags: [Mobile,Phonegap,HTML5,JQTouch]
 ---
 {% include JB/setup %}
 

@@ -7,7 +7,7 @@ days of work rather than just dropping in the new files.  I figured that there h
 the various other HTML5 Mobile platforms when I had to create a mobile application for work. My directives was to find a
 framework ..."
 category: Programming
-tags: mobile,html,phonegap
+tags: [Mobile,Phonegap,HTML5]
 ---
 {% include JB/setup %}
 
