@@ -354,15 +354,20 @@ pre {
 .unit-article li code {
   margin: 0 2px;
   padding: 2px 5px;
-  white-space: nowrap;
+  white-space: pre;
   border: 1px solid #CCC;
   background-color: #F8F8F8;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  display: block;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.unit-article p code.noblock {
+    display: inline;
+    white-space: nowrap;
 }
 .unit-article img {
   display: block;
