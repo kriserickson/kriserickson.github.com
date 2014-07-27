@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Things I have learned in too many years of programming  IDEs"
+title: "Things I have learned in too many years of programming -- IDEs"
 description: "When mentoring a new programmer I almost always try to force them to learn two things, Regular Expressions and VIM.  Although both are relics of a bi-gone era (I still think it is hilarious VIM popularity currently is, I expect EMACS t o swing back into vogue any day now). I still use each one every day, and save myself hundreds of hours a year simply because I can do things very quickly that take someone unfamiliar with those tools much longer.  I am pretty good at VIM, and pretty good a regular expressions (though definitely not a master in either), however I feel that people who develop in VIM or Sublime or any IDE or Editor that doesn't have constant static analysis is making life harder for themselves and overly relying on tests to do their typo checking for them.  Use an Editor for editing text and an IDE for programming."
 category: "Programming"
 tags: [programming, craftwork, professionalism]
