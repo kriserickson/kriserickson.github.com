@@ -13,6 +13,15 @@ tags: [Mobile,Phonegap,HTML5,JQTouch]
 This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 if you haven't already.
 
+***Note***
+
+I have built a few app's with JQT years ago.  I ended up hacking the codebase to hell to get reasonable performance
+on the mobile devices from the era (iPhone 3g, Droid era devices) so I became very familiar with the codebase.  I haven't
+built a full app with it in a couple of years, but I did play around with it before writing this review so keep that
+in mind when reading this article.
+
+*JQT*
+
 JQT (formerly jqTouch) is the Grandaddy of all of the HTML5 Mobile Frameworks and is almost 5 years old (a lifetime
 in mobile web frameworks), I guess [iUI](http://www.iui-js.org/) was around but jqTouch was my introduction to mobile web development.
 Initially jQuery plugin (remember the time when everything was a jQuery plugin?) it grew into a relatively fully functional

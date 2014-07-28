@@ -7,16 +7,22 @@ question count, number of books available, number of articles on the web, which 
 around for a few years, it still hasn't been around as long as jQTouch). It has gone through several iterations -- with
 each iteration making ..."
 category: Programming
-tags: [Mobile,Phonegap,HTML5,jQuery MObile]
+tags: [Mobile,Phonegap,HTML5,jQuery Mobile]
 ---
 {% include JB/setup %}
 
-This is Part 3 in multipart series on the State of Mobile Frameworks in 2014, see
+This is Part 3 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 
 * [Part 1 - The State of HTML Mobile Frameworks in 2014](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 * [Part 2 - Mobile Frameworks -- JQT (Formerly jqTouch)](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
 
-if you haven't already.
+***Note***
+
+[Recipe Folder](http://recipe-folder.com) version 1 was built in jQuery Mobile (version 1.3).  I am intimately familiar
+with it and all the hacks required to get a hybrid app working with it and how to get lists to semi-decently scroll in it.
+I personally would not use it again for a hybrid app where I didn't want the app to look like a generic jQuery mobile app.  
+
+*jQuery Mobile*
 
 Last time we dealt with the grandaddy of all HTML5 Mobile Frameworks, now lets look at the 800 lb Gorilla.  jQuery Mobile
 is bar far the most well known and commonly used Mobile Framework (and while I admin I'm going mostly by number of StackOverflow
@@ -89,7 +95,8 @@ features, however, if you are going to use this, do it from the beginning do not
 and then try removing features one at a time as you can spend a ton of debugging missing features, or just building
 dozens of versions when you discover some feature you didn't think you needed was actually necessary on page 7 of your
 application.  My general recommendation for jQuery mobile is to use it for websites that are primarily mobile but to avoid
-it for building applications that will be installed on devices.
+it for building applications that will be installed on devices unless you have no problem with that application looking
+like a generic jQuery mobile application.
 
 I will end with [Brian Leroux's](https://twitter.com/brianleroux/) (one of Phonegap's original creators) addition to the
 [#FiveWordTechHorros Meme](https://twitter.com/search?q=%23FiveWordTechHorrors&src=hash) from a few months ago:
@@ -98,6 +105,8 @@ I will end with [Brian Leroux's](https://twitter.com/brianleroux/) (one of Phone
 <blockquote class="twitter-tweet" lang="en"><p>use jquery mobile with phonegap <a href="https://twitter.com/search?q=%23FiveWordTechHorrors&amp;src=hash">#FiveWordTechHorrors</a></p>&mdash; xnoɹǝʃ uɐıɹq (@brianleroux) <a href="https://twitter.com/brianleroux/statuses/410650764101439488">December 11, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+
+
 
 Next up, [Bootstrap](/2014/05/08/mobile-frameworks-bootstrap/)...
 

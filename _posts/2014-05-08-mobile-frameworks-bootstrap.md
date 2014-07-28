@@ -10,13 +10,22 @@ tags: [Mobile,Phonegap,HTML5,Bootstrap]
 ---
 {% include JB/setup %}
 
-This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, see
+This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 
 * [Part 1 - The State of HTML Mobile Frameworks in 2014](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 * [Part 2 - Mobile Frameworks -- JQT (Formerly jqTouch)](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
 * [Part 3 - Mobile Frameworks -- jQuery Mobile](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/)
 
-if you haven't already.
+***Note***
+
+I spent some time creating a bootstrap version of my [Recipe Folder](http://recipe-folder.com) app before switching
+to [TopCoatTouch](http://topcoattouch.com).  It was fairly easy to switch from jQuery mobile to a bootstrap implementation
+but the application just didn't feel like a mobile app, but more like a website so I abandoned the project after about 
+a week.  These are just some things to bear in mind when reading this review, that while I am very familiar with Bootstrap
+and mobile Bootstrap I have only spent a week or so building a hybrid app in Bootstrap and with more time I may have had
+a much different experience.
+
+*Bootstrap*
 
 Bootstrap is another monster in the mobile world now, especially with Bootstrap 3.0 and its emphasis on "responsive" and
 "mobile first" design.  And it can't be argued that it is popular, a lot of the sites you see created in the past few
