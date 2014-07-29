@@ -77,11 +77,14 @@ Kendo is huge, 4 Megs of Javascript source code (and the division between Mobile
 say jQuery Mobile) and almost 3 Megs of Css.  When you produce a keno application, you only include a small portion of
 that but getting your head around 4 megs of code is large task.  While you can get up and running with Kendo in a few
 hours I never got to the point where I felt truly comfortable with the large codebase. I will use either two types
-of libraries in a project, ones that are small enough and well documented that I have no problem rolling up my sleeves
-and fixing or customizing them if needs be, or libraries that I feel are so robust and well tested that I can use them
-like built in features in the browser (jQuery for example, when it starts acting weird I know it is almost always something
-I have done and spelunking into the jQuery codebase usually leads to more frustration than edification so I treat it closer
-to plumbing than a library).  It should also be noted that while the Kendo code is not complicated, and fairly easy
+of libraries in a project:
+ 
+1. Ones that are small enough and well documented that I have no problem rolling up my sleeves and fixing or customizing them if needs be.
+2. Or libraries that I feel are so robust and well tested that I can use them like built in language features (a library like jQuery for example, 
+when it starts acting weird I know it is almost always something I have done and spelunking into the jQuery codebase usually leads 
+to more frustration than edification so I treat it closer to plumbing than a library).  
+
+It should also be noted that while the Kendo code is not complicated, and fairly easy
 to read it contains no comments (this may be available in the Professional version, I am not sure) so you are kind
 of on your own when you go looking at the code.  Customizing the CSS is done through their 
 [ThemeBuilder](http://demos.telerik.com/kendo-ui/mobilethemebuilder/) which gives a little bit of 
@@ -92,12 +95,12 @@ some more major features of the look and feel you will not be able to update whe
 
 **Summary**
 
-I think that Kendo is a great choice for projects where you like their look and feel, and you don't want to customize
-much more than the colors.  You will get off the ground relatively quickly and will have a rock solid base fore
-creating a line of business application.  If you are the type of person that likes getting under the hood and 
-tinkering with the look and feel of your page, adjusting CSS and sometimes feel that you need to extend a framework
-for it to do those little things that don't quite exactly work the way you want them to out of the box, I would
-look to one of the smaller frameworks.
+I think that Kendo is a great choice for projects where you like the Kendo look and feel, and you don't want to customize
+the look and feel much more than the colors of the application.  You will get off the ground relatively quickly and will 
+have a rock solid base fore creating a line of business application.  If you are the type of person that likes getting 
+under the hood and tinkering with the look and feel of your page, adjusting CSS and sometimes feel that you need to 
+extend a framework for it to do those little things that don't quite exactly work the way you want them to out of 
+the box, I would look to one of the smaller frameworks.
 
 You can download the free Kendo UI Core [here](http://www.telerik.com/download/kendo-ui-core), or you can build it
 yourself from the [Github Repository](https://github.com/telerik/kendo-ui-core).  The extensive documentation can
