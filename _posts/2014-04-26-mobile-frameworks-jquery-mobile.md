@@ -14,7 +14,7 @@ tags: [Mobile,Phonegap,HTML5,jQuery Mobile]
 This is Part 3 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 
 * [Part 1 - The State of HTML Mobile Frameworks in 2014](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
-* [Part 2 - Mobile Frameworks -- JQT (Formerly jqTouch)](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
+* [Part 2 - Mobile Frameworks -- JQT (Formerly jqTouch)](/programming/2014/04/24/mobile-frameworks-jqt/)
 
 ***Note***
 

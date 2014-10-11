@@ -74,7 +74,7 @@ flexibility you have with the device is almost daunting (especially if you insta
 it really is a tinker's dream.
 
 7. Although completely unrelated to owning a device, developing for Android is both easier and harder than developing for IOS.  It is easier as the tooling is much better
-and far more sane (I know it's not true for everyone, but I [still find using XCode an excruciating experience](http://www.agingcoder.com/programming/2010/07/19/coding-like-its-1999/)
+and far more sane (I know it's not true for everyone, but I [still find using XCode an excruciating experience](/programming/2010/07/19/coding-like-its-1999/)
 and Objective C is a language only a mother could love).  However the dozens of screen sizes make developing a good looking
 app much harder than it is for the 3 sizes that you need to develop on IOS.
 

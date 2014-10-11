@@ -153,5 +153,5 @@ Until next time,
 
 Stay mobile!
 
-Next up [jQT](http://www.agingcoder.com/programming/2014/04/24/mobile-frameworks-jqt/)
+Next up [jQT](/programming/2014/04/24/mobile-frameworks-jqt/)
 
