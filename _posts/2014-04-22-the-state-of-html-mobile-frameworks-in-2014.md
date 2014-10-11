@@ -123,11 +123,11 @@ well on those platforms, but since their site doesn't tout support of that platf
 |Framework   | Reliant Technologies  | Ease of Learning  | Supported Platforms  |
 |---|---|---|---|---|
 |[jQT](http://jqtjs.com/)   | [jQuery](http://jquery.com) | 1 | IOS / Android |
-|[jQueryMobile](http://jquerymobile.com/)  | [jQuery](http://jquery.com), [jQueryUI](jqueryui.com)  | 1  | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
+|[jQueryMobile](http://jquerymobile.com/)  | [jQuery](http://jquery.com), [jQueryUI](http://jqueryui.com)  | 1  | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
 |[Bootstrap](http://getbootstrap.com)   | [jQuery](http://jquery.com) | 1 | IOS  / Android / WinPhone / Blackberry / Meego / Tizen / Bada / Opera Mobile / Desktop Browsers |
 |[KendoUI Mobile](http://www.telerik.com/kendo-ui)  | [jQuery](http://jquery.com) | 2  | IOS / Android / WinPhone |
-|[Ionic](http://ionicframework.com/)   | [Angular](angularjs.org)  | 3 | IOS / Android |
-|[Onsen-UI](http://onsenui.io/) | [Angular](angularjs.org) | 3 | IOS / Android |
+|[Ionic](http://ionicframework.com/)   | [Angular](http://angularjs.org)  | 3 | IOS / Android |
+|[Onsen-UI](http://onsenui.io/) | [Angular](http://angularjs.org) | 3 | IOS / Android |
 |[Sencha-Touch](http://www.sencha.com/products/touch/)   | None (but built on ExtJS) | 5 | IOS / Android |
 |[Jo](http://joapp.com/)   | None! | 4 | IOS, Android, Windows 8, BlackBerry 10, Tizen, Chrome OS  |
 |[PhoneJS](http://phonejs.devexpress.com/)   | [jQuery](http://jquery.com), ([Knockout](http://knockoutjs.com/)) |  3 | IOS, Android, WinPhone, Tizen |

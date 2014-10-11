@@ -113,7 +113,7 @@ You'll either like it or hate it, probably depending upon your feelings of dry E
   through the lens of economics.
 
 **[Dan Carlin's Hardcore History](http://feeds.feedburner.com/dancarlin/history?format=xml)** - In depth looks (the series on the
-[Roman Empire](http://www.dancarlin.com//disp.php/hharchive/Show-34---Death-Throes-of-the-Republic-I/%20podcast-Rome-Republican) runs 13+ hours for example) at
+[Roman Empire](http://www.dancarlin.com/product/hardcore-history-death-throes-of-the-republic-series/) runs 13+ hours for example) at
 history from an amateur historian.  If you love history you will love this podcast, if you don't love history, give it a try you might
 find that you like history a little more than you thought...
 

@@ -20,7 +20,7 @@ Internet Explorer ActiveX control that we all loved so much (with perhaps not as
 out of Greasemonkey and the extension model that Firefox originally built in.  Chrome, however, developed its extension model on its own as it
 realized it needed extensions to compete with Firefox.  The Chrome Apps extended from that as Chrome made it simple to package your URL as an
 application and make another way for promote the app in the Chrome Web Store.  But if more applications are built this way, ChromeOS may start
-becoming real competition for microsoft.  As I pointed out in [Windows 8 is still killing Microsoft](/2013/12/28/windows-8-is-still-killing-microsoft/)
+becoming real competition for microsoft.  As I pointed out in [Windows 8 is still killing Microsoft](/windows/2013/12/28/windows-8-is-still-killing-microsoft/)
 [Chromebooks are becoming a real threat to windows](http://www.businessinsider.com/googles-chromebooks-amazon-best-sellers-2013-12) and as Google
 continues to improve Chrome they will become more of a threat.
 

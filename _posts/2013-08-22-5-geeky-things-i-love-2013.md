@@ -6,7 +6,7 @@ category: Lifehacks
 tags: [rdio,nexus7,jetbrains,github,javascript]
 ---
 {% include JB/setup %}
-[It's two years later](/thingsilove/2011/07/21/5-geeky-things-i-love/) and time to re-evaluate or just expand upon the things I love.  Some have staid the same, some have changed.
+[It's two years later](/lifehacks/2011/07/21/5-geeky-things-i-love/) and time to re-evaluate or just expand upon the things I love.  Some have staid the same, some have changed.
 
 1. [Rdio](http://rd.io) - Still loving it, oh yes it has issues (*cough* playlists *cough*, *cough* social *cough*) but it is constantly getting better and still is an amazing value for money..
 1. [Jetbrains IDE's](http://www.jetbrains.com/phpstorm/) - Note only does [PHPStorm](http://www.jetbrains.com/phpstorm/) make programming in PHP

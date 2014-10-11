@@ -7,7 +7,7 @@ tags: [github,blogging]
 ---
 {% include JB/setup %}
 
-I've moved my blog from [Tumblr](http://kris-erickson.tumblr.com/) to [Github](http:kriserickson.github.io).  Why?
+I've moved my blog from [Tumblr](http://tumblr.com/) to [Github](http:kriserickson.github.io).  Why?
 A bunch of reasons:
 
 1. I have lost too many posts to mention (and I don't blog a lot) to Tumblr's web interface.
