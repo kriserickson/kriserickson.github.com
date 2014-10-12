@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mobile Frameworks - Ionic"
-description: "Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses Angular to allow for declarative, interactive pages and TopCoat to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI tool, some libraries and proscriptive structure for creating a mobile application."
+description: "Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses Angular to allow for declarative, interactive pages and  their own CSS UI to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI tool, some libraries and proscriptive structure for creating a mobile application."
 category: Programming
 tags: [Mobile,Phonegap,HTML5,Ionic]
 ---
@@ -76,7 +76,7 @@ so fast compared to most other methods.  It is also highly testable, reliable, a
 other huge companies behind it.  The Ionic CLI makes it easy to start making and application, and that is nothing to 
 sneeze at.  It is built to work with hubrid applications and Cordova from the ground up.  It's documentation is 
 excellent, and due to its popularity (when I [first looked at the Ionic framework])/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
-in April it had 82 questions on [Stackoverflow](http://stackoverflow.com/search?q=ionic), it now has over 1400) it
+in April it had 82 questions on [Stackoverflow](http://stackoverflow.com/search?q=ionic), it now has over 1,400) it
 has a lot of resources for getting answers.  And to top it off, it is well designed and well written.  
  
 
