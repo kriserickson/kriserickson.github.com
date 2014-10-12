@@ -60,7 +60,7 @@ javascript directory and a template directory.  If you've used angular before yo
 haven't there will be a pretty steep learning curve to figure out exactly what is going on.  Although you might be able
 to use Ionic as a stepping stone into the world of [Angular](https://angularjs.org/) I think that it is probably
 better to learn Angular first (through something like [CodeSchool](https://www.codeschool.com/courses/shaping-up-with-angular-js) or
-[Egghead](http://egghead.io).  
+[Egghead](http://egghead.io)).  
 
 Ionic provides some very good directives, some obvious directives, and maybe some questionable directives.  They also
 provide <s>(through [TopCoat](http://topcoat.io))</s> a great and modern looking UI with CSS applied through said
