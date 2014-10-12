@@ -31,7 +31,7 @@ Ionic is the new hotness in the hybrid app development world, picking up steam a
 tool, some libraries and proscriptive structure for creating a mobile application.
 
 I am a huge fan of Angular and had messed around with a bit on mobile in the past with [TopCoat](http://topcoat.io/).  It 
-wasn't using a framework other than Anuglar and I found that it worked pretty well.  
+wasn't using a framework other than Angular and I found that it worked pretty well.  
 Especially on newer devices, however it seemed at the time to have some issues Android 2.3 devices
 (Android 2.3 is becoming the new [IE 6](https://www.modern.ie/en-us/ie6countdown) of the browser world).  
 It also seemed pretty heavy to add Angular the the little App I was making at the time.  
@@ -56,7 +56,7 @@ Once you have created your app with either the CLI or downloading the libraries 
 (or [github](https://github.com/driftyco/ionic)) and creating your own skeleton app.  You end up with (or should end up with)
 a very minimal index.html with mostly javascript and css files included (you can include your first page, or that can
 be in the templates.  There is also a css directory (which you can set up to use [Sass](http://sass-lang.com/)), a
-javascript directory and a template directory.  If you've used angular before you will be very comfortble here, if you
+javascript directory and a template directory.  If you've used angular before you will be very comfortable here, if you
 haven't there will be a pretty steep learning curve to figure out exactly what is going on.  Although you might be able
 to use Ionic as a stepping stone into the world of [Angular](https://angularjs.org/) I think that it is probably
 better to learn Angular first (through something like [CodeSchool](https://www.codeschool.com/courses/shaping-up-with-angular-js) or
@@ -74,7 +74,7 @@ Angular, angular, angular.  Angular (or something similar to Angular) is the fut
 mobile devices get more and more powerful, Angular starts becoming something of a no brainer, it just makes development
 so fast compared to most other methods.  It is also highly testable, reliable, and has the backing of Google and many
 other huge companies behind it.  The Ionic CLI makes it easy to start making and application, and that is nothing to 
-sneeze at.  It is built to work with hubrid applications and Cordova from the ground up.  It's documentation is 
+sneeze at.  It is built to work with hybrid applications and Cordova from the ground up.  It's documentation is 
 excellent, and due to its popularity (when I [first looked at the Ionic framework])/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 in April it had 82 questions on [Stackoverflow](http://stackoverflow.com/search?q=ionic), it now has over 1,400) it
 has a lot of resources for getting answers.  And to top it off, it is well designed and well written.  
@@ -83,7 +83,7 @@ has a lot of resources for getting answers.  And to top it off, it is well desig
 **Disadvantages**
 
 Angular does have a learning curve, and if you don't already know it, learning Angular and Ionic is a fair amount
-of work.  If you just want to pound out a couple page simple applicaiton it may be overkill to add this level of 
+of work.  If you just want to pound out a couple page simple application it may be overkill to add this level of 
 complexity to your app.  Also on older devices (if you care about supporting devices from 3 or 4 years ago) Angular
 and Ionic run a little slower than a raw Javascript, HTML and CSS app.
 
@@ -94,5 +94,5 @@ would be my framework of choice so far for any large mobile applications that I 
 us to reign in complexity and yet quickly create complicated immersive applications.  Ionic does an excellent
 job of leveraging and improving upon Angular in mobile.  
 
-Next up, we seee if Onsen-UI (another Angular/TopCoat based framework) adds anything to Ionic or falls short in any areas...
+Next up, we see if Onsen-UI (another Angular/TopCoat based framework) adds anything to Ionic or falls short in any areas...
 
