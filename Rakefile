@@ -126,6 +126,9 @@ task :publish do
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = File.join(CONFIG[:drafts], "#{slug}.#{CONFIG[:post_ext]}")
 
+  puts "filename: #{filename}"
+
+
   unless File.exists?(filename)
     filename = File.join(CONFIG[:drafts], "new-post..#{CONFIG[:post_ext]}")
   end
