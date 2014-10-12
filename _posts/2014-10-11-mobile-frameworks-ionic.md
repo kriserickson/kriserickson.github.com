@@ -15,9 +15,19 @@ This is Part 6 in multipart series on the State of Mobile Frameworks in 2014, se
 * [Part 4 - Mobile Frameworks -- Bootstrap](/programming/2014/05/08/mobile-frameworks-bootstrap/)
 * [Part 5 - Mobile Frameworks -- KendoUI](/programming/2014/07/28/mobile-frameworks-kendoui/)
 
+**Edit**: I was mistakenly under the impression from an episode of [JSJabber](http://javascriptjabber.com/126-jsj-the-ionic-framework-with-max-lynch-and-tyler-renelle/)
+ that Ionic had used [TopCoat](http://topcoat.io) as  their UI basis for their CSS, however mistook [@Tyler Renelle](https://twitter.com/lefnire) 
+ (creator of [HabitRPG](https://habitrpg.com)) for [@Max Lynch](https://twitter.com/maxlynch) (co-creator of the Ionic framework)
+ so when Tyler said that they came from Topcoat I was assuming that Ionic came from Topcoat.  A mistake which could have been
+ cleared up by my looking at the CSS a little more closely when I was writing the Q&D app that wrote.  I guess this kind of speaks
+ to the strengths of Ionic that until you want to customize the look and feel of the App (which was not a point that I have reached
+ in the toy app that made) you don't really have to look at the CSS that much.  Anyhow, to be clear, Ionic uses their own CSS 
+ which they have created and does not use Topcoat.  I have edited the article to clarify that, and thanks to [@IonicFramework](https://twitter.com/Ionicframework)
+ for quickly pointing that out and not making me look like a fool for too long.
+
 Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses
-[Angular](https://angularjs.org/) to allow for declarative, interactive pages and [TopCoat](http://topcoat.io) 
-to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI
+[Angular](https://angularjs.org/) to allow for declarative, interactive pages and <s>[TopCoat](http://topcoat.io)</s> their 
+ own CSS UI to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI
 tool, some libraries and proscriptive structure for creating a mobile application.
 
 I am a huge fan of Angular and had messed around with a bit on mobile in the past with [TopCoat](http://topcoat.io/).  It 
@@ -53,9 +63,10 @@ better to learn Angular first (through something like [CodeSchool](https://www.c
 [Egghead](http://egghead.io).  
 
 Ionic provides some very good directives, some obvious directives, and maybe some questionable directives.  They also
-provide (through [TopCoat](http://topcoat.io)) a good and modern looking UI with CSS.  The CLI tool is nice, but mostly
-just a way of setting up a simple skeleton app and wrapping the Cordova CLI.  It looks like they are also creating
-a nice [GUI builder](http://ionicframework.com/creator/), but I haven't had a chance to play with it yet.
+provide <s>(through [TopCoat](http://topcoat.io))</s> a great and modern looking UI with CSS applied through said
+directives as well as through adding classes to elements.  The CLI tool is nice, but mostly just a way of setting up a simple skeleton app and 
+wrapping the Cordova CLI.  It looks like they are also creating a nice [GUI builder](http://ionicframework.com/creator/), 
+but I haven't had a chance to play with it yet.
 
 **Advantages**
 
