@@ -108,7 +108,7 @@ be is [here](http://docs.telerik.com/kendo-ui/).
 
 
 
-Next up, Ionic...
+Next up, [Ionic](/programming/2014/10/11/mobie-frameworks-ionic/)...
 
 
 [^SAAS] [Software as a service](http://en.wikipedia.org/wiki/Software_as_a_service).

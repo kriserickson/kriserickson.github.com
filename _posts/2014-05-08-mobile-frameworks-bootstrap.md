@@ -67,5 +67,5 @@ tool, the latest version looks like something to keep an eye on in the mobile ap
 
 **Summary**
 
-Next up, KendoUI Mobile...
+Next up, [KendoUI Mobile](/programming/2014/07/28/mobile-frameworks-kendoui/)...
 

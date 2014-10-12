@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mobie Frameworks - Ionic"
-description: ""
+description: "Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses [Angular](https://angularjs.org/) to allow for declarative, interactive pages and [TopCoat](http://topcoat.io) to create a modern looking UI.  To this, Ionic adds its..."
 category: Programming
 tags: [Mobile,Phonegap,HTML5,Ionic]
 ---
@@ -15,10 +15,17 @@ This is Part 6 in multipart series on the State of Mobile Frameworks in 2014, se
 * [Part 4 - Mobile Frameworks -- Bootstrap](/programming/2014/05/08/mobile-frameworks-bootstrap/)
 * [Part 5 - Mobile Frameworks -- KendoUI](/programming/2014/07/28/mobile-frameworks-kendoui/)
 
-I am a huge fan of Angular and had messed around with a bit in the past with [TopCoat](http://topcoat.io/) and no framework
-and found that it worked pretty well on newer devices, however it seemed at the time to fall apart on the Android 2.3
-devices (the new [IE 6](https://www.modern.ie/en-us/ie6countdown) of the browser world).  It also seemed pretty heavy to
-add the the light little App I was making at the time.  Eventually I ended up creating my own little framework with
+Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses
+[Angular](https://angularjs.org/) to allow for declarative, interactive pages and [TopCoat](http://topcoat.io) 
+to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI
+tool, some libraries and proscriptive structure for creating a mobile application.
+
+I am a huge fan of Angular and had messed around with a bit on mobile in the past with [TopCoat](http://topcoat.io/).  It 
+wasn't using a framework other than Anuglar and I found that it worked pretty well.  
+Especially on newer devices, however it seemed at the time to have some issues Android 2.3 devices
+(Android 2.3 is becoming the new [IE 6](https://www.modern.ie/en-us/ie6countdown) of the browser world).  
+It also seemed pretty heavy to add Angular the the little App I was making at the time.  
+Eventually I abandoned the experiment and ended up creating my own little framework with
 [TopcoatTouch](http://topcoattouch.com), but had Ionic been there (and at the state it is now) I probably wouldn't
 have bothered and used Ionic.  That said, Angular has certain learning curve and it takes most developers a while to 
  "get it", and there can be a level of frustration when things like a binding just stop working (usually involving
