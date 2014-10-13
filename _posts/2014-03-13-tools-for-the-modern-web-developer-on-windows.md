@@ -45,7 +45,7 @@ windows as modern web developer.
 1.  [Secunia](http://secunia.com/vulnerability_scanning/personal/) since we don't have nice package managers on windows, we
     have to rely on tools like Secunia to tell us when programs are out of date and potential security risks.
 1. [Git](http://git-scm.com/) and [Github](http://github.com) work fine on Windows now, and Github is probably the
-    greatest thing about open source these days.  I personally wound't bother with [Github for windows](http://git-scm.com/),
+    greatest thing about open source these days.  I personally wounld't bother with [Github for windows](http://git-scm.com/),
     but [TortoiseGit](https://code.google.com/p/tortoisegit/) has finally gotten decent.  And as stated above
     [msysgit](http://msysgit.github.io/) is really good.  A big hint for using git though, unless you are willing to
     live in cygwin stick to https urls (i.e. choose https://github.com/kriserickson/topcoat-touch.git over git@github.com:kriserickson/topcoat-touch.git)
