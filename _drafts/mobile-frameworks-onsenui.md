@@ -60,15 +60,23 @@ it isn't using Routing to change pages but has a navigator object (which can be 
 be accessed through $scope.ons.navigator in Angular app.  My guess is that they opted for having a page navigator so
 that you didn't have to do angular page routing, and simplify things but it does feel like a very unangular way
 of doing things.  In fact, my main problem with Onsen is that (at least from the demos and the documentation) they
-are not embracing Angular).
+are not embracing the Angular way of doing things and their sample code is not as clean as I would desire.  
 
-And after spending a fair bit of time in the Monaca IDE, it is surprisingly the best of the online mobile IDE's I have
-tried.  
+The Monaca IDE on the other hand, seems to be a very polished piece of work.  It's not perfect and it has a few rough
+edges with the UI (some of the dialogs are clipped in weird places, some of the icons are little rough) but 
+after spending a fair bit of time in the IDE, it is surprisingly the best of the online mobile IDE's I have tried.
+The IDE is responsive, and although not as full featured as [Jetbrains IDE](https://www.jetbrains.com/webstorm/) or even 
+[Vim](http://www.vim.org) but it is good enough to not hate it.  You can quickly upload files as well, and if you have
+a WebDev client you can edit directly on your computer.  You can then preview in a web browser or on their debugger app 
+on an iPhone, Android, Windows 8 or Chrome.  You can also build an apk, ipa, or 
+lets you quickly test out your app on a real device without having to build and deploy.
 
 **Advantages**
 
 **Disadvantages**
 
+Allowing objects to be hoisted into global space by annotating the elements with var, not embracing routing, not using templates
+out of the box.
 
 **Summary**
 
