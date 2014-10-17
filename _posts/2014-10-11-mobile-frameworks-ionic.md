@@ -94,5 +94,5 @@ would be my framework of choice so far for any large mobile applications that I 
 us to reign in complexity and yet quickly create complicated immersive applications.  Ionic does an excellent
 job of leveraging and improving upon Angular in mobile.  
 
-Next up, we see if Onsen-UI (another Angular/TopCoat based framework) adds anything to Ionic or falls short in any areas...
+Next up, we see if [Onsen-UI](/programming/2014/10/16/mobile-frameworks-onsenui/) (another Angular/TopCoat based framework) adds anything to Ionic or falls short in any areas...
 

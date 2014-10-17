@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Mobile Frameworks - OnsenUI"
-description: ""
+description: "Onsen is another Angular based mobile UI framework, and this one actually (I checked, honestly) does have its CSS framework based on TopCoat, although they have modified it a fair bit. It hails from Japan (Onsen means Hotsprings or Spa in Japanese, so the name is cute pun) which may explain why it lacks the exposure of Ionic. "
 category: Programming
-tags: [Mobile,Phonegap,HTML5,KendoUI]
+tags: [Mobile,Phonegap,HTML5,Onsen]
 ---
 {% include JB/setup %}
 
@@ -95,13 +95,26 @@ maybe I will revisit a few after my experience with Monaca).
 Onsen doesn't look quite as nice as Ionic, when running on a device the default look just feels a little off.  Perhaps that
 is TopCoat showing it's age (it was created before IOS7 and Material design and though it looked fresh and Modern a year and
 a half ago, it is started to look a tad dated) and maybe it is that Onsen needs to spend a tiny bit more time polishing the look.
-The starter kits (with the exception of the Master-Detail)     
-Allowing objects to be hoisted into global space by annotating the elements with var
-
-, not embracing routing, not using templates
-out of the box.
+The starter kits (with the exception of the Master-Detail) are kind of a mess, not only are they full of lipsum data, but
+the entire app is encompased within the index.html (no seperate templates, no js file).  It is nice that Onsen can be written
+without Angular but a good example of this should be shown.  Allowing objects to be hoisted into global space by annotating 
+the elements with var attribute is I guess required to access objects like the page navigator but I feel that should be a
+way to do this without polluting the global space.  Also their choice not using templates in any of the examples is another
+example of how Onsen doesn't proscribe how to create apps, but also doesn't set up some important patterns which would help.
+The documentation and guides are ok, but the lack of a really good full example is missing.  And that underlines one of
+the other problems with Onsen (that hopefully will change) is that due to the fact it is relatively unknown (there isn't
+even a [PropertyCross](http://propertycross.com/) example, and the number of questions on [StackOverflow](http://stackoverflow.com/questions/tagged/onsen-ui)
+is pretty limited.  In fact one of the best references I have found is [Holly Schinsky's Onsen Sample](http://devgirl.org/2014/05/13/sample-phonegap-application-with-angularjsonsenui/), where she states in a Disclaimer that it is her
+first time working with the framework.  So, there is kind of dearth of documentation, instructions, and help other than
+the [documentation](http://onsen.io/guide/components.html) and [guides](http://onsen.io/guide/overview.html) on OnsenUI page.
 
 **Summary**
+
+THere are a lot things to like in OnsenUI, and it is nice to have multiple options for using Angular with mobile.  Onsen
+does a lot of cool things, but there is room for improvement.  I would recommend improving the starter apps, as well as
+creating a full featured sample app highlighting best practices in Onsen.  The Theme Roller tool is a great addition, its
+nice to be able to empower a designer to be able adjust the colour palette without having to break into the CSS or Stylus.
+OnsenUI is certainly worth looking at and checking out, as is their Online [IDE Monaca](http://monaca.mobi/en/).
 
 Next up, Sencha-Touch...
 
