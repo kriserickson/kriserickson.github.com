@@ -62,20 +62,43 @@ that you didn't have to do angular page routing, and simplify things but it does
 of doing things.  In fact, my main problem with Onsen is that (at least from the demos and the documentation) they
 are not embracing the Angular way of doing things and their sample code is not as clean as I would desire.  
 
-The Monaca IDE on the other hand, seems to be a very polished piece of work.  It's not perfect and it has a few rough
-edges with the UI (some of the dialogs are clipped in weird places, some of the icons are little rough) but 
-after spending a fair bit of time in the IDE, it is surprisingly the best of the online mobile IDE's I have tried.
-The IDE is responsive, and although not as full featured as [Jetbrains IDE](https://www.jetbrains.com/webstorm/) or even 
-[Vim](http://www.vim.org) but it is good enough to not hate it.  You can quickly upload files as well, and if you have
-a WebDev client you can edit directly on your computer.  You can then preview in a web browser or on their debugger app 
-on an iPhone, Android, Windows 8 or Chrome.  You can also build an apk, ipa, or 
-lets you quickly test out your app on a real device without having to build and deploy.
+The Monaca IDE on the other hand, seems to be a very thorough piece of work.  It's not perfect and it has a few rough
+edges with the UI (some of the dialogs are clipped in weird places, the icons are not very uniform in style, and the mixture
+of different libraries and frameworks -- [Ace](http://ace.c9.io/), [ExtJs](http://www.sencha.com/products/extjs/), [AngularBootstrap](http://angular-ui.github.io/bootstrap/)
+leaves some rough edges), but after spending a fair bit of time in the IDE, it is surprisingly the best of the online mobile IDE's I have tried.
+The IDE is responsive and although not as full featured as [Jetbrains IDE](https://www.jetbrains.com/webstorm/) or even 
+[Vim](http://www.vim.org) but it is good enough to not hate it.  You can quickly upload files one directory at time, import and export as zip, 
+and if you have a WebDev client you can edit directly on your computer.  You can then preview in a web browser or on their debugger app 
+on an iPhone, Android, Windows 8 or Chrome (similarly to the [Phonegap Developer App](http://app.phonegap.com/).  
+You can also build an apk, ipa, appx (windows 8 package) or Chrome Zip file (although I never actually got the Windows 8
+package to build).  It is a fair bit simpler than AppBuilder but I didn't have nearly as many problems with it as I had
+when trying to use the Telerik product.
+
+Onsen also provides a nice Theme Editor (kind of similar to the old jQuery-UI Theme Roller) where you can start off with 
+one of their predefined colour schemes and modify it to come up with your custom theme with just a few clicks.  You can
+also do the same thing by editing a few [Stylus](http://learnboost.github.io/stylus/) files (their CSS is written
+in Stylus) but having a nice GUI tool makes it easy for a designer who is not comfortable with Stylus or even CSS
+to come up with a unique set of colours for your app.
 
 **Advantages**
 
+One of the big advantages of Onsen is that it uses Angular under the hood, but doesn't force you as a developer to
+learn Angular.  They have gone to a bunch of effort to allow for non-angular developers to work comfortably with the
+tools that they are familiar with (jQuery, etc) and still be able to create angular applications.  Using TopCoat for the
+basis of their CSS and then layering theming on top through Stylus has allowed them to create an easily themable UI
+that looks pretty good and is very flexible.  The Theme Editor is a nice touch, missing in most of the other mobile frameworks
+I have worked with, and the Monaca IDE really surprised me (I have not been a fan of browser based IDE's in the past but
+maybe I will revisit a few after my experience with Monaca).
+
 **Disadvantages**
 
-Allowing objects to be hoisted into global space by annotating the elements with var, not embracing routing, not using templates
+Onsen doesn't look quite as nice as Ionic, when running on a device the default look just feels a little off.  Perhaps that
+is TopCoat showing it's age (it was created before IOS7 and Material design and though it looked fresh and Modern a year and
+a half ago, it is started to look a tad dated) and maybe it is that Onsen needs to spend a tiny bit more time polishing the look.
+The starter kits (with the exception of the Master-Detail)     
+Allowing objects to be hoisted into global space by annotating the elements with var
+
+, not embracing routing, not using templates
 out of the box.
 
 **Summary**
