@@ -29,5 +29,5 @@ This is Part 7 in multipart series on the State of Mobile Frameworks in 2014, se
 **Summary**
 
 
-Next up, Sencha-Touch...
+Next up, rajm...
 
