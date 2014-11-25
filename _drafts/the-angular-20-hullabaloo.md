@@ -35,8 +35,20 @@ useless to the point where there are still [companies](http://www.artinsoft.com/
 convert VB6 applications, and it is still a nightmarish task.  
  
 These kind of changes have happened in past many times, and they frequently end up with two versions that kept in 
-development for perpetuity (look at Python 3 that was released over 6 years ago and Python 2 is still the main branch
-of Python).  PHP4 survived for years after PHP5 was released, and the changes required to migrate code there was minimal.
+development for perpetuity (the classic example is Python where Python 3 was released over 6 years ago, and Python 2 is still 
+the most widely used version of Python).  Sometimes it is successful and the new version quickly overtakes the old
+version (Symfony 2 was adopted rather quickly and it had some fairly major changes), but if you look at examples in 
+Javascript space where major changes have been made the new library adoption has not been fast.  ExtJS, for example,
+is now at version 5 (as of June 2014) and the most commonly used version (63% of the sites that use it) are two versions
+back at version 3 [according the w3techs](http://w3techs.com/technologies/details/js-extjs/all/all). 
+ 
+And we know that Google doesn't have a track of supporting things it feels is no longer in its best interest:
+shutting down [Reader](http://www.google.com/reader/about/) and [Google Wave](https://support.google.com/answer/1083134?hl=en) 
+(does anyone else think that if Google had given Wave a little longer while to develop they could have had a serious 
+[HipChat](https://www.hipchat.com/) or [Slack](https://slack.com/) competitor?) when [they no longer have interest in them](http://www.makeuseof.com/tag/top-ten-dead-google-projects-floating-cyberspace/).  If it isn't in Google's best interest you can be sure
+that support for Angular will have to come from the community, and now that they are 
+
+
 
 
 
