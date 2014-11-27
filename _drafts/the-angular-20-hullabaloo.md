@@ -14,6 +14,8 @@ pet projects I wondered really how much I had to add to the discussion.
 
 **Freak Out -- The Sky Is Falling -- The Angular Developers Hate Us**
 
+<img src="/img/haironfire.gif" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
+
 Even though  Google claims to have over [1600 sites (internal and external) running Angular](http://devchat.tv/adventures-in-angular/016-aia-ng-1-3-and-2-0-with-brad-green-igor-minar-and-mi-ko-hevery)
 they have very few high profile sites running on it.  Their commitment to creating a framework that can be maintained over
 years does not appear to spring from their internal usage of the framework in a any high profile applications.  
@@ -45,13 +47,42 @@ back at version 3 [according the w3techs](http://w3techs.com/technologies/detail
 And we know that Google doesn't have a track of supporting things it feels is no longer in its best interest:
 shutting down [Reader](http://www.google.com/reader/about/) and [Google Wave](https://support.google.com/answer/1083134?hl=en) 
 (does anyone else think that if Google had given Wave a little longer while to develop they could have had a serious 
-[HipChat](https://www.hipchat.com/) or [Slack](https://slack.com/) competitor?) when [they no longer have interest in them](http://www.makeuseof.com/tag/top-ten-dead-google-projects-floating-cyberspace/).  If it isn't in Google's best interest you can be sure
-that support for Angular will have to come from the community, and now that they are 
+[HipChat](https://www.hipchat.com/) or [Slack](https://slack.com/) competitor?) when 
+[they no longer have interest in them](http://www.makeuseof.com/tag/top-ten-dead-google-projects-floating-cyberspace/).  
+If it isn't in Google's best interest you can be sure
+that support for Angular will have to come from the community, and now that they are  focusing on polymer they may not 
+be so intent on making Angular the premier JavaScript framework.
 
+The other problem with ask these changes is the FUD problem.  While this is not being did being directed by 
+Angular's competitors, the lack of a clear migration path and the uncertain future of the Angular 1.x may lead companies 
+and even developers to look at more stable frameworks for their JavaScript needs.  I was interviewing interns over the 
+past couple of weeks and though they all expressed an interest in Angular and especially the MEAN stack, every 
+single one of them mentioned their concerns with what was happening with Angular 2.  If the future JavaScript developers 
+jump ship to Ember or React it doesn't matter if Angular 2 is perfect and there is a simple upgrade path because 
+there will be so few developers still using Angular.
 
-
-
+Right now Angular is the 500 lb Gorilla because of its massive user bar and it's inevitability, of it losers that it 
+will lose one of its greatest assets.  
 
 **Calm The F*ck Down -- Nothing Is Set In Stone -- There Will Be A Migration Plan**
 
-First of all, 
+
+
+First of all, people overreact, developers doubly so.  Criticize a developers favorite editor or IDE if you ever want to 
+see this effect in action.  Move someones cheese and watch the freak-outs happen, so it cane as no surprise that when 
+people finally realized that Angular 2 was going to be drastically different there was going to be s reaction.  
+Though the lead developers had been dropping hints about this for weeks and months[] it was never 100% clear until 
+ng-europe and the new syntax was demoed on screen[].  Part of the problem was the fact that there hadn't been much 
+transparency or consultation of what the users of angular wanted (and no, that isn't the responsibility of the 
+developers of an open source project but if they want to retain said users they should probably keep that thought 
+in mind).  The other problem is a lot of users felt that the Angular developers where basically architecture 
+astronauts searching for a more elegant solution  where most people were happy with Angular's approach.  
+
+Of course the truth is always more complicated, and because of the internet freakout the angular developers have 
+kind of jumped into crisis management mode writing blog posts[] and appearing on podcasts[] to explain exactly 
+what is going on.   Part of the changes are because
+
+
+
+
+ 
