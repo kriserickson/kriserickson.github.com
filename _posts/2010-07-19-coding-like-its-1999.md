@@ -16,7 +16,7 @@ I mean, obviously comment out a line would be on some menu that looked like a a 
 discovered this was User Scripts).  Really?  Shouldn't features like Comment Out, Clean and Build, etc have
 migrated to an actual menu item rather than a User Script?  Don't get me started about the default behavior of End and
 Home keys on the Mac, but I recognize that isn't XCode's fault but that of the Mac in general
-(and it isn't that hard to [fix](http://lifehacker.com/software/keyboard/mac-switchers-tip--remap-the-home-and-end-keys-225873.php).
+(and it isn't that hard to [fix](http://lifehacker.com/software/keyboard/mac-switchers-tip--remap-the-home-and-end-keys-225873.php)).
 
 It just seems to me that XCode looks like an ugly abandoned stepchild when compared to Visual Studio, and that for a
 company that is all about elegance, design and beauty they sure serve their developers a bit of a shit sandwich.

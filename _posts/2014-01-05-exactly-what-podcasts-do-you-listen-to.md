@@ -2,7 +2,7 @@
 layout: post
 title: "Exactly what podcasts do you listen to?"
 description: "What's current in my podcast app"
-category: LIfehacks
+category: Lifehacks
 tags: [podcasts]
 ---
 {% include JB/setup %}
