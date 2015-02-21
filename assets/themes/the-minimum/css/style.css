@@ -352,7 +352,7 @@ pre {
 }
 .unit-article p code,
 .unit-article li code {
-  margin: 0 2px;
+  margin: 10px 2px;
   padding: 2px 5px;
   white-space: pre;
   border: 1px solid #CCC;
