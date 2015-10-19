@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Second thoughts on NativeScript, React Native, and MobileNativeJavascript in general"
+title: "Second thoughts on NativeScript, React Native, and MobileNativeJavaScript in general"
 description: "It's been 6 months since I wrote First Thoughts on NativeScript and you would think by now with my formidable blogging output I would have written dozens of articles following up on my initial thoughts..."
 category: Programming
-tags: [Mobile,NativeScript,JavaScript]
+tags: [Mobile,NativeScript,JavaScript,MNJS]
 ---
 {% include JB/setup %}
 
