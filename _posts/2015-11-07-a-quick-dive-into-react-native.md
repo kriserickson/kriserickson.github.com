@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "A Quick Dive into React Native"
-description: ""
+description: "In my last postDave (no other name), suggested that I try (or to be honest try again) React Native.  And I thought I would give the whole MobileNativeJavaScript thing one more shot..."
 category: Programming
 tags: [React Native,Mobile,MNJS,JavaScript]
 ---
 {% include JB/setup %}
 In my [last post](http://www.agingcoder.com/programming/2015/10/15/second-thoughts-on-nativescript-react-native-and-mobilenativejavascript-in-general/), Dave (no other
-name), suggested that I try (or to be honest try again) React Native.  And I thought I would give the whole MobileNativeJavaScript thing one more shot.React Native, 
+name), suggested that I try (or to be honest try again) React Native.  And I thought I would give the whole MobileNativeJavaScript thing one more shot.  React Native, 
 in its current form, now supports Android and iOS so it is now a closer match to NativeScript and the other MNJS frameworks.
   
 It also is installed through NPM but is, shall we say, not very windows friendly.  The latest version finally install on Windows (the last time I 
