@@ -7,14 +7,14 @@ tags: [programming, craftwork, professionalism]
 ---
 
 
-#Things I have learned in too many years of programming#
+# Things I have learned in too many years of programming#
 
 As a little break from my continuing opus on the [State of Mobile Frameworks](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 I've decided to write one of what may end up being a series of things that I have learned in my 20+ years of programming.
 
-##IDEs##
+## IDEs##
 
-#####**TLDR** - _IDEs make programming easier, if you are still using a text editor for programming seriously consider using a modern IDE._
+##### **TLDR** - _IDEs make programming easier, if you are still using a text editor for programming seriously consider using a modern IDE._
 
 When mentoring a new programmer I almost always try to force them to learn two things, Regular Expressions and VIM.  Although 
 both are relics of a bi-gone era (I still think it is hilarious VIM popularity currently is, I expect EMACS t

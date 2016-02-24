@@ -27,7 +27,7 @@ and not have to deal with dropping audio and bandwidth issues suffered if you wa
 is talk about the few hours I experienced playing around with it, what I think its strengths and weaknesses are and 
 what Telerik can do to make NativeScript one of the pre-eminent platforms to build mobile apps on.
 
-##The Good##
+## The Good ##
 
 1. I like Javascript, I am comfortable in Javascript, I believe that Javascript is only [getting better](https://github.com/lukehoban/es6features),
 and I think that mobile is a natural place for Javascript.  I currently use PhoneGap, but it is definitely a [love/hate
@@ -86,7 +86,7 @@ and this for ios:
 
 Nice and simple, where Android and IOS libraries just become simple Javascript objects.
 
-##The Problems##
+## The Problems ##
 
 1) The [styling and CSS](http://docs.nativescript.org/styling) is currently very limited.  If you look at the 
 [application](http://developer.telerik.com/wp-content/uploads/2015/01/SignUpForm.png) 

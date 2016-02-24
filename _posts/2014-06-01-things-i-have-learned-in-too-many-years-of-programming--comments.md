@@ -7,15 +7,15 @@ tags: [programming, craftwork, professionalism]
 ---
 
 
-#Things I have learned in too many years of programming#
+# Things I have learned in too many years of programming #
 
 As a little break from my continuing opus on the [State of Mobile Frameworks](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 I've decided to write one of what may end up being a series of things that I have learned in my 20+
 years of programming.
 
-##Comments##
+## Comments ##
 
-#####**TLDR** - _Comments are good, comments are bad, clarity is good, clarity is hard, moderation in all things._
+##### **TLDR** - _Comments are good, comments are bad, clarity is good, clarity is hard, moderation in all things._
 
 When I first started programming, I tried to write the most compact, cleverest blocks of code which I would
 dutifully comment to explain what they where doing.  These comments where odes to my brilliance and what a
