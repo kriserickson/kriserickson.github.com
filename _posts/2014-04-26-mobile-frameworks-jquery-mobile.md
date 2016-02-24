@@ -9,7 +9,7 @@ each iteration making ..."
 category: Programming
 tags: [Mobile,Phonegap,HTML5,jQuery Mobile]
 ---
-{% include JB/setup %}
+
 
 This is Part 3 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 

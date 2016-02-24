@@ -5,7 +5,7 @@ description: "Ionic is the new hotness in the hybrid app development world, pick
 category: Programming
 tags: [Mobile,Phonegap,HTML5,Ionic]
 ---
-{% include JB/setup %}
+
 
 This is Part 6 in multipart series on the State of Mobile Frameworks in 2014, see
 

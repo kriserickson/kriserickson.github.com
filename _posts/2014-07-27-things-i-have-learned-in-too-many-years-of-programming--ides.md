@@ -5,7 +5,7 @@ description: "When mentoring a new programmer I almost always try to force them 
 category: "Programming"
 tags: [programming, craftwork, professionalism]
 ---
-{% include JB/setup %}
+
 
 #Things I have learned in too many years of programming#
 

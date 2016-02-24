@@ -5,7 +5,7 @@ description: ""
 category: Music
 tags: [rdio]
 ---
-{% include JB/setup %}
+
 After spending two months with [rdio](http://rd.io), I still love it enough to stay subscribed (though I don't know if 
 I am getting enough value from the mobile player!)  I love the ability to listen to whatever I want instantly.
 Although they don't have a perfect selection (no Pixies, Arcade Fire, Spoon, etc), the selection is very good and getting better.

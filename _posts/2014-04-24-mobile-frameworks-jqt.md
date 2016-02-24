@@ -8,7 +8,7 @@ everything was a jQuery plugin?) it grew into a relatively ..."
 category: Programming
 tags: [Mobile,Phonegap,HTML5,JQTouch]
 ---
-{% include JB/setup %}
+
 
 This is Part 2 in multipart series on the State of Mobile Frameworks in 2014, see [Part 1](/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/)
 if you haven't already.

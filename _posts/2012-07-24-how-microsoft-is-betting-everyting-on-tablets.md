@@ -5,7 +5,7 @@ description: ""
 category: Windows
 tags: [Microsoft, Windows8, Crystal Ball]
 ---
-{% include JB/setup %}
+
 
 It has become clear over the past few years, that the Post PC era, while not yet upon us, is closing in.  With [smartphone penetration over 35%](http://www.wired.com/beyond_the_beyond/2011/12/42-major-countries-ranked-by-smartphone-penetration-rates/),
 and [1 in 3 in the US owning tablets by 2015](http://techcrunch.com/2011/01/04/forrester-forecasts-one-third-of-u-s-online-consumers-will-own-a-tablet-by-2015/)

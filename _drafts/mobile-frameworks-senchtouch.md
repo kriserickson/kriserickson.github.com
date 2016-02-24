@@ -5,7 +5,7 @@ description:
 category: Programming
 tags: [Mobile,Phonegap,HTML5,SenchaTouch]
 ---
-{% include JB/setup %}
+
 
 This is Part 7 in multipart series on the State of Mobile Frameworks in 2014, see
 

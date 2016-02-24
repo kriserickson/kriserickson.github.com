@@ -5,7 +5,7 @@ description: ""
 category: Windows
 tags: [windows8,metro]
 ---
-{% include JB/setup %}
+
 
 Microsoft is betting heavily on Metro and the Metro UI, however I feel that this is misguided attempt at one interface to rule them all.
 Creating a brand new API [WinRT](http://www.i-programmer.info/news/126-os/3055-winrt-the-new-windows.html),

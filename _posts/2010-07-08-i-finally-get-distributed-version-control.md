@@ -5,7 +5,7 @@ description: ""
 category: Programming
 tags: [gihub, dcvs, duh]
 ---
-{% include JB/setup %}
+
 
 I really haven't understood the whole distributed version control thing, and I still believe that for a non open source project,
 it is probably overkill (unless you have a lot of people working on the project).   Having your own repository is great,

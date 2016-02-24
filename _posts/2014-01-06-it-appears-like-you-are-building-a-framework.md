@@ -4,10 +4,11 @@ title: "It appears like you are building a framework"
 description: ""
 category: TopcoatTouch
 tags: [Mobile,Programming]
+featured: true
 ---
-{% include JB/setup %}
 
-<img src="/img/clippy.png" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
+
+<img src="/img/framework/clippy.png" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
 
 *TLDR - After weighing all the options I built a mobile framework around [Topcoat](http://topcoat.io), you
  can find it on [Github](https://github.com/kriserickson/topcoat-touch). *

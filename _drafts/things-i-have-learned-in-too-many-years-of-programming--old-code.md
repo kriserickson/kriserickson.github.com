@@ -5,4 +5,4 @@ description: ""
 category: "Programming"
 tags: [programming, craftwork, professionalism]
 ---
-{% include JB/setup %}
+

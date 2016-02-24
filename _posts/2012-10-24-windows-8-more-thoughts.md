@@ -5,7 +5,7 @@ description: ""
 category: Windows
 tags: [Microsoft, Windows8, Crystal Ball]
 ---
-{% include JB/setup %}
+
 
 Darren [tweeted](https://twitter.com/darrenthetiger/status/222699772161691649) me this morning:
 

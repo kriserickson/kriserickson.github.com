@@ -5,7 +5,7 @@ description: "I just got a new computer, and joy of joys it came with Windows 8.
 category: "Windows" 
 tags: [Windows]
 ---
-{% include JB/setup %}
+
 
 I just got a new computer, and joy of joys it came with Windows 8.1.  I was seriously considering downgrading (upgrading?) to
 Windows 7, but I figured that if I was going to stay in the Windows world for a little while I would have to get use to 

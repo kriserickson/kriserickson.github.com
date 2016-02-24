@@ -5,7 +5,7 @@ description: "Trying too hard to make the uncool, cool.."
 category: Geek Life
 tags: [programming]
 ---
-{% include JB/setup %}
+
 
 #### ... Or Embracing the Suck ####
 
@@ -64,7 +64,7 @@ End of the document, is that a frequent action for many people?  And yes, as a p
 line all the time!  Every time I use OSX I have to deal with dozens of little quirks (that I am sure if you were a longtime
 Mac user seem sensible) that drive me crazy, and make it a non-starter to switch.
 
-<img style="border: 1px solid #000; margin: 10px" src="/img/windows-trailer.jpg">
+<img style="border: 1px solid #000; margin: 10px" src="/img/uncool/windows-trailer.jpg">
 
 All said and done this may be the year I finally bite the bullet and switch to Linux, but for now I will run the Double Wide of
 operating systems and embrace the suck.

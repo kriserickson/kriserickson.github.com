@@ -2,10 +2,11 @@
 layout: post
 title: "Building A Not Very Successful Product For No Money"
 description: "Every now and then when a technical person tries Recipe Folder out, I get asked about how the application was built and what it runs on."
-category: 
+category: "Recipe Folder"
 tags: ["Recipe Folder", "mobile", "node", "programming"]
+featured: true
 ---
-{% include JB/setup %}
+
 
 Every now and then when a technical person tries [Recipe Folder](https://recipe-folder.com) out, I get asked about how the application was built and what it runs on.  It is kind of an interesting application in that it has quite a few moving pieces.  It has a website, a backend api, a Bookmerklet or Browser extension as well as a mobile application that accesses API services on the backend.  It is also kind of interesting as it was a chance for a greenfield application where I could choose any technology, and it was built knowing that it was a pretty niche market and not going to have a ton of traffic and really never be able to make money (the dream is that one day it pays for its own hosting).  I built the app for myself as something I wanted, and I knew it was always going to be something that a couple of hours a week was spent on and I would never have the time or inclination to work on it full time.  I also built it to spend some time with technologies that I was unfamiliar with, and learn about them in a no-risk environment.
 

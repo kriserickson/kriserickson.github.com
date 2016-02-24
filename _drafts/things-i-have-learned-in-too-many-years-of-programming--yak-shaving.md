@@ -5,7 +5,7 @@ description: ""
 category: "Programming"
 tags: [programming, craftwork, professionalism]
 ---
-{% include JB/setup %}
+
 
 A lot of people consider [Yak Shaving](http://www.hanselman.com/blog/YakShavingDefinedIllGetThatDoneAsSoonAsIShaveThisYak.aspx)
  to be the bane of their existence, I admit that sometimes I find a perverse

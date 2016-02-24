@@ -5,7 +5,7 @@ description: "Onsen is another Angular based mobile UI framework, and this one a
 category: Programming
 tags: [Mobile,Phonegap,HTML5,Onsen]
 ---
-{% include JB/setup %}
+
 
 This is Part 7 in multipart series on the State of Mobile Frameworks in 2014, see
 

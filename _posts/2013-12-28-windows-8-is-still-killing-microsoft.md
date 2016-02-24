@@ -5,7 +5,7 @@ description: "Even after the release the Windows 8.1 the scars remain.  Windows 
 category: Windows
 tags: [Windows8]
 ---
-{% include JB/setup %}
+
 
 I've been using Windows 8 (and now 8.1, though I rarely see any differences) for well over 6 months now on a laptop.  It is not
 a daily occurrence, but I've been using it enough that I thought I had a pretty good handle on it.  I have still yet to find a

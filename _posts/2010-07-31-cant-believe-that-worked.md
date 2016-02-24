@@ -5,7 +5,7 @@ description: ""
 category: Computer
 tags: [ubuntu,windows]
 ---
-{% include JB/setup %}
+
 So I have been having a bitch of a time with my PC for the past 4 or 5 months.  Can't get videos to play without skipping.
  have tried everything, and the weird thing is that it started spontaneously.  I have now swapped out a hard drive,
  a video card, reinstalled windows 3 times (once repair, twice cleanly).  The first time I did it cleanly I did it

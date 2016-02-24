@@ -5,7 +5,7 @@ description: "I needed a quick way to display a dataUrl as an image... "
 category: Tool
 tags: [DataUrl, Tools]
 ---
-{% include JB/setup %}
+
 
 ### Data Url Viewer ###
 

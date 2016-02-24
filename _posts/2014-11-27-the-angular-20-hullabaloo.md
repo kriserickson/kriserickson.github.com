@@ -5,7 +5,7 @@ description: "Ever since ng-europe last month, people have been freaking out abo
 category: Programming
 tags: [Javascript, Controversy]
 ---
-{% include JB/setup %}
+
 
 Ever since [ng-europe](http://ngeurope.org/) last month, people have been freaking out about Angular 2.0, initially
 I had written up some thoughts about this in the days following, but I decided to wait a while for things to settle
@@ -14,7 +14,7 @@ pet projects I wondered really how much I had to add to the discussion.
 
 **Freak Out -- The Sky Is Falling -- The Angular Developers Hate Us**
 
-<img src="/img/haironfire.gif" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
+<img src="/img/angular2/haironfire.gif" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
 
 Even though  Google claims to have over [1600 sites (internal and external) running Angular](http://devchat.tv/adventures-in-angular/016-aia-ng-1-3-and-2-0-with-brad-green-igor-minar-and-mi-ko-hevery)
 they have very few high profile sites running on it.  Their commitment to creating a framework that can be maintained over
@@ -66,7 +66,7 @@ will lose one of its greatest assets.
 
 **Calm The F*ck Down -- Nothing Is Set In Stone -- There Will Be A Migration Plan**
 
-<img src="/img/calm-down.jpg" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
+<img src="/img/angular2/calm-down.jpg" style="float:left; border: 1px solid #000; margin: 0 10px 10px 0">
 
 
 First of all, people overreact, developers doubly so.  Criticize a developers favorite editor or IDE if you ever want to 

@@ -5,7 +5,7 @@ description: "Google is Microsofting Microsoft"
 category: Windows
 tags: [Microsoft, Google, Windows]
 ---
-{% include JB/setup %}
+
 
 Google recently announced it's [Chrome App Launcher](https://chrome.google.com/webstore/launcher), and it has got me thinking about Native Windows Apps.
 I can't really think of the last big app that was launched on the desktop that hasn't been slowly migrating its way more effectively to the web.

@@ -5,7 +5,7 @@ description: ""
 category: Programming
 tags: [Programming,Windows]
 ---
-{% include JB/setup %}
+
 Be a windows developer in the web world sucks.  Bring a windows laptop to conference or meet-up you feel like the
 the not so bright kid in the corner eating paste.  Of course you could cover it with Linux stickers and [pretend
 it's running Linux](http://dpcdpc11.deviantart.com/art/Maverick-for-Win7-194347855) but if you are going

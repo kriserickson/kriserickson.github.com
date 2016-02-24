@@ -4,8 +4,9 @@ title: "Browser X is the new IE"
 description: "Over the past few weeks there has been a hullabalou on the interwebs that started with the post from about Nolan Lawson about Safari being the new IE..."
 category: Programming
 tags: ["Browsers", "Chrome", "Safari", "Firefox"]
+comments: true
 ---
-{% include JB/setup %}
+
 
 Over the past few weeks there has been a hullabalou on the interwebs that started with the post from about Nolan Lawson
 about [Safari being the new IE](http://nolanlawson.com/2015/06/30/safari-is-the-new-ie/), which had follow up posts like Benjamin De Cock's

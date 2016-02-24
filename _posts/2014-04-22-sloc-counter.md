@@ -8,7 +8,7 @@ take comments or whitespace into account.  Github does a nice job of this, but n
 category: Tool
 tags: [SLOC, LOC, Tools]
 ---
-{% include JB/setup %}
+
 
 ### (SLOC/LOC) Line of Code Counter ###
 

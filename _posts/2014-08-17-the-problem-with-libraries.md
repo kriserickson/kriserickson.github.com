@@ -5,7 +5,7 @@ description: "Before I go too deep down this rat/rabbit hole, I should state tha
 category: Programming
 tags: [programming, craftwork, professionalism]
 ---
-{% include JB/setup %}
+
 
 Before I go too deep down this rat/rabbit hole, I should state that Libraries are what has allowed programming to
 develop from where only the best of the best can produce software to a place where a plumber like me can still

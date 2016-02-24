@@ -5,7 +5,7 @@ description: "When I first started programming, I tried to write the most compac
 category: "Programming"
 tags: [programming, craftwork, professionalism]
 ---
-{% include JB/setup %}
+
 
 #Things I have learned in too many years of programming#
 

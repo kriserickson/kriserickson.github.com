@@ -4,8 +4,9 @@ title: "Lessons Learned from 5 Years of PhoneGap/Cordova Development"
 description: "It seems hard to believe, but it's been almost 5 years since I started doing PhoneGap development!  while I could write a history of PhoneGap, or a history of my own use of PhoneGap, I felt it would be more interesting to share some of the wisdom I have learned from the past few years..."
 category: Programming
 tags: [Mobile,PhoneGap]
+featured: true
 ---
-{% include JB/setup %}
+
 
 It seems hard to believe, but it's been almost 5 years since I started doing PhoneGap development!  while
 I could write a history of PhoneGap, or a history of my own use of PhoneGap, I felt it would be more interesting

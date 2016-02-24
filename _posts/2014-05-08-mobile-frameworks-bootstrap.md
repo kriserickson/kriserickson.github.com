@@ -8,7 +8,7 @@ a great way to get a website up and going, and looking good with as ..."
 category: Programming
 tags: [Mobile,Phonegap,HTML5,Bootstrap]
 ---
-{% include JB/setup %}
+
 
 This is Part 4 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 

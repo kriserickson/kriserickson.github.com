@@ -4,7 +4,7 @@ category : mobile
 tagline: "Windows Phone 7, and Webkit"
 tags : [mobile, wp7, webkit]
 ---
-{% include JB/setup %}
+
 
 I was having a wait and see approach to WP7, and when it initially came out I spent a bunch of time playing with the SDK.
 It's a nice SDK and I think that there is a lot to like about WP7, but I think that they where very smart in breaking

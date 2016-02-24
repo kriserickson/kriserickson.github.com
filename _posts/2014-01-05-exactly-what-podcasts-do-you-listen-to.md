@@ -5,7 +5,7 @@ description: "What's current in my podcast app"
 category: Lifehacks
 tags: [podcasts]
 ---
-{% include JB/setup %}
+
 
 As my wife will tell you ("he's always got bloody headphones in his ears"), I am a voracious podcast listener.  The only
 thing that keeps my sane on my commute, doing the dishes, cleaning the house, or any other number of chores is

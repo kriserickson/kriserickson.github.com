@@ -5,7 +5,7 @@ description: ""
 category: Programming
 tags: [vs,reghack]
 ---
-{% include JB/setup %}
+
 After MSBuildShellExtension stopped getting developed (so that it won't really build .Net 4.0 any more, even with a fair 
 bit of fiddling), and after trying MSBuild Launch pad and not digging it, I figured why go all high tech and not just 
 create a simple Registry Shell command.  For posterity (and so I can find it in the future) here it is (copy the

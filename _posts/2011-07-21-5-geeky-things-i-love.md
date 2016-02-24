@@ -5,7 +5,7 @@ description: ""
 category: Lifehacks
 tags: [rdio,iphone,kindle,jetbrains,phpstorm,cygwin,thingsilove]
 ---
-{% include JB/setup %}
+
 1. [Rdio](http://rd.io) Instant access to millions of tunes.  Amazing value for money.
 1. [PhpStorm](http://www.jetbrains.com/phpstorm/) Makes programming in PHP a joy again.
 1. [Kindle](http://www.amazon.com/gp/product/B002Y27P3M/ref=sv_kinh_0) The readability and the weight are what makes this the killer ebook reader.

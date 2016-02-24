@@ -5,7 +5,7 @@ description: "KendoUI is one the most popular mobile frameworks around, and for 
 category: Programming
 tags: [Mobile,Phonegap,HTML5,KendoUI]
 ---
-{% include JB/setup %}
+
 
 This is Part 5 in multipart series on the State of Mobile Frameworks in 2014, if you haven't already read the previous articles, they are here:
 

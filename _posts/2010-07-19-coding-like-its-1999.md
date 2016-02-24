@@ -5,7 +5,7 @@ description: ""
 category: Programming
 tags: [xcode, mac]
 ---
-{% include JB/setup %}
+
 
 So I am doing some iPhone programming, and thus, I am working in XCode.  Wow, this thing brings me back to when
 I was working at [Triumf](http://www.triumf.ca/) in the mid 90's and working in

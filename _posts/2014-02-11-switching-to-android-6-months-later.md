@@ -5,7 +5,7 @@ description: "I switched to Android from IOS in September, Here are my thoughts"
 category: Android
 tags: [Mobile, Android, IOS]
 ---
-{% include JB/setup %}
+
 I bought a Nexus 4 at the end of August when they dropped to $199.  My iPhone 4 was barely holding on and I had grown
 frustrated with Apple's walled garden for the past few years.  A month later even though I quite liked the Nexus 4
 I upgraded to the Nexus 5, here are my thoughts on that switch:
@@ -86,6 +86,6 @@ as the value for money there is spectacular.
 To make it simple for you I have created a simple flow chart on how to buy a phone (oh and if you switch as well, read [Eric Schmidt's
 Google+ post on how to switch from IOS to Android](https://plus.google.com/+EricSchmidt/posts/JcfVoJhW2Kw)
 
-<img src="/img/what_phone_to_buy.png">
+<img src="/img/android_switch/what_phone_to_buy.png">
 
 

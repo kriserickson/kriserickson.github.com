@@ -5,7 +5,7 @@ description: ""
 category: Blog
 tags: [github,blogging]
 ---
-{% include JB/setup %}
+
 
 I've moved my blog from [Tumblr](http://tumblr.com/) to [Github](http:kriserickson.github.io).  Why?
 A bunch of reasons:
