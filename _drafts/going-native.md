@@ -12,14 +12,31 @@ I tried doing some work with [Android Studio](https://developer.android.com/tool
 
 So I did my usual thing, and tried porting my [Recipe Folder](https://recipe-folder.com) to an Android app and wow was I impressed.  I actually managed to get 90% of the functionality going in about 5 hours, another 5 hours and it was looking much nicer than the Cordova App that is currently in the App Store.  The only real problem was at that point I had 10% left to finish (and as most programmers know the final 10% takes 90% of the time) and also I decided to add a bunch of new features because releasing a second total rewrite (I rewrote from [jQuery-Mobile](http://www.agingcoder.com/programming/2014/04/26/mobile-frameworks-jquery-mobile/index.html) to [Topcoat-Touch](http://topcoat-touch) last year) of the app without adding any features seemed like a bad idea.  So my grand rewrite in Native has been stalled for the past couple of months, as I keep adding new features.
 
-In my switch back to Native Android development, and looking at the space with fresh eyes I have come up with the Good, the Bad, and the Ugly of native Android development.
+In my switch back to Native Android development, and looking at the space with fresh eyes I have come up with the Good, the Bad, and the Ugly of native Android development (in comparison to Mobile Web Dev).
 
 #### The Good ####
 
-* Great templates, wizard, and development environment.   First there is the fact that it is built on Intellij which I am a massive fan of, their refactoring, code completion, code navigation, local history, and a myriad of other features  The continuous code analysis provides amazing feedback (and really helps you learn about a lot of Android best practicies)  The preview engine is not perfect (sometimes the end result looks very different from the preview you are shown), but it is pretty good.
+* Great templates, wizard, and development environment.   First there is the fact that it is built on Intellij which I am a massive fan of, their refactoring, code completion, code navigation, local history, and a myriad of other features  The continuous code analysis provides amazing feedback (and really helps you learn about a lot of Android best practices)  The preview engine is not perfect (sometimes the end result looks very different from the preview you are shown), but it is pretty good.
 * Easy access to all the APIs including the plethora of design driven APIs and animations that have come with [Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 * Native look and feel, no matter how hard people try to get a truly Native look for material design in Android, it always fails a little short.  The best hi-brid apps eschew this, and use their own design aesthetic, but it is nice and comforting when running a nicely designed Android app that is using material design.
 * Libraries, libraries, libraries.  Since it is such a huge ecosystem, there is a library for pretty much everything you want to do, and for these most part those libraries are of higher quality than a lot of the Cordova plugins (that is not to Dr disparage the Cordova plugins, but due to the raid changing of the underlying base library, the fact that each plugin author(s) had to maintain at least 2 but up to 6 implementations, and the difficulty of writing testing, means that Cordova plugins -- even the sanctioned plugins from Apache -- are frequently buggy to some extent.
-* you have much more control for things like performance, garbage collection, 
+* You have much more control of things like performance, garbage collection, and animations so that if you really need to improve the performance of some aspect of your app, you can.  While sometimes there are things you can do in the browser to improve performance, you are frequently limited to the nature of the browser and have to just settle on removing animations or features to make it perform better.
+* Better support for crash reporting, analytics, testing harneses
+* Better testing
+* Design library
+* Stability
 
+#### The Bad ####
+
+* The previews
+* Version hell
+* Wiring events to views.
+* Gradle
+
+#### The Ugly ####
+
+* Support Library
+* Fragments
+* Java
+* Global state and Android dying
 
