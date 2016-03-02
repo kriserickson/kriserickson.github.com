@@ -17,6 +17,9 @@ In my switch back to Native Android development, and looking at the space with f
 #### The Good ####
 
 * Great templates, wizard, and development environment.   First there is the fact that it is built on Intellij which I am a massive fan of, their refactoring, code completion, code navigation, local history, and a myriad of other features  The continuous code analysis provides amazing feedback (and really helps you learn about a lot of Android best practicies)  The preview engine is not perfect (sometimes the end result looks very different from the preview you are shown), but it is pretty good.
-*
+* Easy access to all the APIs including the plethora of design driven APIs and animations that have come with [Material Design](https://www.google.com/design/spec/material-design/introduction.html).
+* Native look and feel, no matter how hard people try to get a truly Native look for material design in Android, it always fails a little short.  The best hi-brid apps eschew this, and use their own design aesthetic, but it is nice and comforting when running a nicely designed Android app that is using material design.
+* Libraries, libraries, libraries.  Since it is such a huge ecosystem, there is a library for pretty much everything you want to do, and for these most part those libraries are of higher quality than a lot of the Cordova plugins (that is not to Dr disparage the Cordova plugins, but due to the raid changing of the underlying base library, the fact that each plugin author(s) had to maintain at least 2 but up to 6 implementations, and the difficulty of writing testing, means that Cordova plugins -- even the sanctioned plugins from Apache -- are frequently buggy to some extent.
+* you have much more control for things like performance, garbage collection, 
 
 
