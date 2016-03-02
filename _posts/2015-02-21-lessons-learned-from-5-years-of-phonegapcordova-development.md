@@ -81,7 +81,7 @@ claim to support it currently experimentally but I have yet to have that work in
   but be aware that debugging will be much slower than running Weinre locally. 
   
 7. **Avoid loading the Platform project in an IDE**:  Unfortunately, I break this rule all the time and because of that I need to strictly follow
-the [next suggestion}(#blowAway).  IDE Project files (whether it be Eclipse, Intellij IDEA or Android Studio, and xCode) are very complicated beasts
+the [next suggestion](#blowAway).  IDE Project files (whether it be Eclipse, Intellij IDEA or Android Studio, and xCode) are very complicated beasts
 and brittle to external editing, and if you change things in the IDE there is a good chance that the Cordova command line will not be
 able to prepare, upgrade, or build any more.  Or that when do a command from the Cordova command line the project will not build
 properly and you will get some cryptic error that you will spend 2 hours Googling to figure out what actually happened and how to fix it (if you even can).  
