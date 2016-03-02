@@ -471,6 +471,9 @@ nav.pagination .older-posts .fa {
         text-align: left;
         float: left;
     }
+    .notepad-site-footer .copyright section {
+        margin-bottom: 5px;
+    }
     .notepad-site-footer .social-icons {
         text-align: right;
         float: right;
