@@ -285,6 +285,10 @@ body,
     .post-template .notepad-post-content > div:not(.notepad-post-title) p:first-child {
         font-size: 1.625rem;
     }
+    .post-template .notepad-post-content > div:not(.notepad-post-title) ol li p:first-child {
+        font-size: 1.125rem;
+        font-weight: normal;
+    }
 }
 .post-template .notepad-post-content > div:not(.notepad-post-title) p.with-image {
     text-align: center;
