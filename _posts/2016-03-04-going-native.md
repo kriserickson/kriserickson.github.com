@@ -3,7 +3,7 @@ layout: post
 title: "Going Native"
 description: ""
 category: Android
-tags: [Programming, Android, Mobile]
+tags: [Programming, Android, Mobile, PhoneGap, Cordova]
 imagefeature: blog/goingnative.jpg
 ---
 Regular readers of this blog, or a casual reader who has looked at [my posts](http://www.agingcoder.com/categories/) will quickly realize that I am a big fan of [hybrid apps](https://en.wikipedia.org/wiki/HTML5_in_mobile_devices#Hybrid_Mobile_Apps).  I have written extensively on the [various frameworks](http://www.agingcoder.com/programming/2014/04/22/the-state-of-html-mobile-frameworks-in-2014/index.html), [Phonegap and Cordova](http://www.agingcoder.com/programming/2015/02/21/lessons-learned-from-5-years-of-phonegapcordova-development/index.html) and even on the rise of [Mobile Native JavaScript](http://www.agingcoder.com/programming/2015/10/15/second-thoughts-on-nativescript-react-native-and-mobilenativejavascript-in-general/index.html) apps (shockingly MNJS never took off as an acronym).  I found a new love for Javascript 5 years ago or so (after a decade of hating it), and the thought of writing a complete App in Java or Objective C filled me with dread.  My earlier experiences with both Android and iOS had been worlds of pain, mostly because, in my option,  [Eclipse](https://eclipse.org/) and [XCode](https://developer.apple.com/xcode/) are hostile programming environments.  Most of my Android work over the past couple of years has been maintenance of old projects, always in [Intellij](https://www.jetbrains.com/idea/) and when I have to do plugin work for Cordova for iOS I always try to do it in [AppCode](https://www.jetbrains.com/objc/).
