@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/kristianerickson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://agingcoder.com
+  * I am kristianerickson (https://keybase.io/kristianerickson) on keybase.
+  * I have a public key with fingerprint 66AA A3A6 A629 983B 2CB1  1BE0 28B6 0F30 7155 BAFE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01014696ffdd73556e2d2e098757cd5855700f84f5a890bd5dc4ac5d44bd2ff8ce680a",
+            "fingerprint": "66aaa3a6a629983b2cb11be028b60f307155bafe",
+            "host": "keybase.io",
+            "key_id": "28b60f307155bafe",
+            "kid": "01014696ffdd73556e2d2e098757cd5855700f84f5a890bd5dc4ac5d44bd2ff8ce680a",
+            "uid": "e3ed2d1e2c62091370007de9fe308119",
+            "username": "kristianerickson"
+        },
+        "service": {
+            "hostname": "agingcoder.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458064665,
+    "expire_in": 157680000,
+    "prev": "57589bf312ee039749d6d86a1c7bbc809404fdb841d320f8b2617233ee564900",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMIsAnicrVJZaNRAGN7deq4tVRAPKB5B8aCWySQzSdYDfFFR++CBNy4zmck21iZr
+Nq09qFJhQVFUsFUQiie0gvXsg4grKoIXUqGL0NZWqqJW8QJvlDop9c1H52WY+b/r
+//lv5+WEouGCT+f6NszpuxZ+cPN4eWjN6+KJNRJ1WZUUq5FK+cDFtzKe8uOlNpNi
+EpCBrGIDWxZjmoIQ5pBBDgxdQ5rJkI6QBoClqxYiugEoQ8xUiYmYqlIGLUs3OdYB
+kQoly3YS3Et6tuMLWYwJIQrBBEPD0BUKTSrLlAOoUwwsBWgyQpRYXBBL3FTAEOEo
+SfEi2xV/4hEfiPcP/H/OXT4gxxXOIJM5NDEEhqwIMtAYNyyuAF2WjQCY4p5DyniQ
+1bNTvk0c7tlmacp1pNpCSVQrbJMHAw46GkSShBiL6TLuFZlumVBJeq7vmu5WUSvx
+/WQsoPpVyQC7ndP4oEqc2g4TTEGo4F7KFhYxWSBN3w5kZRXpAKsYo0KJVyZtj8ft
+AIE00ZQ4gQ2vEJJIQ7pBLUWGnAPF0FSDYaZjIpsapaYODBWoFqO6KjMFinFRiGUN
+KgrnCKsGAFLQ1zbHlWLCyScJIZmyEw7xyz0u1d66sWlIKBwNDRsaCRYtFB05+u/6
+lfUM76884nd+H3Wl8VvvzGs/pnelC+6dyIfLp/w8cydvXI+at3NM487iTa+u1r14
+Wf2mZG6Pt6Kl+On65mmrMp80hVxIR9MN/Ynad5mV3Sf2t+zvGNG+r85s6zp66aO2
+seHJl+qc8fWnI/OzTfdz904A3Rf3pSHObb6wNp4Bz8zs9rfvJ/1qbBvVNxs+uFN5
+vqtT6l5yd6n8PN0ya0vk1OzsioOhyj0HC2bxDP2w8bK2a9mMh22tY+yp8zsf/Z5+
+6EVoR/28CcvKjXDbkujZsZn+gtYWZ9Ex/rg9//Poyfeu525e3RS+WXR4d8fkROPt
+r2H/cOvi5yd74YJI3aVsdt2OhZEDi4/m+n8AQF5H8w==
+=/Lxc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kristianerickson
+
+==================================================================
+
