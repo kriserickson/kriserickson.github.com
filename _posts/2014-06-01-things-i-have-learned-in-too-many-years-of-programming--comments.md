@@ -34,13 +34,14 @@ something like this:
 ```// creates new date
 var firstUpdated = new Date();
 ```
-
+{:lang="javascript"}
 or
 
 ```if (generateNewDate) {
     lastUpdated = new Date();
 } // end if
 ```
+{:lang="javascript"}
 
 During this period of time I would spend hours expunging useless comments from our company codebase, especially
 the <code class="noblock">// end if</code>, <code class="noblock">// end while</code> variates (this is what indentation is for people!, and
