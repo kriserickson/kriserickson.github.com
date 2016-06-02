@@ -10,7 +10,7 @@ Finally after three and a half years, I'm all in on [TypeScript](https://www.typ
 pushed me over the line was creating a fairly large SPA (single page app) in Angular and TypeScript.  Once you
 got around the tooling (getting a good [gulp](http://gulpjs.com/) script 9 months ago was half the struggle
 but there are excellent samples and even pretty good generators now), and spent the couple of hours it takes
-to get comfortable with typescript and tsd (which is now superceded by [typings](https://github.com/typings/typings))
+to get comfortable with typescript and tsd (which is now superseded by [typings](https://github.com/typings/typings))
 and I was sold.  Of course it makes less sense on a small project with few dependencies and just a few odd scripts,
 but for any project of any size that I was to greenfield I would definitely start with TypeScript.  And then,
 after yet another bug at work where two parameters where flipped in a call, and another where two object
@@ -121,7 +121,7 @@ There are very useful options available to you in the tsconfig.json file:
 
 A full list of compiler options can be found [here](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
 
-#### Tip 3 - Use Typings (definately typed)
+#### Tip 3 - Use Typings (definitely typed)
 
 To get proper IntelliSense or any kind of code completion and static type checking in your editor (whether it is WebStorm,
 [Visual Studio Code](https://code.visualstudio.com/), or  [Vim with TypeScript support](https://github.com/leafgarland/typescript-vim))
@@ -143,7 +143,7 @@ $('#okButton').block({toolTip: 'Please agree to terms and conditions'}});
 $.unblock('#okButton');
 ``````
 
-The following should be pretty self-explanatory and this isn't an article on writing definitely typed sytax but quickly
+The following should be pretty self-explanatory and this isn't an article on writing definitely typed syntax but quickly
 going over it, the DefaultStatic allows selection through a selector string and takes an optional object for the options.
 The DefaultJquery requires calling from a JQuery object and also takes an optional Object.  Of course you can make these
 much more detailed (you can specify the potential options, you could make the DefaultStatic take an element or a
@@ -184,12 +184,199 @@ encounter if you are going to convert all of your old Javascript to Classes and 
 and the example [tslint.json](https://github.com/palantir/tslint/blob/master/docs/sample.tslint.json) file,
 but I would recommend heavily altering the sample tslint.json file (it is **very** strict and has some
 weird checks for things I think TypeScript removes the need for (trailing-comma, use-strict, etc)).  While you
-may want to get everyting working first, and then run tslint, be aware that it is going to hurt your feelings about
-your code if you aren't ready for it, especially if you use said sample config file.
+may want to get everything working first, and then run tslint, be aware that it is going to hurt your feelings about
+your code if you aren't ready for it, especially if you use said sample config file.  Also you should note that if
+you do use tslint, and you are obsessive about getting rid of all of the errors like me, converting to typescript
+will take a **lot** longer.  Giving types to every variable, even if typescript can infer it's type (an option I turned
+off, but unfortunately there is no option for giving types to variables that are not initialized upon declaration).
 
-#### Tip 5 - You don't have to turn everything into classes
+#### Tip 5 - Namespaces remove the need for iife's
 
+The first thing I do when I convert a js file is turn the iife (immediately invoked function expression, or a [Resig](https://twitter.com/jeresig)
+as I believe [Scott Hanselman](https://twitter.com/shanselman) used to call them) that surrounds all the code in the file
+into a namespace.  So
 
+```````
+(function() {
 
+    // Code here
 
+})();
+```````
 
+becomes
+
+````````
+namespace testproject {
+   // Code here
+}
+````````
+
+Note: If you look at the output in JS you will note that every dot becomes a new iife with variables attached so don't use
+Java style namespaces.  For example:
+
+````````
+namespace com.ericksoft.recipefolder {
+	console.log('Hello Nurse!');
+}
+````````
+
+becomes:
+
+````````
+var com;
+(function (com) {
+    var ericksoft;
+    (function (ericksoft) {
+        var recipefolder;
+        (function (recipefolder) {
+            console.log('Hello Nurse!');
+        })(recipefolder = ericksoft.recipefolder || (ericksoft.recipefolder = {}));
+    })(ericksoft = com.ericksoft || (com.ericksoft = {}));
+})(com || (com = {}));
+````````
+
+#### Tip 6 - You don't have to turn everything into classes
+
+The first couple of files I converted I decided that I would convert from our old style classes (we for the most part have
+our classes built upon functions and have eschewed the speed of prototypical functions for the advantages of private
+functions and variables -- I don't say that this is the best way to do classes (and it is not the way that TypeScript
+impliments them under the hood), but it has worked for us in the past.  So we had a class like this:
+
+`````````
+(function() {
+    function Employee(initialName, id) {
+        var name;
+        var greetCount = 0;
+
+        setName(initialName);
+
+        function setName(val) {
+            // Name validation goes here
+            name = val;
+        }
+
+        this.greet = function() {
+            return 'Hello ' + this.name + ', your employee id is ' + id;
+        }
+    }
+})();
+`````````
+
+and after renaming it, adding the namespace and bunch of flipping it became this:
+
+`````````
+namespace test {
+    class Employee {
+        private id:string;
+        private greetCount:number = 0;
+        public name:string;
+
+        constructor(name:string, id:string) {
+            this.id = id;
+            this.setName(name);
+        }
+
+        public greet():void {
+            this.greetCount++;
+            return 'Hello ' + this.name + ', your employee id is ' + this.id;
+        }
+
+        private setName(val:string):void {
+            // Name validation goes here
+            this.name = val;
+        }
+
+    }
+}
+`````````
+
+Which isn't a lot of work for small files, but it is a lot of Regex Replace /this\.(\w+) = function/public $1/ and
+Regex Replace /function (\w+)\(/private $1(/ and Regex Replace /var (\w+);/private $1;/ and then manaully adding a lot
+of this references.  And then I started running into problems, because there are a lot of anonymous functions in our
+code, and if something calls that anonymous function without correctly setting the scope of this then you are headed
+into a heap of trouble.  For example, suppose we have some Controller that is using jQuery:
+
+`````````
+(function() {
+    function EmployeeController(name) {
+        $('#nameField').val(name).on('blur', nameFieldChanged);
+
+        function nameFieldChanged(e:JQueryInputEventObject):void {
+            name = $(this).val();
+            outputName();
+        }
+
+        function outputName() {
+            console.log(name);
+        }
+    }
+
+    var tmp = new EmployeeController('John Doe');
+})();
+`````````
+
+We naively convert it to TypeScript
+
+`````````
+namespace test {
+    class EmployeeController {
+
+        constructor(private name:string) {
+            $('#nameField').val(name).on('blur', this.nameFieldChanged);
+        }
+
+        private nameFieldChanged(e:JQueryInputEventObject):void {
+            this.name = $(this).val();
+            this.outputName();
+        }
+
+        private outputName() {
+            console.log(this.name);
+        }
+    }
+
+    var tmp = new EmployeeController('John Doe');
+}
+`````````
+
+But if we look in the console, we see that we get an error (you can see the converted Javascript and what happens at
+this [fiddle](https://jsfiddle.net/ksoncan34/nbwn4Lka/)).
+
+<code style="color:red">Uncaught TypeError: this.outputName is not a function</code>
+
+So what is going on?  Those who look for a minute will quickly realize (and I added a hint, using the jQuery shorthand $(this).val())
+that the scope of this is scoped to the jQuery element that was blurred, and not scoped to our EmployeeController class at all.
+So not only can we not call the prive outputName function, but we are actually setting name on the nameField input element
+and not changing the name of our user at all.  How to fix this?   Well, for one, **never** bind jQuery callbacks to private or
+public class members (quick note, there is really no difference in typescript between private and public class members and
+the only thing stopping you from calling private members of TypeScript classes is the compiler will complain).  Also, you
+are going to ween yourself off of the this scope in jQuery -- it's confusing and leads to more unintentional bugs than you
+probably realize.   And you are going to have to use an arrow function.  Let's look at our fixed class:
+
+`````````
+namespace test {
+    class EmployeeController {
+
+        constructor(private name:string) {
+            $('#nameField').val(name).on('blur', (e:JQueryInputEventObject):void => {
+                this.nameFieldChanged(e);
+            });
+        }
+
+        private nameFieldChanged(e:JQueryInputEventObject):void {
+            this.name = $(e.currentTarget).val();
+            this.outputName();
+        }
+
+        private outputName() {
+            console.log(this.name);
+        }
+    }
+
+    var tmp = new EmployeeController('John Doe');
+}
+`````````
+
+Now everything works.  See the updated [fiddle](https://jsfiddle.net/ksoncan34/fwexam4h/).  Now you might not think that
+this will be a problem to find, but if you are using a lot of these you will get burned missing a few (at least I did).
