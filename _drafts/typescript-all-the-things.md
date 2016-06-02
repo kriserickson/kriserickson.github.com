@@ -190,7 +190,9 @@ you do use tslint, and you are obsessive about getting rid of all of the errors 
 will take a **lot** longer.  Giving types to every variable, even if typescript can infer it's type (an option I turned
 off, but unfortunately there is no option for giving types to variables that are not initialized upon declaration).
 
-#### Tip 5 - Namespaces remove the need for iife's
+#### Tip 5 - Use an Editor with support for TypeScript
+
+#### Tip 6 - Namespaces remove the need for iife's
 
 The first thing I do when I convert a js file is turn the iife (immediately invoked function expression, or a [Resig](https://twitter.com/jeresig)
 as I believe [Scott Hanselman](https://twitter.com/shanselman) used to call them) that surrounds all the code in the file
@@ -236,7 +238,7 @@ var com;
 })(com || (com = {}));
 ````````
 
-#### Tip 6 - You don't have to turn everything into classes
+#### Tip 7 - You don't have to turn everything into classes
 
 The first couple of files I converted I decided that I would convert from our old style classes (we for the most part have
 our classes built upon functions and have eschewed the speed of prototypical functions for the advantages of private
@@ -293,7 +295,11 @@ namespace test {
 
 Which isn't a lot of work for small files, but it is a lot of Regex Replace /this\.(\w+) = function/public $1/ and
 Regex Replace /function (\w+)\(/private $1(/ and Regex Replace /var (\w+);/private $1;/ and then manaully adding a lot
-of this references.  And then I started running into problems, because there are a lot of anonymous functions in our
+of this references.
+
+#### Tip 8 - JQuery can be a nemesis
+
+Then I started running into problems, because there are a lot of JQuery calls in our
 code, and if something calls that anonymous function without correctly setting the scope of this then you are headed
 into a heap of trouble.  For example, suppose we have some Controller that is using jQuery:
 
@@ -380,3 +386,5 @@ namespace test {
 
 Now everything works.  See the updated [fiddle](https://jsfiddle.net/ksoncan34/fwexam4h/).  Now you might not think that
 this will be a problem to find, but if you are using a lot of these you will get burned missing a few (at least I did).
+
+#### Tip 9 - Callbacks are also problematic, use Promises instead
