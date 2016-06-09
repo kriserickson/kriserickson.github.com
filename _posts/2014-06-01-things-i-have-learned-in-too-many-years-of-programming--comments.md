@@ -31,17 +31,18 @@ gets updated but comments don't.   Comments are often poorly written and confuse
 People often add comments to add comments and they serve no purpose (everyone who programs for a while has seen
 something like this:
 
-```// creates new date
+{% highlight javascript %}
+// creates new date
 var firstUpdated = new Date();
-```
-{:lang="javascript"}
+{% endhighlight %}
+
 or
 
-```if (generateNewDate) {
+{% highlight javascript %}
+if (generateNewDate) {
     lastUpdated = new Date();
 } // end if
-```
-{:lang="javascript"}
+{% endhighlight %}
 
 During this period of time I would spend hours expunging useless comments from our company codebase, especially
 the <code class="noblock">// end if</code>, <code class="noblock">// end while</code> variates (this is what indentation is for people!, and

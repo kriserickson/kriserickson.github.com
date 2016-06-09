@@ -48,21 +48,21 @@ made the plugin useless for the purpose of the Beditations app.  So my 5 hour jo
 through the source of the WakeupTimer plugin and figure out a way to get it to work when the Screen locked, which
 I after debugging some other issues with plugin I fixed by setting some flags for the cordova window,
 
-``` java
+{% highlight java %}
     Window cordovaWindow = cordova.getActivity().getWindow();
     cordovaWindow.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
     cordovaWindow.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
     cordovaWindow.addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-```
+{% endhighlight %}
 
 and then clearing them after the Alarm is done, or when you cancel the alarm:
 
-``` java
+{% highlight java %}
     Window cordovaWindow = cordova.getActivity().getWindow();
     cordovaWindow.clearFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
     cordovaWindow.clearFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
     cordovaWindow.clearFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-```
+{% endhighlight %}
 
 The next problem with the alarm is that if due to memory pressure the Cordova App Android decides to kill the app,
 when the alarm is fired the app knows nothing about the alarm to play.  So I had to create a way to save state in

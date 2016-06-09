@@ -20,6 +20,9 @@ I had just recently heard a great [interview](https://devchat.tv/js-jabber/209-j
 with [Anders](https://twitter.com/ahejlsberg) about how you can literally just take all your .js files and rename them
 .ts and get some of the advantages of TypeScript, so I set off to do so.
 
+**Warning!  This article is a bit of a deep dive, with lots of source code.  Please let me know in the comments
+  if this is useful or whether it is best to talk in generalities without getting into the weeds.**
+
 #### Tip 1 -- Chrome Dev Tools and Source Maps
 
 First, part of the reason I have become so attached to TypeScript is that since late 2014 (Chrome 39) [SourceMaps have been
@@ -174,7 +177,7 @@ interface JQuery {
 }
 {% endhighlight %}
 
-#### Tip 4 - Use tslint (optional)
+#### Tip 4 - Use tslint
 
 To get even further benefits from TypeScript (and some help that might track down some of the errors you might
 encounter if you are going to convert all of your old Javascript to Classes and the like) you may want to use
@@ -193,9 +196,15 @@ but it will give a lot more information to the static analysis engine in typescr
 I love [WebStorm](https://www.jetbrains.com/webstorm/) and all the JetBrains IDE variants, and I would highly recommend
 it for developing in TypeScript (you won't even need to write a Gulp/Grunt script it will do almost all of that work for
 you out of the box) but there are a lot of editors (see Tip 3) that have plugins that work with the TypeScript compiler
-to make you more productive, and help you automatically detect errors.  TypeScript was specifically written to enable
-tooling improvements and you should take advantage of that, computers are very good at [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)
-if they have a language that is "strict" enough to support it, and TypeScript gives JavaScript the information that
+to make you more productive, and help you automatically detect errors.  The built in [support for TypeScript](https://www.jetbrains.com/help/webstorm/2016.1/typescript-support.html)
+and tslint makes me think that it is a no brainer, but if you prefer VS Code (where it works out of the box), or
+Sublime [the plugin is here](https://github.com/Microsoft/TypeScript-Sublime-Plugin), Vim [plugin](https://github.com/Quramy/tsuquyomi),
+or even ughh, Eclipse [plugin](https://github.com/angelozerr/typescript.java) make sure that you are getting all the help that the
+[TypeScript Language Server](https://github.com/Microsoft/TypeScript/blob/master/bin/tsserver) can give you.
+
+TypeScript was specifically written to enable  tooling improvements and you should take advantage of the fact that
+computers are very good at [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)
+if they have a language that is "strict" enough to support it.  TypeScript gives JavaScript the information that
 static analysis requires to do its job (of course if you don't supply types or make every type 'any' then there is
 less static analysis that can be done by the compiler and the utility of converting to TypeScript is greatly reduced.)
 
@@ -353,7 +362,7 @@ namespace test {
 But if we look in the console, we see that we get an error (you can see the converted Javascript and what happens at
 this [fiddle](https://jsfiddle.net/ksoncan34/nbwn4Lka/)).
 
-<code style="color:red">Uncaught TypeError: this.outputName is not a function</code>
+<code style="color:red; background: #e5e5e5; border: 1px solid #999; padding: 5px; width: 100%; display: inline-block">Uncaught TypeError: this.outputName is not a function</code>
 
 So what is going on?  Those who look for a minute will quickly realize (and I added a hint, using the jQuery shorthand $(this).val())
 that the scope of this is scoped to the jQuery element that was blurred, and not scoped to our EmployeeController class at all.
@@ -396,41 +405,41 @@ this will be a problem to find, but if you are using a lot of these you will get
 Similar to the jQuery issues, is the issue of callbacks.  If you are used to passing in callbacks to a function to handle
 asynchronous functions you might also have issues with TypeScript classes.  For example:
 
-`````````
+{% highlight csharp %}
 namespace test {
     class UserController {
 
         public constructor(private toastService:ToastService, private jsonService:JsonService) {}
 
         public changeName(name:string):void {
-            this.updateNameAsync(name, (success) => {
+            this.updateNameAsync(name, function (success) {
                 this.toastService('Name updated');
             });
         }
 
         private updateNameAsync(name:string, callback:(success:boolean) => void):void {
             // Name validation amd other stuff happens here...
-            this.jsonService.updateName(name, (success:boolean):void => {
+            this.jsonService.updateName(name, function (success:boolean):void {
                 callback(success);
             });
         }
     }
 }
-`````````
+{% endhighlight %}
 
 would throw an error when the service was updated, since toastService doesn't exist in the global scope.  You have to
 remember to perform all your class callbacks with [.call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 or [.apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).  So to properly
 use a callback in a TypeScript class you must use arrow functions and either call or apply:
 
-`````````
+{% highlight csharp %}
 namespace test {
     class UserController {
 
         public constructor(private toastService:ToastService, private jsonService:JsonService) {}
 
         public changeName(name:string):void {
-            this.updateNameAsync(name, function(success) { // Note the fat-arrow
+            this.updateNameAsync(name, (success) => { // Note the fat-arrow
                 this.toastService('Name updated');
             });
         }
@@ -444,7 +453,43 @@ namespace test {
         }
     }
 }
-`````````
+{% endhighlight %}
+
+However, a much better way to go is to use promises rather than callbacks, preferably the [Q](http://documentup.com/kriskowal/q/) library or
+the $q service in Angular, or if [worse comes to worse](http://stackoverflow.com/questions/23744612/problems-inherent-to-jquery-deferred-jquery-1-x-2-x)
+using [jQuery.Deferred](https://api.jquery.com/jquery.deferred/) (though if you are using [jQuery 3](http://blog.jquery.com/2016/06/09/jquery-3-0-final-released/),
+its Deferred is [Promises/A+ compliant](https://github.com/promises-aplus/promises-tests)).
+
+The above code becomes much nicer (especially with [Generics in TypeScript](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Generics.md))
+using promises:
+
+{% highlight csharp %}
+namespace test {
+    class UserController {
+
+        public constructor(private toastService:ToastService, private jsonService:JsonService) {}
+
+        public changeName(name:string):void {
+            this.updateNameAsync(name).then((success) => {
+                this.toastService('Name updated');
+            });
+        }
+
+        private updateNameAsync(name:string):Q.Promise<boolean> {
+            var defer = Q.defer<boolean>();
+
+            // Name validation amd other stuff happens here...
+            this.jsonService.updateName(name, (success:boolean):void => {   // Note the fat-arrow
+                defer.resolve(success);
+            });
+
+            return defer.promise;
+        }
+
+    }
+}
+{% endhighlight %}
+
 
 #### Tip 10 - Go with the spirit of TypeScript instead of trying to trick it
 
@@ -472,19 +517,19 @@ function drawSquare(url, x, y, size, options) {
         size = -1;
         options = size || {};
     }
-    \\ ... Draw the square
+    // ... Draw the square
 }
 {% endhighlight %}
 
 and we converted it TypeScript
 
 {% highlight csharp %}
-function drawSquare(url:string, x:number, y:number, size:number, options:Object) {
+function drawSquare(url:string, x:number, y:number, size?:number, options?:Object) {
     if (typeof size === 'object' || !size) {
         size = -1;
         options = size || {};
     }
-    \\ ... Draw the square
+    // ... Draw the square
 }
 {% endhighlight %}
 
@@ -495,9 +540,70 @@ you are going to get a warning that a number can't be converted to an object.  S
 
 {% endhighlight %}
 
-Notice; use [as any rather than (<any>size) to allow for future use of JSX](https://github.com/Microsoft/TypeScript/issues/296)
+**Note: use [as any rather than (<any>size) to allow for future use of JSX](https://github.com/Microsoft/TypeScript/issues/296).**
+
+But a better way is to go with the spirit of TypeScript and not mutate types, so instead of changing the type of arguments,
+create variables in the function and assign them the proper value.
+
+{% highlight csharp %}
+function drawSquare(url:string, x:number, y:number, inSize?:number, inOptions?:Object) {
+    var size:number;
+    var options:Object;
+
+    if (typeof inSize === 'object' || !inSize) {
+        size = -1;
+        options = size || {};
+    } else {
+        size = inSize;
+        options = inOptions || {};
+    }
+    // ... Draw the square
+}
+{% endhighlight %}
+
+Obviously this is a simplistic example, but I think it helps to realize that in Javascript we are no longer trying to
+compress as much code into as few lines as possible, and the addition of a couple lines (and a couple variables) will
+provide more readable code that doesn't force the mutation of objects.  In our code we had some pretty crazy functions
+that had a large number of optional variables and huge blocks of code that checked what parameters were passed in and
+which optional parameters were omitted.  We made the decision to make none of the arguments optional, and found that there
+were several places where the function was being called were the handling that adjusted parameters was only working
+by fluke (the values of the parameters were actually invalid but the invalid value triggered a default behavior that was
+the desired value).  Another way to go (rather than optional parameters) is to use a parameters object that is strongly typed.
+For the above example:
+
+{% highlight csharp %}
+interface IDrawSquareParameters {
+    url:string;
+    x:number;
+    y:number;
+    size?:number;
+    options?: {
+        border?: boolean;
+        borderColor?: string;
+        borderWidth?:number;
+    }
+}
+
+
+function drawSquare(parameters:IDrawSquareParameters) {
+    parameters.size = parameters.size || -1;
+    parameters.options = parameters.options || {};
+}
+{% endhighlight %}
+
+The nice thing about using a parameters interface, is that the values are checked by the compiler, but the defination of
+the interface takes no space in the compiled code.
 
 #### Tip 11 - Enjoy
 
-I know reading over this document switching from JavaScript to TypeScript seems like a lot of work, and to get all the
-benefits from TypeScript it is
+I know reading over this document it appears that switching from JavaScript to TypeScript seems like a lot of work,
+and to be fair to get all the benefits from TypeScript it is a fair bit of work, but you don't have to do all the work
+at once and once you have TypeScript up and running you will be living and working in a better world.  You can confidently
+refactor and find code usages that were more string matching in the old JavaScript world.  You know what methods are available
+ for every class (and you have proper JavaScript classes before ES6 arrives in all browsers).  You know exactly what arguments
+are required for each function and what is returned just through intellisense rather than having to the code for the
+function you are calling.  You can use namespaces, classes, inheritance, decorators, rocket functions, and a lot of the great features of ES6/7 without
+waiting for browsers to support all these features.  You also get the advantages of [DefinatelyTyped](http://definitelytyped.org/)
+for older libraries.  And since TypeScript is rapidly evolving you will see future Javascript features like async/await, JSX, generators,
+mixins, non-nullable types, variadic types, and tons of other [features](https://github.com/Microsoft/TypeScript/wiki/Roadmap) coming
+in the near future.  I highly recommend switching to TypeScript, you will be glad you did!

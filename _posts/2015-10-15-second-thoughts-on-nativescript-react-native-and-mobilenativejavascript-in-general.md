@@ -55,16 +55,18 @@ was that you could call any native API that you wanted in Javascript.   Unfortun
 with Android and iOS APIs and be comfortable enough with NativeScript to be able to convert it to Javascript.  So when you wanted
 to be able to, say, get the version of the App, you would have to know that the code to get it in Android is:
 
-<code>PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+{% highlight java %}
+PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 String version = pInfo.versionName;
-</code>
+{% endhighlight %}
 
 And know that you would have to convert it to the following Nativescript: 
 
-<code>var packageManger = application.android.context.getPackageManager();
+{% highlight javascript %}
+var packageManger = application.android.context.getPackageManager();
 var pInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
-String version = pInfo.versionName;
-</code>
+var version = pInfo.versionName;
+{% endhighlight %}
 
 Now you just need to include the [nativescript-appversion](https://www.npmjs.com/package/nativescript-appversion), and
 you by installing the plugin you get the iOS version as well.  There are 30 odd plugins listed (25 cross platform) on the 
@@ -87,12 +89,14 @@ which has to be class specific to the OS (either [TimeInterpolator](http://devel
 for Android or [UIAnimationCurve](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIView_Class/#//apple_ref/c/tdef/UIViewAnimationCurve)
 for iOS).  Which means that if you wish to support both devices you have add code like this:
 
-<code>view.animate({
+{% highlight javascript %}
+view.animate({
       opacity: 0,
       duration: 3000
       curve: view.ios ? UIViewAnimationCurve.UIViewAnimationCurveLinear : 
             new android.view.animation.LinearInterpolator
-    });</code>
+    });
+{% endhighlight %}    
 
 and try to find roughly equivalent classes to do your easing.  Why they couldn't have abstracted easing is a bit
 of a mystery, maybe it is a feature coming in the future.  
