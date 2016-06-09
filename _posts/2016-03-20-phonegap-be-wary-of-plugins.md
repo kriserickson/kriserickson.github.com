@@ -5,6 +5,7 @@ description: ""
 category: PhoneGap
 imagefeature: blog/dragons.jpg
 tags: [Programming, Android, Mobile, PhoneGap, Cordova]
+featured: true
 ---
 
 Today, dear reader, I have a cautionary tale to tell.  It is a story of trust, and how that trust can quickly erode

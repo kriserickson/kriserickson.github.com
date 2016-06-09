@@ -5,6 +5,7 @@ description: "Lessons learned moving a large codebase to typescript"
 category: TypeScript
 imagefeature: blog/typescript.jpg
 tags: [Programming, JavaScript, TypeScript]
+featured: true
 ---
 Finally after three and a half years, I'm all in on [TypeScript](https://www.typescriptlang.org/).  What really
 pushed me over the line was creating a fairly large SPA (single page app) in Angular and TypeScript.  Once you
