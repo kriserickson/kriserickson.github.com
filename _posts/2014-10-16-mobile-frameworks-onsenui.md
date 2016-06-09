@@ -36,21 +36,25 @@ of the main differences between OnSen and Ionic, is that even though Onsen is us
 have to create an Angular App if you don't want to, it is very happy to let you use jQuery or whatever JS framework you want to.  You
 do have to "compile" objects that are custom (onsen) elements.  From their guide:
 
-```ons.bootstrap();
+{% highlight javascript %}
+ons.bootstrap();
 ons.ready(function() {
     // Add another Onsen UI element
     var content = document.getElementById("my-content");
     content.innerHTML="<ons-button>Another Button</ons-button>";
     ons.compile(content);
-});```
+});
+{% endhighlight %}
      
 or with jQuery
      
-```ons.bootstrap();
+{% highlight javascript %}
+ons.bootstrap();
 ons.ready(function() {
     // Add another Onsen UI element
     ons.compile($("#my-content").html("<ons-button>Another Button</ons-button>"));    
-});```     
+});
+{% endhighlight %}
 
 Although that might be annoying, it is nice that if you weren't comfortable with Angular you could actually use Onsen pretty
 productively.

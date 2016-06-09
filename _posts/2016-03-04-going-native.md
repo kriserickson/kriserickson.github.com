@@ -31,7 +31,7 @@ In my switch back to Native Android development, and looking at the space with f
 * While the preview in Android Studio is getting pretty good, there are lots of times when things will look fine in the previewer and look completely different when running on a Device or on an emulator (and it may be only one version of Android where it looks different or wrong).  Theming/styling in Android is confusing, challenging and if my experience is typical, quite error prone.  You can have similar issues if you are using the latest CSS in Cordova and you test on a device that using an old version of the Android browser or some such, but generally if you design a site in the Chrome browser you are pretty sure what it will look like when you load it on a device.
 * The way that you wire events to controls seems like something out of 1990's or early 2000's where you have to manually wire up Event Classes for each control that you want to respond to:
 
-``` java
+{% highlight java %}
   Button clickButton = (Button) findViewById(R.id.clickButton);
   clickButton.setOnClickListener( new OnClickListener() {
 
@@ -41,7 +41,8 @@ In my switch back to Native Android development, and looking at the space with f
           toast.show();
       }
   });
-```
+{% endhighlight %}
+
 * If you have a dozen or so controls you want to set actions for you end up writing these onCreate functions with hundreds of lines of boilerplate code that is difficult to navigate around.  Android Studio now auto-collapses a lot of boiler-plate code so it doesn't look quite as bad.  Also you can have the Activity or Fragment class handle all onclick's in one function and use a switch to delegate event handling, or you can use [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) and a library like [Butter Knife](https://github.com/JakeWharton/butterknife) to handle it a much cleaner manner.
 * While it has certainly got better over time, I don't believe that [Gradle](http://gradle.org/) will ever be confused with a speed daemon, I mentioned this above, but it is a pain point and worth mentioning again.  I eagerly await the promise of Hot-Swapping in Android Studio 2.0, but for now, code rebuilding is currently painfully slow.  While Cordova is not much faster if you are actually doing a full compile, there are a lot of [plugins](https://github.com/nparashuram/cordova-plugin-browsersync) and [tooling](http://app.phonegap.com/) that allow you to rapidly develop in PhoneGap.  The magic that is Chrome Dev tools is also a huge plus for Cordova development, but if you are doing Native Android (with any Network Calls) spend the time it takes to get [stetho](http://facebook.github.io/stetho/) working it is well worth the time investment.
 

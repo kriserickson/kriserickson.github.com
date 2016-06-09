@@ -28,21 +28,22 @@ and work really well with TypeScript, there is basically only 1 trick to learn a
 in SourceMaps and that is that sometimes 'this' is '_this'.  Which is to say, if you look at TypeScript output you will
 discover that whenever you use an arrow function, it creates a reference to this in _this.  See the example silly class below:
 
-``````
+{% highlight csharp%}
 class TimedLogger {
-	constructor(private msg:string) {}
+
+    constructor(private msg:string) {}
 
     public output() {
-		setTimeout(() => {
-			console.log(this.msg);
-		})
+        setTimeout(() => {
+            console.log(this.msg);
+        })
     }
 }
-``````
+{% endhighlight %}
 
 and that converts to :
 
-```````
+{% highlight csharp%}
 var TimedLogger = (function () {
     function TimedLogger(msg) {
         this.msg = msg;
@@ -55,22 +56,22 @@ var TimedLogger = (function () {
     };
     return TimedLogger;
 }());
-```````
+{% endhighlight %}
 
 So, when you are debugging in the Chrome Dev tools, and you set a breakpoint in the **output** function it will look like you can
 type:
 
-````````
+{% highlight shell %}
 > this.msg
   undefined
-````````
+{% endhighlight %}
 
 which fails since this is actually bound to the window (global) scope, but if you type
 
-`````````
+{% highlight shell %}
 > _this.msg
   "Hey Ma! It Works!"
-`````````
+{% endhighlight %}
 
 you are all good.  This was learned quickly when we developed the Spa app, but it still trips me up every now
 and then (especially when dealing with the dreaded scoping of this in classes -- more on that later) and it frequently
@@ -84,7 +85,7 @@ over what typescript files get compiled through watchers and the other advantage
 tsconfig.json to be able to set various options of how typescript compiles your files.  While the default way to
 specify all the files you are converting is to create a list of files
 
-`````````
+{% highlight JSON %}
 "files": [
    "core.ts",
     "sys.ts",
@@ -94,18 +95,18 @@ specify all the files you are converting is to create a list of files
     "utilities.ts",
     "binder.ts"
 ]
-`````````
+{% endhighlight %}
 
 this is not good for us lazy programmers with hundreds of files to compile, especially if they are a bunch of old
 javascript files that are being renamed and moved into more appropriate folders as we going through the process of
 turning all our old JavaScript into TypeScript.  The better way is to use filesGlob, a la:
 
-``````````
+{% highlight JSON %}
 "filesGlob": [
     "typings/tsd.d.ts",
     "ts/**/*.ts"
   ]
-``````````
+{% endhighlight %}
 
 however, here is the rub with fileGlob (which is hopefully fixed by the time you read this), it is clearly caching the
 list files because when you add a new file to the ts directory it won't compile it.  My current solution is to change
@@ -136,12 +137,12 @@ convert, and say, any JQuery plugins you might have written.  Included below, to
 for a hypothetical block/unblock jquery extension that allowed you disable access to some UI elements.  It would could be used
 like:
 
-``````
+{% highlight JavaScript %}
 $('#okButton').block({toolTip: 'Please agree to terms and conditions'}});
 
 // Or optionally
 $.unblock('#okButton');
-``````
+{% endhighlight %}
 
 The following should be pretty self-explanatory and this isn't an article on writing definitely typed syntax but quickly
 going over it, the DefaultStatic allows selection through a selector string and takes an optional object for the options.
@@ -150,20 +151,17 @@ much more detailed (you can specify the potential options, you could make the De
 JQuery object, but the intention is pretty clear).  Also, note this does require having already installed the jquery.d.ts
 file through typings.
 
-``````
+{% highlight csharp %}
 namespace MyJquery {
 
     interface DefaultStatic {
         (selector:string, options?:Object):JQuery;
     }
 
-
     interface DefaultJQuery {
         (options?:Object):JQuery;
-    }
-
+    } 
 }
-
 
 interface JQueryStatic {
     block:MyJquery.DefaultStatic;
@@ -174,7 +172,7 @@ interface JQuery {
     block:MyJquery.DefaultJquery;
     unblock:MyJquery.DefaultJquery;
 }
-``````
+{% endhighlight %}
 
 #### Tip 4 - Use tslint (optional)
 
@@ -187,10 +185,19 @@ weird checks for things I think TypeScript removes the need for (trailing-comma,
 may want to get everything working first, and then run tslint, be aware that it is going to hurt your feelings about
 your code if you aren't ready for it, especially if you use said sample config file.  Also you should note that if
 you do use tslint, and you are obsessive about getting rid of all of the errors like me, converting to typescript
-will take a **lot** longer.  Giving types to every variable, even if typescript can infer it's type (an option I turned
-off, but unfortunately there is no option for giving types to variables that are not initialized upon declaration).
+will take a **lot** longer.  Giving types to every variable, even if typescript can infer it's type may be overkill,
+but it will give a lot more information to the static analysis engine in typescript (see Tip 5 below).
 
 #### Tip 5 - Use an Editor with support for TypeScript
+
+I love [WebStorm](https://www.jetbrains.com/webstorm/) and all the JetBrains IDE variants, and I would highly recommend
+it for developing in TypeScript (you won't even need to write a Gulp/Grunt script it will do almost all of that work for
+you out of the box) but there are a lot of editors (see Tip 3) that have plugins that work with the TypeScript compiler
+to make you more productive, and help you automatically detect errors.  TypeScript was specifically written to enable
+tooling improvements and you should take advantage of that, computers are very good at [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis)
+if they have a language that is "strict" enough to support it, and TypeScript gives JavaScript the information that
+static analysis requires to do its job (of course if you don't supply types or make every type 'any' then there is
+less static analysis that can be done by the compiler and the utility of converting to TypeScript is greatly reduced.)
 
 #### Tip 6 - Namespaces remove the need for iife's
 
@@ -198,34 +205,32 @@ The first thing I do when I convert a js file is turn the iife (immediately invo
 as I believe [Scott Hanselman](https://twitter.com/shanselman) used to call them) that surrounds all the code in the file
 into a namespace.  So
 
-```````
-(function() {
-
-    // Code here
-
+{% highlight JavaScript %}
+(function() { 
+    // Code here 
 })();
-```````
+{% endhighlight %}
 
 becomes
 
-````````
+{% highlight csharp %}
 namespace testproject {
    // Code here
 }
-````````
+{% endhighlight %}
 
 Note: If you look at the output in JS you will note that every dot becomes a new iife with variables attached so don't use
 Java style namespaces.  For example:
 
-````````
+{% highlight csharp %}
 namespace com.ericksoft.recipefolder {
-	console.log('Hello Nurse!');
+    console.log('Hello Nurse!');
 }
-````````
+{% endhighlight %}
 
 becomes:
 
-````````
+{% highlight JavaScript %}
 var com;
 (function (com) {
     var ericksoft;
@@ -236,7 +241,7 @@ var com;
         })(recipefolder = ericksoft.recipefolder || (ericksoft.recipefolder = {}));
     })(ericksoft = com.ericksoft || (com.ericksoft = {}));
 })(com || (com = {}));
-````````
+{% endhighlight %}
 
 #### Tip 7 - You don't have to turn everything into classes
 
@@ -245,7 +250,7 @@ our classes built upon functions and have eschewed the speed of prototypical fun
 functions and variables -- I don't say that this is the best way to do classes (and it is not the way that TypeScript
 impliments them under the hood), but it has worked for us in the past.  So we had a class like this:
 
-`````````
+{% highlight JavaScript %}
 (function() {
     function Employee(initialName, id) {
         var name;
@@ -263,11 +268,11 @@ impliments them under the hood), but it has worked for us in the past.  So we ha
         }
     }
 })();
-`````````
+{% endhighlight %}
 
 and after renaming it, adding the namespace and bunch of flipping it became this:
 
-`````````
+{% highlight csharp %}
 namespace test {
     class Employee {
         private id:string;
@@ -287,11 +292,10 @@ namespace test {
         private setName(val:string):void {
             // Name validation goes here
             this.name = val;
-        }
-
+        } 
     }
 }
-`````````
+{% endhighlight %}
 
 Which isn't a lot of work for small files, but it is a lot of Regex Replace /this\.(\w+) = function/public $1/ and
 Regex Replace /function (\w+)\(/private $1(/ and Regex Replace /var (\w+);/private $1;/ and then manaully adding a lot
@@ -303,7 +307,7 @@ Then I started running into problems, because there are a lot of JQuery calls in
 code, and if something calls that anonymous function without correctly setting the scope of this then you are headed
 into a heap of trouble.  For example, suppose we have some Controller that is using jQuery:
 
-`````````
+{% highlight JavaScript %}
 (function() {
     function EmployeeController(name) {
         $('#nameField').val(name).on('blur', nameFieldChanged);
@@ -320,11 +324,11 @@ into a heap of trouble.  For example, suppose we have some Controller that is us
 
     var tmp = new EmployeeController('John Doe');
 })();
-`````````
+{% endhighlight %}
 
 We naively convert it to TypeScript
 
-`````````
+{% highlight csharp %}
 namespace test {
     class EmployeeController {
 
@@ -344,7 +348,7 @@ namespace test {
 
     var tmp = new EmployeeController('John Doe');
 }
-`````````
+{% endhighlight %}
 
 But if we look in the console, we see that we get an error (you can see the converted Javascript and what happens at
 this [fiddle](https://jsfiddle.net/ksoncan34/nbwn4Lka/)).
@@ -360,7 +364,7 @@ the only thing stopping you from calling private members of TypeScript classes i
 are going to ween yourself off of the this scope in jQuery -- it's confusing and leads to more unintentional bugs than you
 probably realize.   And you are going to have to use an arrow function.  Let's look at our fixed class:
 
-`````````
+{% highlight csharp %}
 namespace test {
     class EmployeeController {
 
@@ -382,9 +386,65 @@ namespace test {
 
     var tmp = new EmployeeController('John Doe');
 }
-`````````
+{% endhighlight %}
 
 Now everything works.  See the updated [fiddle](https://jsfiddle.net/ksoncan34/fwexam4h/).  Now you might not think that
 this will be a problem to find, but if you are using a lot of these you will get burned missing a few (at least I did).
 
 #### Tip 9 - Callbacks are also problematic, use Promises instead
+
+#### Tip 10 - Go with the spirit of TypeScript instead of trying to trick it
+
+One of the advantages of JavaScript and other untyped languages is that you can easily mutate variables, a string can
+be come a number, or even an object.  To get this working without the TypeScript compiler yelling at you, you will need
+to make these types any.  Resist that impulse and think about refactoring your code.  While it is not the worst thing
+in the world to have these types (in fact I used to do a lot of tricks to make optional args work this way), it will
+make it much harder for the TypeScript compiler to help you validate your work.  If you work against the spirit of TypeScript
+(which is that all variables should have a type) then you create areas in your code where you cannot rely on the TypeScript
+compiler to check your work.  This is kind of like having large areas of code without UnitTests, it probably works, but you
+are never really sure.
+
+For example, suppose we had the following JavaScript function that took two optional arguments:
+
+{% highlight JavaScript %}
+/**
+* @param url {String}
+* @param x {Number}
+* @param y {Number}
+* @param [size] {Number}
+* @param [options] {Object}
+*/
+function drawSquare(url, x, y, size, options) {
+    if (typeof size === 'object' || !size) {
+        size = -1;
+        options = size || {};
+    }
+    \\ ... Draw the square
+}
+{% endhighlight %}
+
+and we converted it TypeScript
+
+{% highlight csharp %}
+function drawSquare(url:string, x:number, y:number, size:number, options:Object) {
+    if (typeof size === 'object' || !size) {
+        size = -1;
+        options = size || {};
+    }
+    \\ ... Draw the square
+}
+{% endhighlight %}
+
+you are going to get a warning that a number can't be converted to an object.  So either you for the type:
+
+{% highlight csharp%}
+        options = (size as any) || {}; // <!--- 
+
+{% endhighlight %}
+
+Notice; use [as any rather than (<any>size) to allow for future use of JSX](https://github.com/Microsoft/TypeScript/issues/296)
+
+#### Tip 11 - Once your done, you will be much more productive and happier
+
+I know reading over this document switching from JavaScript to TypeScript seems like a lot of work, and to get all the
+benefits from TypeScript it is

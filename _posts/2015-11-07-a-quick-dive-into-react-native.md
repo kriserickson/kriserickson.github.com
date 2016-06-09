@@ -23,7 +23,9 @@ you will see the advantages and disadvantages of React Native.  You create a ske
 two projects for you, an iOS Project and an Android Project.   The iOS project has to be run through xCode, whereas the android project can either
 be run through the command line with
 
-<code>react-native run-android</code>
+{% highlight shell %}
+react-native run-android
+{% endhighlight %}
 
 or you can also run it in Android Studio (I had to do that to figure out what was going on with the Network issue I had, but more about that later).
 Once the app is running on the device you can then start a local webserver which serves the javascript to the app in development.  This allows basically

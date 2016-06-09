@@ -27,10 +27,12 @@ I manage to be productive on Windows 8.1.
    The more complete Registry hack is available [here in a zip file](/img/DisableCharms.zip) or you can enter it manually:
    
    
-   <code>HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell\EdgeUI; 
+````
+    HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell\EdgeUI; 
     ValueName: DisableCharmsHint; ValueType: dword; ValueData: 1
     ValueName: DisableTRcorner; ValueType: dword; ValueData: 1
-    ValueName: DisableTLcorner; ValueType: dword; ValueData: 1</code>
+    ValueName: DisableTLcorner; ValueType: dword; ValueData: 1
+````
    
          
    BTW if you really need to get the charms back after this registry hack, you can still get them back by hitting Windows-Key C,
@@ -58,7 +60,9 @@ I manage to be productive on Windows 8.1.
      right click on the shortcut icon (you will need to find in the Start Menu), and add the following to the Target 
      field under the Shortcut tab: 
    
-   <code>/high-dpi-support=1 /force-device-scale-factor=1</code>
+   ````
+   /high-dpi-support=1 /force-device-scale-factor=1
+   ````
         
         
         

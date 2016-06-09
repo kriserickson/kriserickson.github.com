@@ -31,17 +31,17 @@ the file explorer):
 
 If you don't have access to root, you can get the file through adb:
 
-``` bash
+{% highlight shell %}
 adb -d shell "run-as com.yourpackge.name cat /data/data/com.yourphonegap.name/app_webview/Local Storage/file__0.localstorage > /sdcard/file__0.localstorage"
 adb pull /sdcard/file__0.localstorage
-```
+{% endhighlight %}
 
 Now use your favorite [SQLite Browser](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/) to open the database.  You
 are going to see one table (ItemTable), with two columns (key and value).  Now the values you see are going to be a little
 hard to decipher as they are UTF-16 encoded blobs, but it is nice to at least have a look and see that what we are looking
 at is a relatively normal SqLite database.  Now lets look at the code to get values from our table:
 
-``` java
+{% highlight java %}
 ContextWrapper contextWrapper = new ContextWrapper(this);
 
 // Find the data directory
@@ -90,7 +90,7 @@ if (appWebViewFilesDir.exists()) {
          }
      }
 }
-```
+{% endhighlight %}
 
 And that's it.  Now you can read all the localStorage you want from your old PhoneGap apps either as part of a hybrid
 approach mobile development or if you are switching to a native android App from a PhoneGap app for whatever reason.  Hopefully
