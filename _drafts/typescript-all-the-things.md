@@ -388,3 +388,60 @@ Now everything works.  See the updated [fiddle](https://jsfiddle.net/ksoncan34/f
 this will be a problem to find, but if you are using a lot of these you will get burned missing a few (at least I did).
 
 #### Tip 9 - Callbacks are also problematic, use Promises instead
+
+Similar to the jQuery issues, is the issue of callbacks.  If you are used to passing in callbacks to a function to handle
+asynchronous functions you might also have issues with TypeScript classes.  For example:
+
+`````````
+namespace test {
+    class UserController {
+
+        public constructor(private toastService:ToastService, private jsonService:JsonService) {}
+
+        public changeName(name:string):void {
+            this.updateNameAsync(name, (success) => {
+                this.toastService('Name updated');
+            });
+        }
+
+        private updateNameAsync(name:string, callback:(success:boolean) => void):void {
+            // Name validation amd other stuff happens here...
+            this.jsonService.updateName(name, (success:boolean):void => {
+                callback(success);
+            });
+        }
+    }
+}
+`````````
+
+would throw an error when the service was updated, since toastService doesn't exist in the global scope.  You have to
+remember to perform all your class callbacks with [.call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+or [.apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply).  So to properly
+use a callback in a TypeScript class you must use arrow functions and either call or apply:
+
+`````````
+namespace test {
+    class UserController {
+
+        public constructor(private toastService:ToastService, private jsonService:JsonService) {}
+
+        public changeName(name:string):void {
+            this.updateNameAsync(name, function(success) { // Note the fat-arrow
+                this.toastService('Name updated');
+            });
+        }
+
+        private updateNameAsync(name:string, callback:(success:boolean) => void):void {
+            // Name validation amd other stuff happens here...
+            this.jsonService.updateName(name, (success:boolean):void => {   // Note the fat-arrow
+                callback.apply(this, [success]);
+                // Optionally callback.call(this, success);
+            });
+        }
+    }
+}
+`````````
+
+#### Tip 10
+
+Enjoy
