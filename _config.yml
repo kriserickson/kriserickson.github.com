@@ -4,6 +4,7 @@ logo:             logo.png
 disqus_shortname: agingcoder
 share:            true
 dropcap:		  true
+comments:         true
 
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
