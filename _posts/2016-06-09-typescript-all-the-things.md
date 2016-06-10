@@ -120,8 +120,8 @@ to "ts/**/*.ts" and it will have smartened up.
 
 There are very useful options available to you in the tsconfig.json file:
 
-**noEmitOnError** - Don't output the js file until there are no errors in the ts file.
-**noFallthroughCasesInSwitch** - Don't allow fall throughs on case switches
+**noEmitOnError** - Don't output the js file until there are no errors in the ts file.<br/>
+**noFallthroughCasesInSwitch** - Don't allow fall throughs on case switches.<br/>
 **target** - The language to target, for now you want es5 but es6 should be soon.
 
 A full list of compiler options can be found [here](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
