@@ -18,7 +18,7 @@ title : RSS Feed
             <title>{{ post.title | xml_escape }}</title>
             <description>{{ post.content | xml_escape }}</description>
             <link>{{ site.url }}{{ post.url }}</link>
-            <guid>{{ site.url }}{{ post.id }}</guid>
+            <guid isPermaLink="false">{{ site.url }}{{ post.id }}</guid>
             <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
         </item>
         {% endfor %}
