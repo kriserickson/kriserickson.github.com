@@ -54,32 +54,8 @@ The chart below is an updated version of what I produced:
 
 <style>
 table {
-    color: #fff;
-    margin-bottom: 20px;
-}
-th {
-    border-bottom: 1px solid #666;
-    background-color: #921B00;
-}
-td {
-    padding: 2px 16px 2px 0;
-}
-
-td a {
-    color: #fff !important;
-    border-bottom: 2px dotted #fff !important;
-}
-
-td a:hover {
-    color: #FFFF7E !important;
-    border-bottom: 2px dotted #FFFF7E !important;
-}
-
-tr:nth-child(even) {
-    background-color: #921B00;
-}
-tr:nth-child(odd) {
-    background-color: #B8523D;
+    margin: 0 auto 20px auto;
+    max-width: 56.25rem;
 }
 
 </style>
