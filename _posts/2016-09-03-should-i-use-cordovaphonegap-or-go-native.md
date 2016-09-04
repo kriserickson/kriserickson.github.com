@@ -3,6 +3,7 @@ layout: post
 title: "Should I use Cordova/Phonegap or go Native?"
 description: ""
 category: Programming
+imagefeature: cordova-or-native/direction.jpg
 tags: [Mobile,Phonegap,Cordova,Native]
 ---
 
@@ -19,11 +20,18 @@ of Cordova*
 And my answer is always: it depends.  For us pragmatists it is a similar question to "What is the best programming language?"
 And it depends on even more than the type of App you are planning on creating, it depends on where you want that app
 to go, what features the app requires, what development talent you have available to you, what platforms you want to target,
-and the list goes on.  Initially I had sketched out a flowchart that gave some guidance as to whether or not you should
-develop a native app or a hybrid/Cordova app, however it oversimplified things and did not properly factor a great many
-things into the decision.  
+and the list goes on.    
 
-My new solution is a system where you create two columns and give points to either Native or Hybrid depending upon the
+When I am asked if you can build it in Cordova, the answer 90% of the time is yes, you can build it Cordova.  
+However, sometimes, building certain types of Apps in Cordova would require so much work will be spent on 
+plugins and optimizing the HTML that it may not necessarily the most optimal choice of a platform.  
+
+Initially I had sketched out a flowchart that gave some guidance as to whether or not you should
+develop a native app or a hybrid/Cordova app, however it oversimplified things and did not properly factor a great many
+things into the decision.
+
+My new answer is more like the classic decision tool where you write down the plus and minuses of each aspect of a decision,
+except I recommend you create two columns (Native and Cordova )and give points to either Native or Cordova depending upon the
 answers to following questions.  You may decide to change the weights I have awarded to each question, and I may have
 missed several factors that may affect the decision, please feel free to make suggestions in the comments below.
 
@@ -90,7 +98,7 @@ for our App, and that our brand and our app is more important than the platform 
       </span>
   </div>
   
-If you want your app to be unique, and have its own look and feel, award 3 points to Cordova.
+If you want your app to not mimic the features of the underlying OS, and have its own look and feel, award 3 points to Cordova.
   
 #### Development Experience
   
@@ -147,7 +155,9 @@ you are going to run on.  Obviously for something like []In App Purchase](https:
  
 If everything checks out, and you either don't need plugins, or the plugins work great give Cordova +5 points, otherwise
 +5 to Native.  If you discover that it is something that you simply currently can't do on Cordova, then really short-circuit
-this whole process and go direct to Native.
+this whole process and go direct to Native.  If you are going to be using plugins that may require some care and attention,
+or you are going to be writing your own plugins, make sure you have access to developers who are comfortable in all the
+platforms you will be developing for.  Debugging plugins requires a fairly good understanding of the underlying platform.
 
 #### Backend Requirements
 
@@ -165,7 +175,7 @@ Javascript library is going to be easier, award 3 points to Cordova.
 Even if you end up ignoring the final tally (you may find after doing all the research required to come up with a number
 for Cordova or Native that you have already decided on one direction or another) thinking about and researching each
 of these methods will give you a feel on the way to go.  Be pragmatic and patient, realize where the advantages of the various
-methodologies lie and in the end, choose wisely.   You will hopefully (if you have a succesful product) have to live 
+methodologies lie and in the end, choose wisely.   You will, if you have a successful product, have to live 
 with your decision for quite a while.
 
 
