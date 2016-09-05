@@ -60,6 +60,17 @@ var notepad = (function ($) {
         $(window).on('scroll', function() {
             indexPostAnimate();
         });
+
+        var initialY = null;
+        $('bg-img').on('touchmove', function(e) {
+            var currentY = e.originalEvent.touches[0].clientY;
+            if (initialY == null) {
+                initialY = currentY;
+            }
+            if(currentY > initialY + 20){
+                indexPostAnimate();
+            }
+        });
         postHeaderCoverImg();
         mobileMenu();
         headerTitlesBackgroundCheck();

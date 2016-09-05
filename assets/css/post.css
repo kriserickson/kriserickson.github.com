@@ -14,10 +14,10 @@ body,
 .notepad-post-header {
     height: 100%;
 }
+
 .notepad-post-header-title {
     display: inline-block;
-    padding: 0;
-    padding-left: 1.25rem;
+    padding: 0 0 0 1.25rem;
     height: 5rem;
     line-height: 5rem;
     vertical-align: middle;
@@ -34,17 +34,13 @@ body,
 .notepad-post-header-title a:hover {
     color: white;
 }
-.post-template {
-    /* Header */
-    /* based on http://tympanus.net/Development/ArticleIntroEffects/index3.html */
-    /* Trigger Button */
-    /* Conent */
-    /* -------------------------- */
-    /* Sliced */
-    /* based on http://tympanus.net/Development/ArticleIntroEffects/index3.html
-  /* -------------------------- */
-    /* Delays */
+
+.figure {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: inline-block;
 }
+
 .post-template .notepad-blog-menu .notepad-mobile-menu a {
     color: white;
 }
@@ -89,16 +85,20 @@ body,
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100%;
     -webkit-backface-visibility: hidden;
 }
 .post-template .bg-img img {
     position: absolute;
     top: 0;
-    left: 0;
+    /*left: 0;*/
     display: block;
     min-width: 100%;
     min-height: 100%;
     max-width: none;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,0%);
 }
 .post-template .notepad-post-title {
     z-index: 1000;
@@ -163,6 +163,12 @@ body,
     font-size: 2em;
     cursor: pointer;
 }
+@media only screen and (max-device-width: 480px){
+    .post-template button.trigger {
+        font-size:4em;
+    }
+}
+
 .post-template button.trigger.background--light::before,
 .post-template button.trigger.background--light span::before {
     color: black;

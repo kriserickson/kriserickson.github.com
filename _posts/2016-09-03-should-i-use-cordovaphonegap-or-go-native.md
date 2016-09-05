@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Should I use Cordova/Phonegap or go Native?"
+title: "Should I use Cordova / Phonegap or go Native?"
 description: ""
 category: Programming
 imagefeature: cordova-or-native/direction.jpg
@@ -66,13 +66,13 @@ where Gmail on iOS looks like an iOS app and Gmail on Android looks like an Andr
     <div>
         <img src="/img/cordova-or-native/gmail-ios.png" style="border: 1px solid #000; margin: 0 10px 10px 0">
     </div>
-    Gmail on iOS
+    <span class="figure">Gmail on iOS</span>
     </span>
     <span style="vertical-align:top; display: inline-block">     
     <div>
         <img src="/img/cordova-or-native/gmail-android.png" style="border: 1px solid #000; margin: 0 10px 10px 0" >
     </div>
-    Gmail on Android
+    <span class="figure">Gmail on Android</span>
     </span>
 </div>          
 
@@ -88,13 +88,13 @@ for our App, and that our brand and our app is more important than the platform 
       <div>
           <img src="/img/cordova-or-native/instagram-ios.png" style="border: 1px solid #000; margin: 0 10px 10px 0">
       </div>
-      Untapped on iOS
+      <span class="figure">Instagram on iOS</span>
       </span>
       <span style="vertical-align:top; display: inline-block">     
       <div>
           <img src="/img/cordova-or-native/instagram-android.png" style="border: 1px solid #000; margin: 0 10px 10px 0" >
       </div>
-      Untapped on Android
+      <span class="figure">Instagram on Android</span>
       </span>
   </div>
   
@@ -108,7 +108,8 @@ usually charge more than Cordova developers).  I have no simple scale for this q
 2 points to Cordova for every developer who is an experienced web developer on your team, add 5 points to Cordova for
 experienced Cordova developer and add 5 points to Native for experienced iOS or Android developer and subtract 5 points
 from Native if you are missing a developer for that platform (i.e. if you have an experienced iOS developer, but no
-experienced Android developer and you are shipping to both platforms then add 0 points since it is a wash).
+experienced Android developer and you are shipping to both platforms then add 0 points since it is a wash).  Feel free to
+adjust the number of points awarded to each side based on the level of experience on the various platforms.
 
 #### Speed to Delivery
 
@@ -169,6 +170,15 @@ iOS can work with) but not in Javascript.  If that is the case, then award 5 poi
 or posting to a website and having to parse the results in HTML, Javascript potentially with the help of jQuery or another
 Javascript library is going to be easier, award 3 points to Cordova.
 
+#### Update Requirements
+
+A lot of hay was made about ReactNative's ability to update without going the App Store, and with multiple [plugins] 
+(https://github.com/nordnet/cordova-hot-code-push), including one from [Microsoft](https://github.com/Microsoft/cordova-plugin-code-push), or 
+with the [hydration](http://docs.phonegap.com/phonegap-build/tools/hydration/) feature from PhoneGap build you can do the
+same thing with Cordova.  In the past, the week to two week updates times of the iOS App Store made this a truly compelling
+feature, however with Apple's new [push to shorten approval times](http://www.bloomberg.com/news/articles/2016-05-12/apple-shortens-app-review-times-in-push-to-boost-service-sales)
+to just one day that becomes a less appealing feature of Cordova.  However, if you want really want to do [Continuous Deployment](https://www.agilealliance.org/glossary/continuous-deployment/),
+or you are concerned that Apple will not be maintaining there speedy approval times in the future, chalk a couple of extra points up for the Cordova side.
 
 ### The Final Result
 
