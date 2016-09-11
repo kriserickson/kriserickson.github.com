@@ -5,6 +5,7 @@ description: ""
 category: Programming
 imagefeature: cordova-or-native/direction.jpg
 tags: [Mobile,Phonegap,Cordova,Native]
+featured: true
 ---
 
 ### Cordova or Native?
