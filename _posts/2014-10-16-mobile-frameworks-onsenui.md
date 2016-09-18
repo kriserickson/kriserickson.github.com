@@ -3,7 +3,7 @@ layout: post
 title: "Mobile Frameworks - OnsenUI"
 description: "Onsen is another Angular based mobile UI framework, and this one actually (I checked, honestly) does have its CSS framework based on TopCoat, although they have modified it a fair bit. It hails from Japan (Onsen means Hotsprings or Spa in Japanese, so the name is cute pun) which may explain why it lacks the exposure of Ionic. "
 category: Programming
-tags: [Mobile,Phonegap,HTML5,Onsen]
+tags: [Mobile,Cordova,Phonegap,HTML5,Programming,Onsen]
 ---
 
 

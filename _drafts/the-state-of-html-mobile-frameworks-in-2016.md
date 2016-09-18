@@ -37,4 +37,45 @@ However, this article is concerned with the Big Three frameworks that are left i
 
 #### Ionic
 
-If most people ask me what Framework to use I pretty much always say [Ionic](http://ionicframework.com/).  The only real question is whether or not to try to live on the bleeding edge and use [Ionic 2](http://ionic.io/2) or stay with the tried and true.  While Ionic t
+If most people ask me what Framework to use I pretty much always say [Ionic](http://ionicframework.com/).  The only
+real question in the past few months has been whether or not to try to live on the bleeding edge and use [Ionic
+2](http://ionic.io/2) or stay with the tried and true.  [Ionic 1](http://ionicframework.com/) is an open source
+framework built on top of [Angular](https://angularjs.org/), providing a bunch of directives, css and a well
+through out, proven way of creating mobile apps.  You can see my previous [look at Ionic](/programming/2014/10/11/mobile-frameworks-ionic/), 
+which pretty much holds true for the past couple of years.  The [Ionic](http://ionic.io/) company, besides working on
+Ionic, has developed an eco-sphere of paid add ons that add a fair of bit of value to the Ionic Framework.  A [cloud
+service](http://ionic.io/cloud) which provides push notification, authentication services, a build server, and their
+version of live update.  They also sell a [drag and drop designer](http://ionic.io/products/creator), that would
+allow a designer to prototype an app and then allow a developer to bring the prototype to life without having to
+start from scratch (a year ago, the last time I used it, it produced a pretty good framework to work with, a
+little messy but I am sure that has improved over time).
+ 
+And now they are at beta 11 of Ionic 2, which uses [Angular 2](https://angular.io) as the basis of Ionic 2.  This means
+that it will be basically a rewrite to upgrade your application from Ionic to Ionic 2.  You might be able to keep some
+of the html templates, the controllers (controllers no longer exist in Angular 2) will have to be completely
+rewritten, and it is recommended (though not essential) that you switch from plain ol' Javascript to [TypeScript](https://www.typescriptlang.org/).  
+However if you are starting a new project, you really should be thinking about starting in Ionic 2.  Now that
+Angular 2 final has been released, I think we can expect Ionic 2 to leave beta shortly.  Although Angular 2 is almost
+a completely different framework from Angular 1, it shares only a little of the philosophy and even less of the
+syntax, it is a much more modern framework that has taken a lot insight from weaknesses of Angular 1 and from new
+frameworks like [React](https://facebook.github.io/react/).  Since Angular 2 is more efficient at rendering HTML, it
+is much more suited for the mobile environment.  It was wise of Ionic to switch to Angular 2, as staying with
+Angular 1 would have left them on a dead-end framework.  
+ 
+While I have not built a real world Ionic 2 application yet, and I might hesitate to work with Ionic 2 if I had to
+deliver an app in the next couple of weeks, I think that one should definitely consider moving to Ionic 2 if you
+are building an App that you wish to deliver in the next three months and are expecting to support for years, 
+rather than an app your need to build in the next few days and will be doing little maintenance on.  Over the next
+months and years, usage of Ionic 1 will drop off and Ionic 1 app will start seeming dated.  The hope is, now that
+Angular 2 has been released the developers of Angular have truly made a framework that will last years.  Angular 1 had
+a very good run and was the dominant framework for several years (maybe React has taken over with developer excitement,
+Angular is still the top dog in [real world usage](https://www.similartech.com/compare/angular-js-vs-react-js)), and
+with the force behind Angular 2 it will eventually become one of the most important Javascript Frameworks.
+ 
+#### OnSen UI
+
+[OnSen UI](https://onsen.io/) is another framework I have looked into [in the past](/programming/2014/10/16/mobile-frameworks-onsenui/), 
+and was pleasantly with.  A fair bit has changed with what was written in the article, and they have just
+recently released [OnSen UI 2](https://onsen.io/blog/onsen-ui-2-is-here/).  Like Ionic 2, it is pretty much 
+a complete rewrite and is no longer based on Angular.  They have switched to using the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements),
+and because of this they allow using a Vanilla JS, Angular 2 or React as the binding framework.

@@ -3,7 +3,7 @@ layout: post
 title: "First Thoughts on NativeScript"
 description: "On March 5th Telerik NativeScript, a new way of developing Mobile Apps aimed squarely at web developers.  There have been a few other platforms that have tried to do cross platform development before ..."
 category: Programming
-tags: [Mobile,NativeScript,JavaScript]
+tags: [Mobile,Programming,NativeScript,JavaScript]
 featured: true
 ---
 

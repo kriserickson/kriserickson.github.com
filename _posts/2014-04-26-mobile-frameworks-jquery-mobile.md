@@ -7,7 +7,7 @@ question count, number of books available, number of articles on the web, which 
 around for a few years, it still hasn't been around as long as jQTouch). It has gone through several iterations -- with
 each iteration making ..."
 category: Programming
-tags: [Mobile,Phonegap,HTML5,jQuery Mobile]
+tags: [Mobile,Cordova,Programming,Phonegap,HTML5,jQuery Mobile]
 ---
 
 

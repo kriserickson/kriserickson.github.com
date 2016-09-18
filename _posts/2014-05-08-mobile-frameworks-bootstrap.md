@@ -6,7 +6,7 @@ mobile first design.  And it can't be argued that it is popular, a lot of the si
 years are written with the aid of Bootstrap (or perhaps Zurb's Foundation)). It provides
 a great way to get a website up and going, and looking good with as ..."
 category: Programming
-tags: [Mobile,Phonegap,HTML5,Bootstrap]
+tags: [Mobile,Programming,Cordova,Phonegap,HTML5,Bootstrap]
 ---
 
 

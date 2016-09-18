@@ -7,11 +7,9 @@ days of work rather than just dropping in the new files.  I figured that there h
 the various other HTML5 Mobile platforms when I had to create a mobile application for work. My directives was to find a
 framework ..."
 category: Programming
-tags: [Mobile,Phonegap,HTML5]
+tags: [Mobile,Programming,Phonegap,Cordova,HTML5]
 featured: true
 ---
-
-
 This is part 1 of a multipart series.  There will be more parts forthcoming.
 
 A year I released my mobile app [Recipe Folder](http://recipe-folder.com) using jQuery mobile and PhoneGap.  While jQuery mobile

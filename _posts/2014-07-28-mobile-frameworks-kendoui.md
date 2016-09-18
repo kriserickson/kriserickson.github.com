@@ -3,7 +3,7 @@ layout: post
 title: "Mobile Frameworks -- KendoUI"
 description: "KendoUI is one the most popular mobile frameworks around, and for good reason. Until a few months ago it had a commercial only license which limited its attractiveness to non-enterprise developers, but its new Apache license makes it very attractive especially if you are looking for a framework that heavily leverages jQuery."
 category: Programming
-tags: [Mobile,Phonegap,HTML5,KendoUI]
+tags: [Mobile,Programming,Cordova,Phonegap,HTML5,KendoUI]
 ---
 
 

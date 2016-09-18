@@ -3,7 +3,7 @@ layout: post
 title: "Mobile Frameworks - Ionic"
 description: "Ionic is the new hotness in the hybrid app development world, picking up steam and popularity at I high rate.  It uses Angular to allow for declarative, interactive pages and  their own CSS UI to create a modern looking UI.  To this, Ionic adds its own special sauce: a collection of Angular directives, a CLI tool, some libraries and proscriptive structure for creating a mobile application."
 category: Programming
-tags: [Mobile,Phonegap,HTML5,Ionic]
+tags: [Mobile,Cordova,Programming,Phonegap,HTML5,Ionic]
 ---
 
 
