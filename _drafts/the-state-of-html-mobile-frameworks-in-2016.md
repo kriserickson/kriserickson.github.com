@@ -78,4 +78,18 @@ with the force behind Angular 2 it will eventually become one of the most import
 and was pleasantly with.  A fair bit has changed with what was written in the article, and they have just
 recently released [OnSen UI 2](https://onsen.io/blog/onsen-ui-2-is-here/).  Like Ionic 2, it is pretty much 
 a complete rewrite and is no longer based on Angular.  They have switched to using the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements),
-and because of this they allow using a Vanilla JS, Angular 2 or React as the binding framework.
+as the way that their &lt;on-sen&gt; components are rendered, and because of this they allow using a Vanilla JS,
+Angular 1, Angular 2, React, [Vue](https://vuejs.org/) or even [Meteor](https://www.meteor.com/) as the binding 
+framework.  They also provide two separate and automatically rendered skins, Material (for Android) and iOS.    
+  
+Like Ionic, their value add (monetization strategy) is adding features on backend (push notifications, live
+app updating) as well as a build server, and a even Cloud IDE.  Unlike Ionic this is under a different name called
+[Monaca](https://monaca.io/), which does not require use of OnSen, but clearly favours it.   
+
+When reviewing a earlier version of OnSen, it required using [Yeoman](http://yeoman.io/) to Scaffold the 
+application.  The latest version uses the [Monaca CLI](https://docs.monaca.io/en/manual/development/monaca_cli/) which
+is a slick CLI that even shows previews of the templates when selecting them.  It's not as full featured as the
+Ionic CLI, but I believe a lot of the functionality missing might be 
+
+#### Framework 7
+
