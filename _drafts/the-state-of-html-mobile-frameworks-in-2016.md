@@ -37,6 +37,8 @@ However, this article is concerned with the Big Three frameworks that are left i
 
 #### Ionic
 
+##### Ionic vs Ionic 2 
+
 If most people ask me what Framework to use I pretty much always say [Ionic](http://ionicframework.com/).  The only
 real question in the past few months has been whether or not to try to live on the bleeding edge and use [Ionic
 2](http://ionic.io/2) or stay with the tried and true.  [Ionic 1](http://ionicframework.com/) is an open source
@@ -71,6 +73,32 @@ Angular 2 has been released the developers of Angular have truly made a framewor
 a very good run and was the dominant framework for several years (maybe React has taken over with developer excitement,
 Angular is still the top dog in [real world usage](https://www.similartech.com/compare/angular-js-vs-react-js)), and
 with the force behind Angular 2 it will eventually become one of the most important Javascript Frameworks.
+
+##### The Ionic Framework
+
+What you get with the Ionic 2 Framework (not talking about the upsells from the company) is a pretty robust framework,
+that smartly uses Angular 2 and its strengths.  
+
+##### The CLI
+
+You get a CLI that allows project creation.  The project creation,
+like most of the CLI, requires you to set all of your options on the command line.  You have to know the name of 
+the template you want to use (or specify a github repo, or a codepen url) and specify that on the command line.  
+You have to remember specify --v2 if you want an Ionic 2 project rather than an Ionic project, otherwise it is
+ctrl-c and delete and start again (if you caught it when it was building rather than after you spent the 5 minutes
+to bring up the new project and then discover that it is a Ionic 1 app).  You have to specify --sass i8f you want
+Sass rather than CSS.  This will be familiar to you if you have have run the Cordova CLI a lot, but other CLIs (and
+even Yeoman) are more prompt based.
+
+The CLI also wraps almost all of the cordova features (build, run, add platform, add plugin), and if you want the
+advantages from the [Ionic Native](http://ionicframework.com/docs/v2/native/) plugin wrappers, I believe you have
+to use <code>ionic plugin add</code> rather than <code>cordova pluign add</code> (though I haven't actually tried
+using cordova plugin add with Ionic Native) -- see [John Morony's](http://www.joshmorony.com/)
+[article on Ionic Native](http://www.joshmorony.com/using-cordova-plugins-in-ionic-2-with-ionic-native/) for a complete
+explanation of how Ionic Native Works.
+
+
+ 
  
 #### OnSen UI
 
@@ -89,7 +117,7 @@ app updating) as well as a build server, and a even Cloud IDE.  Unlike Ionic thi
 When reviewing a earlier version of OnSen, it required using [Yeoman](http://yeoman.io/) to Scaffold the 
 application.  The latest version uses the [Monaca CLI](https://docs.monaca.io/en/manual/development/monaca_cli/) which
 is a slick CLI that even shows previews of the templates when selecting them.  It's not as full featured as the
-Ionic CLI, but I believe a lot of the functionality missing might be 
+Ionic CLI, but its certainly an improvement over the previous version.
 
 #### Framework 7
 
