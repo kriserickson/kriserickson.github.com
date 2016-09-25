@@ -108,9 +108,9 @@ a quick clone of my [Recipe Folder](https://recipe-folder.com) app, since it is 
 it might be pretty easy, I could at least get the first page up and running in a few hours and maybe I could
 reuse some of the code.
 
-<span style="display: block; text-align: center; font-weight: bold">
+
 <img src="/img/nativescript2/recipe_folder.png" style="width: 300px; border: 1px solid #000; margin: 10px auto" />
-Recipe Folder List Recipes Page</span>
+<span style="display: block; text-align: center; font-weight: bold">Recipe Folder List Recipes Page</span>
 
 
 And it was pretty easy to get the Javascript going to get a list of recipes, however I found
@@ -123,9 +123,8 @@ Next I wanted to color the ActionBar, but apparently that is still [not possible
 yet either.  So basically I had an ugly list of recipes, OK, maybe then I will get to the recipe view part.  So I added
 an event to go to view the recipe.  Below is the page I wanted to duplicate:
 
-<span style="display: block; text-align: center; font-weight: bold">
 <img src="/img/nativescript2/recipe_folder_2.png" style="width: 300px; border: 1px solid #000; margin: 10px auto" />
-Recipe Folder View Recipe Page</span>
+<span style="display: block; text-align: center; font-weight: bold">Recipe Folder View Recipe Page</span>
 
 The GridLayout was working pretty well to create my view, and things were going swimmingly until 
 I wanted to add a button that had an image on the right (the x that allows the user to remove tags form the recipes).  And
@@ -140,16 +139,13 @@ Trying to convince myself that I was just not comfortable or familiar enough wit
 built all the sample apps, they all look terrible.   The best looking app [Friends](https://github.com/nativescript/sample-friends) (see below), 
 still has an unstyled title bar:
  
- <span style="display: block; text-align: center; font-weight: bold">
  <img src="/img/nativescript2/friends.png" style="width: 300px; border: 1px solid #000; margin: 10px auto" />
- Friends Sample App</span>
+ <span style="display: block; text-align: center; font-weight: bold">Friends Sample App</span>
  
  Sure they are sample apps, but, their [App Showcase](https://www.nativescript.org/showcases) has 4 apps.  Three of them
  are pretty ugly sample apps, only one is available in the AppStore -- and it crashes on my  phone: 
  
- <span style="display: block; text-align: center; font-weight: bold">
-  <img src="/img/nativescript2/telerik_next.png" style="width: 300px; border: 1px solid #000; margin: 10px auto" />
-  Crashy Crashy</span>
+<img src="/img/nativescript2/telerik_next.png" style="width: 300px; border: 1px solid #000; margin: 10px auto" /><span style="display: block; text-align: center; font-weight: bold">Crashy Crashy</span>
 
 and the rest are pretty feature barren.  Has no one in the six months that this has been a product released an app that
 they can point to in one of the app stores to brag about?  The number one recommendation I gave in my last article was to 
