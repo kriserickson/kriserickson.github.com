@@ -183,7 +183,7 @@ end # task :page
 desc 'Launch preview environment'
 task :preview do
   drafts = ENV['drafts'].to_s.empty? ? '' : ' --drafts'
-  system "bundle exec jekyll serve --incremental --watch#{drafts}"
+  system "bundle exec jekyll serve --watch#{drafts}"
 end # task :preview
 
 desc 'Build site'

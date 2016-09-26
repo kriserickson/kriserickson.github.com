@@ -3,7 +3,7 @@ layout: post
 title: "Should I use Cordova / Phonegap or go Native?"
 description: ""
 category: Programming
-imagefeature: cordova-or-native/direction.jpg
+imagefeature: blog/direction.jpg
 tags: [Mobile,Phonegap,Cordova,Native,Programming]
 featured: true
 ---
