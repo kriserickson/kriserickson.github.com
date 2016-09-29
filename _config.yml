@@ -29,6 +29,11 @@ google_analytics:   UA-46763224-1
 google_verify:      
 bing_verify:
 
+#required for lets-encrypt
+keep_files: [
+    '.well-known/acme-challenge'
+]
+
 gems: [jekyll-paginate]
 
 # Links to include in footer navigation
