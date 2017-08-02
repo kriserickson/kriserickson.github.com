@@ -2,8 +2,10 @@
 layout: post
 title: "What Javascript Framework should I allow my developers to develop a SPA App, and what is a SPA App"
 description: ""
+imagefeature: blog/javascript-frameworks.jpg
 category: Opinion
 tags: [Javascript,Frameworks]
+featured: true
 ---
 ### Brief
 This genesis of this article was a conversation attempting to explain the reasons for choosing one Javascript Framework (or really collection of Frameworks) over another to a non Frontend developer.  It was remarked that many managers, entrepreneurs, and clients of contractors might find the information useful when thinking about how to develop a new, or in the industry jargon [greenfield](https://en.wikipedia.org/wiki/Greenfield_project) project.   While this is mostly relevant in choosing a framework for a [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) (or SPA), some of the considerations can be applied to a more traditional page based web application (though some of the heavier Javascript Frameworks do really lend themselves at all well traditional web applications).  What is a SPA and when is it the better choice for Web Site (or area of a web site)?  A is frequently a website that is used like a more traditional application, some examples of SPAs would be Gmail (or really any modern WebMail), [Expedia](https://expedia.com) or any travel or [hotel booking application](https://hotels.com), [Facebook](https://facebook.com), [Twitter](https://twitter.com), etc.  Think of sites where the main frame of the website stays relatively constant and only the data within that frame changes.  Sites that don't necessarily lend themselves to being SPA's are more like Shopping Sites, News Sites, a Blogs, basically any site where you want the content to be indexed by a web search engine.  Though there are techniques to make SPA's indexable and searchable, it is generally a better idea to make that content that dynamically changed by the server rather than using data from server and dynamically updating it on the client.    
