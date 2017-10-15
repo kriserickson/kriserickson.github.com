@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Javascript Framework should I allow my developers to develop a SPA App, and what is a SPA App"
-description: ""
+description: "This genesis of this article was a conversation attempting to explain the reasons for choosing one Javascript Framework (or really collection of Frameworks) over another to a non Frontend developer."
 imagefeature: blog/javascript-frameworks.jpg
 category: Opinion
 tags: [Javascript,Frameworks]

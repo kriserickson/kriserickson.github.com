@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Flutter: A quick look at a new Cross Platform Mobile App Toolkit"
-description: "Well over a year ago, Google (well, at least Google developers built it -- it's said to be made with "contributions by Google and the community", introduced yet another Mobile Toolkit that allows building apps for both iOS and Android."
+description: "Well over a year ago, Google (well, at least Google developers built it -- it's said to be made with 'contributions by Google and the community', introduced yet another Mobile Toolkit that allows building apps for both iOS and Android."
 category: Programming
+imagefeature: blog/flutter.jpg
 tags: [Mobile,Programming,Dart]
 featured: true
 ---
