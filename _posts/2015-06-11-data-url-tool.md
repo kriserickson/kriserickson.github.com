@@ -11,7 +11,7 @@ tags: [DataUrl, Tools]
 
 I needed a quick and dirty way to display a dataUrl as an image...   
 
-<textarea id="dataUrlTextarea" style="width:800px; height: 400px"></textarea>
+<textarea id="dataUrlTextarea" style="width: 1020px; height: 400px; margin: 0 auto 20px;"></textarea>
 
 <input type="button" id="dataUrlButton" value="Show Data Url">
 
