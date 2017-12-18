@@ -19,7 +19,7 @@ take comments or whitespace into account.  Github does a nice job of this, but n
 in had their code in a single file.  I figured how long could a SLOC counter take to write, and the answer was 11 minutes,
 so here it is, maybe you will find some use in it too:
 
-<textarea id="slocTextarea" style="width:800px; height: 400px"></textarea>
+<textarea id="slocTextarea" style="width:1020px; height: 400px; margin: 0 auto 20px"></textarea>
 
 <span id="countResult">Number of lines: </span>
 
