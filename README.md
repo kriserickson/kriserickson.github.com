@@ -1,1 +1,3 @@
-New version of my blog based on https://github.com/hmfaysal/Notepad by @hmfaysal
+## Building the Site
+
+bundle exec jekyll build --verbose
