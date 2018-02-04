@@ -94,7 +94,7 @@ Eventually we are going store our user accounts in Mongo, and [Mongoose](http://
 
 ### RPSLS.json
 
-Since our app is Rock Paper Lizard Spock we are going to use the acronym rpsls all over the place.  The first place we are going to do that is for the project.json file for Google Actions (or gactions).  Create a file ```resls.json``` and populate it with:
+Since our app is Rock Paper Lizard Spock we are going to use the acronym rpsls all over the place.  The first place we are going to do that is for the project.json file for Google Actions (or gactions).  Create a file ```rpsls.json``` and populate it with:
 
 {% highlight json %}
 {
@@ -120,4 +120,45 @@ Since our app is Rock Paper Lizard Spock we are going to use the acronym rpsls a
 }
 {% endhighlight %}   
 
-Note the CHANGE-ME in the conversations, eventually when we get your NGROK connection setup, you will have to change that URL.  We are also going to be adding authentication to this file eventually but for now this will do.
+Note the CHANGE-ME in the conversations, eventually when we get your NGROK connection setup, you will have to change that URL.  We are also going to be adding authentication to this file eventually but for now this will do.  This file is currently divided into 2 sections, actions and conversations and only describes one action.  The actions described in [ActionPackage](https://developers.google.com/actions/reference/rest/Shared.Types/ActionPackage) are actions that are available without having started a conversation (we will code other Actions later, but they will not need to be described in the actions file since they are only available once a conversation is started).  Each action must have a name, and should have an intent, a fulfillment and a description -- though according to the documentation they do not have to if the name is a [built-in intent](https://developers.google.com/actions/reference/rest/intents), for example action.intent.MAIN.  The fulfillment must have a field conversationName, and that has to point to a name in the conversations section.  
+
+The conversations section has a collection of conversations, which have a name, a url and fulfillmentApiVersion.  Make sure the name of the conversation matches the collection name, and the fulfillmentApiVersion is set to 2 (Api 1 was very different, and will not be supported much longer and doesn't work with actions-on-google npm module).
+
+### Set Up A Project
+
+Go to the "Actions on Google Console" by going to [https://console.actions.google.com/](https://console.actions.google.com/).   
+
+<img src="/img/google-home/step1.png" style="border: 1px solid #000; margin: 10px auto 0" />
+
+Click on Add/Import Project, and call it rpsls.  Click on Create Project.
+
+<img src="/img/google-home/step2.png" style="border: 1px solid #000; margin: 10px auto 0" />
+
+Now click on the "Actions SDK" build button:
+
+<img src="/img/google-home/step3.png" style="border: 1px solid #000; margin: 10px auto 0" />
+
+And you will see that your project has been created.
+
+<img src="/img/google-home/step4.png" style="border: 1px solid #000; margin: 10px auto 0" />
+
+Now copy the piece of text from the second step and paste it into a command prompt in the directory where you created the ```rpsls.json``` and ```package.json```.  It should look something like:
+
+```gactions update --action_package PACKAGE_NAME --project rpsls-74009```
+
+Where the 74009 will be a unique number assigned to you by Google.  Replace PACKAGE_NAME with rpsls.json and hit enter:
+
+```gactions update --action_package rpsls.json  --project rpsls-74009```
+
+If everything goes right, you will be told:
+
+```
+Gactions needs access to your Google account. Please copy & paste the URL below into a web browser and follow the instructions there. Then copy and paste the authorization code from the browser back here.
+Visit this URL:
+ https://accounts.google.com/o/oauth2/auth?access_type=offline&c.....
+```
+
+Once you have visited the URL paste the code into the command prompt and your  
+
+
+
