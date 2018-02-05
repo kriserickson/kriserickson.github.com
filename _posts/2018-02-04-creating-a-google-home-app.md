@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating A Google Home App"
-description: ""
+description: "A while ago I got an email from a Recipe Folder user asking how to get the Google Home integration working with Recipe Folder.  I have no idea why they thought that there was an integration, but it got me thinking, maybe I should add one.  I hadn't looked at Google Home or Amazon Alexa development before, but I thought it might be fun to add at least Google Home integration..."
 category: Programming
 imagefeature: blog/google-home.jpg 
 tags: [Google Home,Programming, Nodejs]
