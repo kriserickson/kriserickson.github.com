@@ -144,3 +144,44 @@ function optionIntentHandler(app) {
     }
 }
 {% endhighlight %}
+
+The option intent handler is also rather simple, the key thing is that to get text from an option, we use the getSelectedOption method.  This method will give
+us back the exact string we used as the key when we built the list (even if the user types in 'start game' we will get back 'Start Game').  In fact, since we
+need the exact string, lets replace all the string instances with constants.  At the top of the rpsls.js lets add the following constants:
+
+{% highlight javascript %}
+const OPTION_INSTRUCTIONS = 'Instructions';
+const OPTION_START_GAME = 'Start Game';
+const OPTION_AGAIN = 'Again';
+const OPTION_END = 'End';
+{% endhighlight %}
+
+and lets fix the main intent, by replacing the list with said options:
+
+{% highlight javascript %}
+list.addItems([
+    app.buildOptionItem(OPTION_START_GAME, ['Start', 'New Game']).setTitle(OPTION_START_GAME),
+    app.buildOptionItem(OPTION_INSTRUCTIONS, ['Help', 'Read Instructions', 'Tell Me Instructions', 'Repeat Instructions']).setTitle(OPTION_INSTRUCTIONS)
+])
+{% endhighlight %}
+
+and clean up the optionIntentHandler:
+
+{% highlight javascript %}
+// React to list or carousel selection
+function optionIntentHandler(app) {
+    console.log('OPTION intent triggered.');
+    const param = app.getSelectedOption();
+    if (param === OPTION_INSTRUCTIONS) {
+        readInstructions(app);
+    } else if (param === OPTION_START_GAME || param === OPTION_AGAIN) {
+        startGame(app);
+    } else if (param === OPTION_END) {
+        app.tell('Bye');
+    }
+}
+{% endhighlight %}
+
+We will be using OPTION_AGAIN and OPTION_END later in the tutorial.
+  
+
