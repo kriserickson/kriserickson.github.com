@@ -387,9 +387,15 @@ If everything worked, you should see and hear "Hey Ma, It Works!"
 
 Now that it is working on the simulator, you can test it on your own Google Home.  Note: The account you have logged in to your Google Home must be the account you are developing the App under.  The same is true for testing on a device, and remember unless you fill out the App Information the name of the App is "My Test App".
 
-Ok, now that we have an app up and working, we'll start learning more about the actual ActionsAppSDK in the next tutorial and build out our program to actually play a game.  While you are waiting, you might want to start messing around with the program we have created.  Perhaps asking more questions, or instead of using plain text use [ssml](https://developers.google.com/actions/reference/ssml)(Speech Synthesis Markup Language ) to make more complex speach.  The methods available to the app object in the GoogleActionsSDK are documented [here](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp#methods).  Until next time, have fun!
+Ok, now that we have an app up and working, we'll start learning more about the actual ActionsAppSDK in the [next tutorial](/programming/2018/02/08/creating-a-google-home-app-part-2-the-game/)
+ and build out our program to actually play a game.  While you are waiting, you might want to start messing around with the program we have created.  
+ Perhaps asking more questions, or instead of using plain text use [SSML](https://developers.google.com/actions/reference/ssml) (Speech Synthesis Markup Language ) to make more complex speech.
+   The methods available to the app object in the GoogleActionsSDK are documented [here](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp#methods).  Until next time, have fun!
 
 Oh, and all the code for this project can be found on [GitHub](https://github.com/kriserickson/google-actions-rpsls).  This first article is is divided into 2 tags if you want to follow along,
-first there is generating the [JSON files](https://github.com/kriserickson/google-actions-rpsls/tree/PART_1_STEP_1), and finally the full code for this article is [here](https://github.com/kriserickson/google-actions-rpsls/tree/PART_1_STEP_2).  If you see any bugs, or have suggestions feel free to do so either in the comments below, or as an issue or pull request in the [GitHub repo](https://github.com/kriserickson/google-actions-rpsls).
+first there is generating the [JSON files](https://github.com/kriserickson/google-actions-rpsls/tree/PART_1_STEP_1), and finally the full code for this article is
+ [https://github.com/kriserickson/google-actions-rpsls/tree/PART_1_STEP_2](https://github.com/kriserickson/google-actions-rpsls/tree/PART_1_STEP_2).  
+ If you see any bugs, or have suggestions feel free to do so either in the comments below, or as an issue or pull request in the 
+ [GitHub repo](https://github.com/kriserickson/google-actions-rpsls).
 
 

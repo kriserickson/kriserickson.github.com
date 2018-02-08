@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Creating A Google Home App Part 2 -  The Game"
-description: ""
+title: "Creating A Google Home App Part 2 - The Game"
+description: "In the previous article, Creating A Google Home App, I detailed how to get a very simple Google Home App up and running.  Mostly it was about setting up the node project, the Google Actions project, but in the end you had an App that when you talked to it, it would say -- 'Hey Ma, It Worked!'.  And while it wasn't much of an achievement, but I know I felt pretty cool when I got my Google Speaker in my kitchen saying things I wanted it to say.  Somehow it felt more impressive that just having a website that dumped out HTML, and now in this article we are going to learn how to actually create something (somewhat) useful, and learn a fair bit more about the GoogleActionSDK."
 category: Programming
 imagefeature: blog/rpsls.png 
 tags: [Google Home,Programming, Nodejs]
@@ -10,16 +10,34 @@ featured: true
 
 ### Introduction
 
-In the previous article, [Creating A Google Home App](https://agingcoder.com/programming/2018/02/04/creating-a-google-home-app/) I detailed how to get a very simple Google Home App up and running.  Mostly it was about setting up the node project, the Google Actions project, but in the end you had an App that when you talked to it, it would say -- 'Hey Ma, It Worked!'.  And while it wasn't much of an achievement, but I know I felt pretty cool when I got my Google Speaker in my kitchen saying things I wanted it to say.  Somehow it felt more impressive that just having a website that dumped out HTML, and now in this article we are going to learn how to actually create something (somewhat) useful, and learn a fair bit more about the GoogleActionSDK.
+In the previous article, [Creating A Google Home App](https://agingcoder.com/programming/2018/02/04/creating-a-google-home-app/) 
+I detailed how to get a very simple Google Home App up and running.  Mostly it was about setting up the node project, the Google 
+Actions project, but in the end you had an App that when you talked to it, it would say -- 'Hey Ma, It Worked!'.  And while it wasn't 
+much of an achievement, but I know I felt pretty cool when I got my Google Speaker in my kitchen saying things I wanted it to say.  
+Somehow it felt more impressive that just having a website that dumped out HTML, and now in this article we are going to learn how to
+ actually create something (somewhat) useful, and learn a fair bit more about the GoogleActionSDK.
 
-A couple of quick notes before we jump into the application, because we are handling all of the parsing of text (Google handles the Text to Speech for us, and does a very impressive job of that), this does not create the cleanest possible code as we are stuck using default intents.  If you want to have a cleaner set of intents to map to, and not have to manually parse responses you might want to look at [WebHooks in DialogFlow](https://dialogflow.com/docs/fulfillment), this is not that tutorial however.
+A couple of quick notes before we jump into the application, because we are handling all of the parsing of text (Google handles 
+the Text to Speech for us, and does a very impressive job of that), this does not create the cleanest possible code as we are 
+stuck using default intents.  If you want to have a cleaner set of intents to map to, and not have to manually parse responses 
+you might want to look at [WebHooks in DialogFlow](https://dialogflow.com/docs/fulfillment), this is not that tutorial however.
 
-Another note, I have been messing around with Google Actions Console for a while, and sometimes it is just buggy.  I've had to delete projects and create fresh projects to get things to work, hence I would recommend not filling out App Information section of the Overview until you are ready to go for two reasons.
+Another note, I have been messing around with Google Actions Console for a while, and sometimes it is just buggy.  I've had to 
+delete projects and create fresh projects to get things to work, hence I would recommend not filling out App Information section 
+of the Overview until you are ready to go for two reasons.
 
 1. It's frustrating to fill out the App Information multiple times.
-2. The App Name you choose in their is like a URL, it has to be unique and if you have to recreate your app because it is acting funny remember to change the old apps name BEFORE you delete it.  Also you have to wait about an hour before changing an apps name to be able to create a new app with that name.
+2. The App Name you choose in their is like a URL, it has to be unique and if you have to recreate your app because it is 
+acting funny remember to change the old apps name BEFORE you delete it.  Also you have to wait about an hour before changing 
+an apps name to be able to create a new app with that name.
 
-Thirdly, Google For Business accounts seem to work, until they don't.  I spent over an hour trying to figure out why the app would stop sending requests after the first one.  Finally after a lot of googling, I saw someone post about how they were having a similar problem until they blew away their app and recreated it on a gmail account (rather than a Google for Business Account) and all my problems went away -- you have been warned, not all Google Accounts are equal (and surprisingly the ones you pay for are less equal).
+Also, a quite note: Google For Business accounts seem to work, until they don't.  
+I spent over an hour trying to figure out why the app would stop sending requests after the first one.  
+Finally after a lot of googling, I saw someone post about how they were having a similar problem until they blew away their app 
+and recreated it on a gmail account (rather than a Google for Business Account) and all my problems went away 
+-- you have been warned, not all Google Accounts are equal (and surprisingly the ones you pay for are less equal),
+or it could be the act of creating a new project fixed things, as I have said a couple of times sometimes the only way
+to fix a project is to create a new one.
 
 ### The Code
 
@@ -59,7 +77,7 @@ The TEXT standard intent gives us raw text to parse, which allows the user to te
 #### The rpsls.js file
 
 Create a new file in the main directory called rpsls.js.  It is going to have three exported functions, so lets create those first (this will enable us
-to run the app even though it isn't complete because all the pieces will at least be in palce).
+to run the app even though it isn't complete because all the pieces will at least be in place).
 
 {% highlight javascript %}
 function mainIntentHandler(app) {
@@ -84,7 +102,12 @@ module.exports = {
 #### The Main Intent Handler
 
 Just like our mainIntentHandler in previous version, all intents that are mapped from the main SDK get an instance of the
-actionSDKApp object passed to them.  This is used for many things, and is pretty well documented at [https://developers.google.com/actions/reference/nodejs/ActionsSdkApp](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp), and [https://developers.google.com/actions/reference/nodejs/AssistantApp](https://developers.google.com/actions/reference/nodejs/AssistantApp) -- it is important to note that ActionsSdkApp is a subclass of the AssistantApp.  The first thing we are going to do welcome our user and give them the option to either get instructions for Rock, Paper, Scissors, Lizard, Spock or play the game.  We could do this with text parsing, but since there are only two possible options this seems like the perfect place to ask for a list.   So lets update our mainIntentHandler:
+actionSDKApp object passed to them.  This is used for many things, and is pretty well documented at 
+[https://developers.google.com/actions/reference/nodejs/ActionsSdkApp](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp), and 
+[https://developers.google.com/actions/reference/nodejs/AssistantApp](https://developers.google.com/actions/reference/nodejs/AssistantApp) -- it is 
+important to note that ActionsSdkApp is a subclass of the AssistantApp.  The first thing we are going to do welcome our user and give them the option
+ to either get instructions for Rock, Paper, Scissors, Lizard, Spock or play the game.  We could do this with text parsing, but since there are only two
+  possible options this seems like the perfect place to ask for a list.   So lets update our mainIntentHandler:
 
 {% highlight javascript %}
 function mainIntentHandler(app) {
@@ -106,9 +129,20 @@ function mainIntentHandler(app) {
 }
 {% endhighlight %}
 
-First we are going to create a list of options we are going to present our user.  We do with the [buildList](https://developers.google.com/actions/reference/nodejs/AssistantApp#buildList) method of the ActionSdkApp, build list takes an optional title.  This obviously will not be visible on the Google Home, but it will show up on your phone.  Plus it can be useful debug information, so we will include it.  Next we add items to the list, each item is constructed with the [buildOptionItem](https://developers.google.com/actions/reference/nodejs/AssistantApp#buildOptionItem) method.  The buildOptionItem takes a key, and a list of synonyms.  Also, we are setting the title of the optionItem (optionItem methods and the buildOptionItem method are chainable).  Now that we have that list, we are ready to [askWithList](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp#askWithList).  
+First we are going to create a list of options we are going to present our user.  We do with the 
+[buildList](https://developers.google.com/actions/reference/nodejs/AssistantApp#buildList) method of the ActionSdkApp, 
+build list takes an optional title.  This obviously will not be visible on the Google Home, but it will show up on your phone.  
+Plus it can be useful debug information, so we will include it.  Next we add items to the list, each item is constructed 
+with the [buildOptionItem](https://developers.google.com/actions/reference/nodejs/AssistantApp#buildOptionItem) method.  
+The buildOptionItem takes a key, and a list of synonyms.  Also, we are setting the title of the optionItem (optionItem methods 
+and the buildOptionItem method are chainable).  Now that we have that list, we are ready to 
+[askWithList](https://developers.google.com/actions/reference/nodejs/ActionsSdkApp#askWithList).  
 
-The askWithList method, takes an InputPrompt and a list.  The buildInputPrompt takes an option (whether or not the text is [SSML](https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language)), some text (either SSML or plain text), and a list of messages that can be output if the user fails to enter any text.  If you want the ability to properly read things fractions, numbers, and have more control of the timing of the speech I would recommend producing your text in SSML.  Our SSML is very simple here, we create a single paragraph (```<p>```), in which we have three sentences (```<s>```).
+The askWithList method, takes an InputPrompt and a list.  The buildInputPrompt takes an option 
+(whether or not the text is [SSML](https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language)), some text (either SSML or plain text),
+ and a list of messages that can be output if the user fails to enter any text.  If you want the ability to properly read things fractions, 
+ numbers, and have more control of the timing of the speech I would recommend producing your text in SSML.  Our SSML is very simple here, 
+ we create a single paragraph (```<p>```), in which we have three sentences (```<s>```).
 
 OK, now that we have a slightly better opening for application, lets make sure it worked.  The first thing we have to do is restart the app
 
@@ -420,5 +454,11 @@ Now that everything is done, lets start up the simulator again.
 Now that it is working in the simulator, try it on your Google Home device.  Also play around with SSML, and the various
 inflections to improve the feel of our little game.
 
+If you want to download the code for the state that it is in, it is [TAG PART_2_STEP_1](https://github.com/kriserickson/google-actions-rpsls/tree/PART_2_STEP_1) on
+GitHub: <a href="https://github.com/kriserickson/google-actions-rpsls/tree/PART_2_STEP_1">https://github.com/kriserickson/google-actions-rpsls/tree/PART_2_STEP_1</a>. 
+
 Next article we will start keeping score, add a login to our app, add account linking, and finish off some of the rough
 edges in the app.    
+
+As always, if you see any bugs, or have suggestions feel free to do so either in the comments below, or as an issue or pull request in the 
+ [GitHub repo](https://github.com/kriserickson/google-actions-rpsls).
