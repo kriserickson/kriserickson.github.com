@@ -85,5 +85,44 @@ const CHOICE_MATRIX = {
 Now we can greatly simplify our returnResults code: 
 
 {% highlight javascript %}
-XXXX INSERT CODE FROM PART_3_1
+function returnResults(app, userChoice) {
+    const computerChoice = CHOICE_ARRAY[Math.floor(Math.random() * CHOICE_ARRAY.length)];
+    if (computerChoice === userChoice) {
+        app.ask(app.buildInputPrompt(true,
+    `<speak>
+          <p>
+            <s>I also picked ${userChoice}.</s>
+            <s>Try again, do you pick Rock, Paper, Scissors, Lizard or Spock</s>
+          </p>
+        </speak>`));
+    } else {
+        const result = CHOICE_MATRIX[userChoice + computerChoice];
+        if (!userChoice) {
+            console.error('Impossible choice: ' + userChoice);
+            app.ask('Something has gone wrong, you picked: ' + userChoice);
+            return;
+        }
+
+        let list = app.buildList('Start Game or Instructions');
+        list.addItems([
+            app.buildOptionItem(OPTION_AGAIN, ['Start', 'Yes']).setTitle('Again'),
+            app.buildOptionItem(OPTION_END, ['Stop', 'No']).setTitle('End')
+        ]);
+
+        const message = '<s>' + result.outcome + '</s>' + (result.win ? '<s>You Won!</s>' : '<s>You lost.</s>');
+
+        app.askWithList(app.buildInputPrompt(true,
+                `<speak>
+          <p>
+              ${message}
+              <s>To play again, say again.</s>
+              <s>To quit say end.</s>
+          </p>
+        </speak>`), list);        
+    }
+}
 {% endhighlight %}
+
+To see exactly what this looks like, you can look at the tag: [PART_3_STEP_1](https://github.com/kriserickson/google-actions-rpsls/tree/PART_3_STEP_1).
+
+Now lets add some scoring t 
