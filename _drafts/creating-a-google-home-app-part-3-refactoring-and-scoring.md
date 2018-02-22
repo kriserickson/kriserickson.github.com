@@ -123,6 +123,53 @@ function returnResults(app, userChoice) {
 }
 {% endhighlight %}
 
-To see exactly what this looks like, you can look at the tag: [PART_3_STEP_1](https://github.com/kriserickson/google-actions-rpsls/tree/PART_3_STEP_1).
+To see exactly what this looks like, you can look at the tag: [PART_3_STEP_1](https://github.com/kriserickson/google-actions-rpsls/tree/PART_3_STEP_1).  
+Nothing here is particularly complicated, and it really has nothing to do with Google Actions so let's skip along to our next change.
 
-Now lets add some scoring t 
+Next we are going to add per session scoring, as well as a bit of state so that we can provide better responses when we don't get
+an answer we want.  Our game state is going to be an enumeration, and there are basically 3 states: Initial, StartGame (when we are 
+waiting for the user to choose Rock/Paper/Scissors/Lizard/Spock), and EndGame when we are waiting to see if they want to play again.  Let's 
+create our version of an enumeration and place it at the top of the rpsls.js file:
+
+{% highlight javascript %}
+const STATES = Object.freeze({INITIAL_STATE: 0, START_GAME: 1, END_GAME: 2});
+{% endhighlight %}
+
+Next we need to keep the state somewhere, and this is done by adding the state to to every ask method (and askWIthList method).  If you don't
+pass the state, it will revert to null so remember you have to set it everywhere, even if you don't change it!  The other thing to realize about 
+state is that you are passing it back to the Google Servers and the Google Servers are passing it back to you with every request, so even though
+you can store fairly large objects in it, it may not be the most efficient way of doing things (you might want to store large objects
+in a local database instead).
+
+The first place to add the state is in our mainIntentHandler.  Since this is only executed when a user begins their conversation with our game, we
+can completely reset the state (including setting their wins and losses for this conversation to 0 -- we will use these wins and losses later in the article).
+
+{% highlight javascript %}
+function mainIntentHandler(app) {
+    console.log('MAIN intent triggered.');
+    const list = getStartList(app);
+    app.askWithList(app.buildInputPrompt(true,
+            `<speak>
+              <p>
+                  <s>Welcome to Rock, Paper, Scissors, Lizard, Spock.</s>
+                  <s>If you need instructions, say Instructions.</s>
+                  <s>To play the game, say Start Game</s>
+              </p>
+            </speak>`, ['Say Instructions or Start Game']), list, {state: STATES.INITIAL_STATE, wins: 0, loss: 0});
+
+}
+{% endhighlight %}
+
+the only change in this function is the addition of the state at the end:
+
+{% highlight html %}
+</speak>`, ['Say Instructions or Start Game']), list);
+{% endhighlight %}
+
+becomes:            
+
+{% highlight html%}
+</speak>`, ['Say Instructions or Start Game']), list, {state: STATES.INITIAL_STATE, wins: 0, loss: 0});
+{% endhighlight %} 
+
+Now we have to 
