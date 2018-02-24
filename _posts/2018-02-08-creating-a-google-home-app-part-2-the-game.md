@@ -4,7 +4,7 @@ title: "Creating A Google Home App Part 2 - The Game"
 description: "In the previous article, Creating A Google Home App, I detailed how to get a very simple Google Home App up and running.  Mostly it was about setting up the node project, the Google Actions project, but in the end you had an App that when you talked to it, it would say -- 'Hey Ma, It Worked!'.  And while it wasn't much of an achievement, but I know I felt pretty cool when I got my Google Speaker in my kitchen saying things I wanted it to say.  Somehow it felt more impressive that just having a website that dumped out HTML, and now in this article we are going to learn how to actually create something (somewhat) useful, and learn a fair bit more about the GoogleActionSDK."
 category: Programming
 imagefeature: blog/rpsls.png 
-tags: [Google Home,Programming, Nodejs]
+tags: [Google Home, Google Assistant, Google Actions, Programming, Nodejs]
 featured: true
 ---
 
@@ -115,7 +115,8 @@ function mainIntentHandler(app) {
     let list = app.buildList('Start Game or Instructions');
     list.addItems([
         app.buildOptionItem('Start Game', ['Start', 'New Game']).setTitle('Start Game'),
-        app.buildOptionItem('Instructions', ['Help', 'Read Instructions', 'Tell Me Instructions', 'Repeat Instructions']).setTitle('Instructions')
+        app.buildOptionItem('Instructions', ['Help', 'Read Instructions', 'Tell Me Instructions', 
+            'Repeat Instructions']).setTitle('Instructions')
     ]);
     app.askWithList(app.buildInputPrompt(true,
             `<speak>

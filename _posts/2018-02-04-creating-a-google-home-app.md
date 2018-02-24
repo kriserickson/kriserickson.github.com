@@ -4,7 +4,7 @@ title: "Creating A Google Home App"
 description: "A while ago I got an email from a Recipe Folder user asking how to get the Google Home integration working with Recipe Folder.  I have no idea why they thought that there was an integration, but it got me thinking, maybe I should add one.  I hadn't looked at Google Home or Amazon Alexa development before, but I thought it might be fun to add at least Google Home integration..."
 category: Programming
 imagefeature: blog/google-home.jpg 
-tags: [Google Home,Programming, Nodejs]
+tags: [Google Home, Google Assistant, Google Actions, Programming, Nodejs]
 featured: true
 ---
 ## Introduction
@@ -18,7 +18,12 @@ user saying that there was currently no integration but it was something that I 
 
 So I started looking into writing a Google Home app.  A bit of research, and I discovered that you don't really write
 Google Home app's, but you write [Google Actions](https://developers.google.com/actions/) that run on any of the Google Assistants (the Google Home being one,
-but also there is an assistant built into all modern Android Phones and Tablets).  Most of the tutorials that I 
+but also there is an assistant built into all modern Android Phones and Tablets and Google has licensed the Assistant to 
+multiple companies so they can create their own Google Assistants some of which are starting to show up now 
+lie the [Zolo](https://9to5google.com/2018/02/22/zolo-mojo-review-google-assistant/), [TicHome Mini](https://www.mobvoi.com/collections/tichome-mini),
+the [Sony LF-S50G](https://www.engadget.com/2018/01/29/sony-lf-s50g-review-google-assistant-speaker/), 
+the [JBL Link 10](https://www.jbl.com/voice-activated-speaker/JBL+LINK+10.html), and 
+ soon to be many others).  Most of the tutorials that I 
 discovered were built around [api.ai](https://dialogflow.com/) which is now called dialogflow, and used Google
 Cloud platform to run.  I needed access to all the data on my own servers, so I wanted to write a stand-alone that didn't
 require outside services (other than the Google Action API, obviously).  While there were some example apps from

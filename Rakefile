@@ -41,7 +41,7 @@ task :default do
     puts "Usage\n"
     puts "rake post title=\"title\" [date=\"date\"]\n"
     puts "rake draft [title=\"A Title\"] [tags=[tag1, tag2]]"
-    puts 'rake preview [drafts=true]'
+    puts 'rake preview'
     puts "rake publish [title=\"A Title\"] [date=\"date\"]"
     puts "rake page [name=\"Page Name\"]"
 end
@@ -182,8 +182,7 @@ end # task :page
 
 desc 'Launch preview environment'
 task :preview do
-  drafts = ENV['drafts'].to_s.empty? ? '' : ' --drafts'
-  system "bundle exec jekyll serve --watch#{drafts}"
+  system "bundle exec jekyll serve --watch --drafts"
 end # task :preview
 
 desc 'Build site'
