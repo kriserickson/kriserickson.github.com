@@ -8,8 +8,10 @@ featured: true
 comments: true
 ---
 
+<div style="font-size: 16px; margin: 0 0 10px 0; background: #f5f5f5; border: 1px solid #ddd; padding: 15px"><strong>Update:</strong> Recent experiences with React Native can be found in the post: <a href="/programming/2018/07/04/react-native-a-tempting-quagmire/">React Native -- A Tempting Quagmire</a></div>
 
-It's been 6 months since I wrote [First Thoughts on NativeScript](http://www.agingcoder.com/programming/2015/03/07/first-thoughts-on-nativescript/)
+
+<span style="float: left; font-size: 4.688rem; line-height: 4.375rem; padding-top: .25rem; padding-right: .5rem; padding-left: .188rem; font-family: serif;">I</span>t's been 6 months since I wrote [First Thoughts on NativeScript](http://www.agingcoder.com/programming/2015/03/07/first-thoughts-on-nativescript/)
 and you would think by now with my formidable blogging output I would have written dozens of articles following up on 
 my initial thoughts.  Well, as they say the best laid plans of mice and men, but I finally spent several hours with
 the latest build NativeScript build ([NativeScript 1.3](https://www.nativescript.org/blog/details/nativescript-1.3-release-is-live))

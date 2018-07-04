@@ -2,7 +2,7 @@
 layout: post
 title: "Things I have learned in too many years of programming -- Comments"
 description: "When I first started programming, I tried to write the most compact, cleverest blocks of code which I would dutifully comment to explain what they where doing.  These comments where odes to my brilliance and what a clever way I had solved this problem rather ..."
-category: "Programming"
+category: Programming
 tags: [programming, craftwork, professionalism]
 ---
 
