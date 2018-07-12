@@ -30,7 +30,7 @@ but some you will no longer have to worry about.
 So here, in no particular order, are my PhoneGap Lessons:
 
 1. **Node is your best friend**: Sure you pretty much have to install node to get Cordova running these days (I
-guess there may be hacks to get around this, or you could use an ancient version) but embrace node.  Use [grunt[(http://gruntjs.com/) or
+guess there may be hacks to get around this, or you could use an ancient version) but embrace node.  Use [grunt](http://gruntjs.com/) or
 [gulp](http://gulpjs.com/) as your build system (I actually recommend having a subdirectory off your project to
 place your cordova output and have a build task copy the required files there - this will make it possible to
 concat and minify your JS and CSS files).  Use node [http-server](https://www.npmjs.com/package/http-server) or

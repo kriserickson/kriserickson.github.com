@@ -147,11 +147,11 @@ the default cordova app, this has happened to me a couple of times when I though
 turned out to be Hello Cordova).
 
 5) See if you can make your own quick and dirty sample app that does what you need it to do, and run it on all the platforms
-you are going to run on.  Obviously for something like []In App Purchase](https://github.com/j3k0/cordova-plugin-purchase)
+you are going to run on.  Obviously for something like [In App Purchase](https://github.com/j3k0/cordova-plugin-purchase)
  that might be a little too much work for preliminary research (though I can attest to how well that particular
  plugin works, it's awesome), but if it is something like a barcode scanner, make sure it functions like you expect.  
 
-6) Check StackOverflow and see if there are lingering issues with Plugin.
+6) Check StackOverflow and see if there are lingering issues with said Plugin.
 
 7) Ask on the [Slack Channels](http://slack.cordova.io/) if anyone has used the plugin, and what their experiences were.
  
