@@ -7,6 +7,7 @@ tags: [Mobile,Programming,PhoneGap,Cordova]
 featured: true
 ---
 
+<div style="font-size: 16px; margin: 0 0 10px 0; background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 0 auto 2em auto; max-width: 56.25rem; line-height: 1.5em"><strong>Update:</strong> This post is getting pretty long in the tooth, so I have updated it: <a href="/programming/2018/07/11/three-more-years-of-phonegapcordova-lessons/">Three More Years of Phonegap / Cordova Lessons</a></div>
 
 It seems hard to believe, but it's been almost 5 years since I started doing PhoneGap development!  while
 I could write a history of PhoneGap, or a history of my own use of PhoneGap, I felt it would be more interesting

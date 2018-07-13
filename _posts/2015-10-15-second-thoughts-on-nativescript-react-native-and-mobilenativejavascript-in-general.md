@@ -8,7 +8,7 @@ featured: true
 comments: true
 ---
 
-<div style="font-size: 16px; margin: 0 0 10px 0; background: #f5f5f5; border: 1px solid #ddd; padding: 15px"><strong>Update:</strong> Recent experiences with React Native can be found in the post: <a href="/programming/2018/07/04/react-native-a-tempting-quagmire/">React Native -- A Tempting Quagmire</a></div>
+<div style="font-size: 16px; margin: 0 0 10px 0; background: #f5f5f5; border: 1px solid #ddd; padding: 15px; margin: 0 auto 2em auto; max-width: 56.25rem; line-height: 1.5em"><strong>Update:</strong> Recent experiences with React Native can be found in the post: <a href="/programming/2018/07/04/react-native-a-tempting-quagmire/">React Native -- A Tempting Quagmire</a></div>
 
 
 <span style="float: left; font-size: 4.688rem; line-height: 4.375rem; padding-top: .25rem; padding-right: .5rem; padding-left: .188rem; font-family: serif;">I</span>t's been 6 months since I wrote [First Thoughts on NativeScript](http://www.agingcoder.com/programming/2015/03/07/first-thoughts-on-nativescript/)
