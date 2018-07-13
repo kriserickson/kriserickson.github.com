@@ -289,7 +289,38 @@ written example of a more complex but modernish (ok it's from 2015 when Microsof
 
 Also still good advice, plugins tend to be fragile (even the ones supported by Adobe/Apache that are part of cordova, though they 
 tend to be the best of the bunch). See [Phonegap, be Wary of Plugins](http://kriserickson.com/phonegap/2016/03/20/phonegap-be-wary-of-plugins/),
-for the pain I have experienced myself.  
+for the pain I have experienced myself.   Don't get me wrong, plugins are definitely one of Cordova's strengths, but they
+each one you add adds potential for someone elses code to go wrong.  Frequently writers of a plugin (unless they are a team),
+will have expertise in one platform and only a passing familiarity with the other platform and this can cause plugins to work
+great on one platform but poorly or cause issues on another platform.   Just to do a TLDR on the linked to article: before 
+including a plugin look at how many people are using the plugin on npm (for example at the time of writing about 800 people
+a week are downloading [cordova-pluign-inapppurcahse](https://www.npmjs.com/package/cordova-plugin-inapppurchase), while only
+20 are using [cordova-plugin-purchase](https://www.npmjs.com/package/cordova-plugin-purchase) which leads me to think
+that inapppurchase is probably the way to go).  Go over the current [issues in GitHub](https://github.com/AlexDisler/cordova-plugin-inapppurchase/issues)
+and notice that it has 116 open issues (again at the time of writing).  One of the other [purchase plugins](https://www.npmjs.com/package/cc.fovea.cordova.purchase)
+also has around 800 weekly downloads, but only has [26 open issues](https://github.com/j3k0/cordova-plugin-purchase/issues).  If you look at the two issue trackers, you will see
+that one has fewer total issues, but less closed issues and the other has far more issues, but only a few open issues.  Without
+spending some time in those issue trackers you will have no idea whether one developer just doesn't clear out the bogus
+issues fast enough and both plugins are of the same quality, or one of the plugins really has more active than the other.
+
+Mix that with the possibility that Libraries (for example the android support version that the plugin requires on Android, or the CocoaPod on 
+iOS) will conflict and you will realize that the more plugins you add, the chance of these conflicts expands exponentially.  Right
+now I am fighting with the fact that the published version of the [Cordova Camera Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/),
+version 4.0.3, published 3 months ago requires the support library 24 (from over 2 years ago), while another [plugin I am using](https://github.com/dpa99c/cordova-diagnostic-plugin)
+requires support version 26 and thus the app requires support libraries and breaks during the build process.  The @head
+version of the camera plugin uses support library 27 (which doesn't help, and there is no tagged version of camera that
+uses support library 26).  So to get the current build to work you have to manually change the app/build.gradle file,
+which breaks one of my rules (Always be prepared to blow away a platform), and means that I can't use automation to 
+make the build.  The solution is either to figure out a way to change app/build.gradle (which has been unsuccessful so
+far as no matter where I seem to put the hook the build.gradle file is getting written over), or forking the camera plugin and
+hard coding support version 26 in and then going through this mess again when either plugin updates.
+
+And that is kind of the problem: deciding on which plugin to use, even with tools like [Cordova's Plugin Registry](https://cordova.apache.org/plugins/)
+and the quickly Sherlocked [PlugReg](http://www.plugreg.com/), is a time consuming and fraught process.  Picking plugins
+from the core Cordova team makes that less fraught, but I have fought with bugs in the 
+[Cordova Media Player Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media/) as well as the 
+[Cordova Camera Plugin](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/) that never should have been
+released and yet remained the published plugin for months.
 
 ### Lesson 10 - Don’t write your own Framework
 
@@ -298,6 +329,14 @@ would have to be a masochist to develop your own Framework now.   If you are in 
 or if you (like me) prefer Vue look at [Quasar](https://quasar-framework.org/), [Framework7 Vue](https://framework7.io/vue/), or [Onsen](https://onsen.io/vue/).
 If you like React then look at [OnSen](https://onsen.io/react/), or [Framework7 React](https://framework7.io/react/) and if you like
 kicking it Old School without having a binding framework as such, you can go with the standard [Framework7](https://framework7.io/docs/).
+
+Personally I am using Framework7 Vue for my greenfield projects now, and mostly loving it (no framework is perfect, and
+some of the issues merging Vue with Framework7 cause some feelings of Ugh, but it is bar far the best framework I have
+used so far).  
+
+The other thing I would add about Frameworks, is that they evolve over time, and unless you want to spend all of your maintenance
+work in a world of pain, I would try to keep your code up to date as the framework changes.  For Ionic this is especially painful
+as the shift from AngularJS to Angular2/3/4/5/6/7 whatever they call it now was basically a rewrite.  
 
 
 ## Conclusion
