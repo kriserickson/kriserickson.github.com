@@ -4,7 +4,7 @@ title: "Three More Years of PhoneGap/Cordova Lessons"
 description: "Has it really been more than three years since I wrote Lessons Learned, hard to believe.  So much time has past and yet it is definitely still the most viewed article on this website.  After re-reading it I felt it was time to update its recommendations to be more recent, and add some new ones"
 category: Programming
 tags: [Mobile,Programming,PhoneGap,Cordova]
-imagefeature: blog/phonegap.jpg
+imagefeature: blog/phonegap-cordova.jpg
 featured: true
 ---
 
