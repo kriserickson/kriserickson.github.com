@@ -43,10 +43,7 @@ Over the past year I have been working on my own mobile hobby App [Recipe Folder
 a kind of [Pocket](http://getpocket.com)/[Instapaper](http://www.instapaper.com/)/ Readability (now defunct) for
 Recipes (using a [Chrome Extension](https://chrome.google.com/webstore/detail/recipe-folder/nfgkogochmmkkglclaokmangionbpmha) or
 [Bookmarklet](http://recipe-folder.com) you can save any Recipes you find on the web and then access them
-later on your Mobile device).  It was written using jQuery Mobile, and that is a mistake I would never make again.  To quote
-one of the creators of PhoneGap:
-
-
+later on your Mobile device).  It was written using jQuery Mobile, and that is a mistake I would never make again. 
 
 I also looked at some of the commercial options (specifically [PhoneJS](http://phonejs.devexpress.com/) and [KendoUI Mobile](http://www.kendoui.com/mobile.aspx),
 but once again the size of the framework scared me off.  Its not **just** that adding 1/2 a Meg of minified Javascript
